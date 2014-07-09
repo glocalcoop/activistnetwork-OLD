@@ -1,65 +1,23 @@
 multisite
 =========
 
-====== Activist Network Overview ======
+Activist Network Overview
+=========
 
 
-The Activist network in a preconfigure WordPress Multisite that allows activists & organizers to create a space where groups and projects can have their own website within a network and the news, events & user profiles are shared across the network and highligted on the main site.
+The Activist network in a preconfigure WordPress Multisite that allows activists & organizers to create a space where groups and projects can have their own website within a network and the news, events & user profiles are shared across the network and highlighted on the main site.
 
 
 The flow chart below provides an idea of what a network would look like with one main site displaying the data and being the face of the network for each sub site to communicate and share with their communities.
 
 
-----
-
-
-<WRAP round box 95%>
-
 === Main Network Site ===
 
 Main site/url for the network that shows news, events and activity of the users within their sub sites. 
 
-</WRAP>
-
-<columns 100%> 
-
-<WRAP center round box>
-
-=== Sub-site 1 ===
-The site for project 1 to share news, events & share user access. </WRAP>
 
 
-<newcolumn>
-
-
-<WRAP center round box>
-
-=== Sub Site 2 ===
-The site for project 2 to share news, events & share user access. </WRAP>
-
-
-<newcolumn>
-
-
-<WRAP center round box>
-
-=== Sub Site 3 ===
-The site for project 3 to share news, events & share user access. </WRAP>
-
-
-<newcolumn>
-
-<WRAP center round box>
-
-=== More sites ===
-There can be as many sites as needed, however server requirements will increase. 
-</WRAP>
-
-</columns>
-
-
-
-===== Funtionality =====
+===== Functionality =====
 
 
 This section refers to the back-end/admin features needed to organize the content within the templates. We will build around WordPress core.
@@ -68,7 +26,7 @@ This section refers to the back-end/admin features needed to organize the conten
 ==== News ====
 
 
-News is the posts (or blog) section of the site. Content here can be formated around taxonomies & post formats.
+News is the posts (or blog) section of the site. Content here can be formatted around taxonomies & post formats.
 
 
 === Taxonomy ===
