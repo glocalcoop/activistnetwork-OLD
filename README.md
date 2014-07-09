@@ -1,17 +1,10 @@
-Activist Network Overview
-=========
+====== Activist Network Overview ======
 
 
-The Activist network in a preconfigure WordPress Multisite that allows activists & organizers to create a space where groups and projects can have their own website within a network and the news, events & user profiles are shared across the network and highlighted on the main site.
+The Activist network is a pre-configured WordPress Multisite that allows activists & organizers to create a space where groups and projects can have their own website within a network and the news, events & user profiles are shared across the network and highlighted on the main site.
 
 
-The flow chart below provides an idea of what a network would look like with one main site displaying the data and being the face of the network for each sub site to communicate and share with their communities.
-
-
-=== Main Network Site ===
-
-Main site/url for the network that shows news, events and activity of the users within their sub sites. 
-
+The flow chart below provides an idea of what a network would look like with one main site displaying the data and being the face of the network for each sub site to communicate and share with their communities
 
 
 ===== Functionality =====
@@ -52,7 +45,7 @@ Post Formats, refer to the type of content which is connected to templates in th
 === Social Integration ===
 
 
-Explore using Keyring to accompplish this around post formats. This actually archives data on the site as opposed to the only leaving on commercial/propiretary network.
+Explore using Keyring to accomplish this around post formats. This actually archives data on the site as opposed to the only leaving on commercial/proprietary network.
 
 
 * [[http://wordpress.org/plugins/keyring/|http://wordpress.org/plugins/keyring/]]
@@ -62,7 +55,7 @@ Explore using Keyring to accompplish this around post formats. This actually arc
 ==== Events ====
 
 
-This is a custom post type created using the [[http://wordpress.org/plugins/events-manager/|Events Manager]] plugin that allows for a creation of global (or shared) events table to display events from all sub-sites on the main site. There is a wide variety of optins available through the admin area of the site for customizations on a site by site basis and there are some network wide settings that allows for easier management.
+This is a custom post type created using the [[http://wordpress.org/plugins/events-manager/|Events Manager]] plugin that allows for a creation of global (or shared) events table to display events from all sub-sites on the main site. There is a wide variety of options available through the admin area of the site for customizations on a site by site basis and there are some network wide settings that allows for easier management.
 
 
 ==== User Profiles ====
@@ -72,7 +65,7 @@ Individuals will be able to register as users to the network to get notification
 
 
 *  [[http://wordpress.org/plugins/wp-biographia/|http://wordpress.org/plugins/wp-biographia/]]
-  * There are a lot of settings to allow site admins ways to control where this information appears. The rest is controled within templates.
+  * There are a lot of settings to allow site admins ways to control where this information appears. The rest is controlled within templates.
 *  [[http://wordpress.org/plugins/theme-my-login/|http://wordpress.org/plugins/theme-my-login/]]
   * Provider frontend login, logout, reset password pages and a widget that allows to show links based on user role.
 * [[http://wordpress.org/plugins/join-my-multisite/|http://wordpress.org/plugins/join-my-multisite/]] (if already a user on one site, if a user tries to register again it won't work, this will allow them to register to multiple sites with the same username.)
