@@ -71,24 +71,6 @@
 
 		<section class="home-modules">
 
-
-
-			<?php
-			// $customizaton = get_option( 'community_options' );
-			// echo $customization['featured_category'];
-
-			// $tempoptions = get_option("community_options");
-			// if (!empty($tempoptions)) {
-			//     foreach ($tempoptions as $key => $option)
-			//         $options[$key] = $option;
-			//     	$category = get_cat_name($option);
-			// }
-			// echo $category;
-
-			// echo "I'm the category selected: " . community_home_category();
-
-
-			?>
 			<?php if ( is_multisite() ) { // Check to see if multisite is active. If not, display a recent posts and events module for this site. ?> 
 
 			<?php 
@@ -99,8 +81,6 @@
 				} else {
 					$title = 'Latest';
 				}
-				echo 'category'. $category;
-				echo 'title' . $title;
 			}
 			?>
 			<?php $sites = wp_get_sites('offset=1'); // Set up variable that holds array of sites ?>
