@@ -375,6 +375,7 @@ function community_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'community_customize_register' );
 
+
 // Return the category name selected in theme customization
 function community_home_category() {
 	$homecategory = get_option("community_options");
