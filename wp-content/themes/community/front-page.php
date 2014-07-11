@@ -70,21 +70,53 @@
 		</section>
 
 		<section class="home-modules">
+
+
+
+			<?php
+			// $customizaton = get_option( 'community_options' );
+			// echo $customization['featured_category'];
+
+			// $tempoptions = get_option("community_options");
+			// if (!empty($tempoptions)) {
+			//     foreach ($tempoptions as $key => $option)
+			//         $options[$key] = $option;
+			//     	$category = get_cat_name($option);
+			// }
+			// echo $category;
+
+			// echo "I'm the category selected: " . community_home_category();
+
+
+			?>
 			<?php if ( is_multisite() ) { // Check to see if multisite is active. If not, display a recent posts and events module for this site. ?> 
+
+			<?php 
+			if(function_exists('community_home_category')) {
+				$category = community_home_category(); // Get the category from theme customization 
+				if(!empty($category)) {
+					$title = $category;
+				} else {
+					$title = 'Latest';
+				}
+				echo 'category'. $category;
+				echo 'title' . $title;
+			}
+			?>
 			<?php $sites = wp_get_sites('offset=1'); // Set up variable that holds array of sites ?>
 
 			<?php
 			if(function_exists( 'network_latest_posts' )) {
 
 				$parameters = array(
-				'title'         => 'Requests',
+				'title'         => $title,
 				'title_only'    => 'false',
 				'auto_excerpt'  => 'true',
 				'full_meta'		=> 'true',
-				'category'         => 'requests',          // Widget title
+				'category'         => $category,
 				'number_posts'     => 9,
 				'wrapper_list_css' => 'highlights-list',
-				'wrapper_block_css'=> 'module row highlights', //The wrapper classe
+				'wrapper_block_css'=> 'module row highlights', //The wrapper class
 				'instance'         => 'highlights-module', //The wrapper ID
 				);
 				// Execute
