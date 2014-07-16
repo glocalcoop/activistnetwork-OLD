@@ -22,87 +22,14 @@
 				<?php endwhile; endif; ?>
 			</article>
 			
-			<article class="home-feature">
 
-				<script type="text/javascript">
-
-				jQuery(document).ready(function(){
-				  jQuery('.featured-posts').bxSlider({
-				    mode: 'fade',
-				    adaptiveHeight: true,
-				    captions: true
-				  });
-				});
-				</script>
-
-				<ul id="featured" class="featured-posts bxslider">
-				<!-- Displays sticky posts from the current site -->
-
-					<?php
-					$sticky = get_option( 'sticky_posts' ); // Fetch an array of sticky posts
-					rsort( $sticky ); // Sort by latest first
-					$sticky = array_slice( $sticky, 0, 5 ); // Change the last number to show more or less posts
-					$featuredposts = new WP_Query( array( 'post__in' => $sticky, 'ignore_sticky_posts' => 1 ) );
-
-					while ($featuredposts->have_posts()) : $featuredposts->the_post();
-						$permalink = get_permalink();
-						$title = get_the_title();
-						// $post_meta = get_post_meta($post->ID, 'community_volunteer_location', true);
-						$imagearg = array(
-							'title'	=> trim(strip_tags($title)),
-							'alt'	=> trim(strip_tags($title))
-						);
-					?>
-
-					<li class="featured-post">
-						<a href="<?php echo $permalink; ?>" title="<?php echo get_the_title();?>">
-						<?php echo get_the_post_thumbnail($post->ID, 'full', $imagearg); ?>
-						</a>
-					</li>
-					
-
-				<?php endwhile; ?>
-				<?php wp_reset_query(); ?> 
-
-				</ul>
-
-			</article>
 		</section>
 
 		<section class="home-modules">
 
 			<?php if ( is_multisite() ) { // Check to see if multisite is active. If not, display a recent posts and events module for this site. ?> 
 
-			<?php 
-			if(function_exists('community_home_category')) {
-				$category = community_home_category(); // Get the category from theme customization 
-				if(!empty($category)) {
-					$title = $category;
-				} else {
-					$title = 'Latest';
-				}
-			}
-			?>
 			<?php $sites = wp_get_sites('offset=1'); // Set up variable that holds array of sites ?>
-
-			<?php
-			if(function_exists( 'network_latest_posts' )) {
-
-				$parameters = array(
-				'title'         => $title,
-				'title_only'    => 'false',
-				'auto_excerpt'  => 'true',
-				'full_meta'		=> 'true',
-				'category'         => $category,
-				'number_posts'     => 9,
-				'wrapper_list_css' => 'highlights-list',
-				'wrapper_block_css'=> 'module row highlights', //The wrapper class
-				'instance'         => 'highlights-module', //The wrapper ID
-				);
-				// Execute
-				$hightlights_posts = network_latest_posts($parameters);
-			}
-			?>
 
 			<script type="text/javascript">
 			jQuery(document).ready(function(){
@@ -126,16 +53,27 @@
 			});
 			</script>
 
+			<?php 
+			if(function_exists('community_home_category')) {
+				$postcategory = community_home_category(); // Get the category from theme customization 
+				if(!empty($postcategory)) {
+					$categorytitle = $postcategory;
+				} else {
+					$categorytitle = 'Latest';
+				}
+			}
+			?>
+
 			<?php
 			if(function_exists( 'network_latest_posts' )) {
 
 				$parameters = array(
-				'title'         => 'News',
+				'title'         => $categorytitle,
 				'title_link'    => '/news/',
 				'title_only'    => 'false',
 				'auto_excerpt'  => 'true',
 				'full_meta'		=> 'true',
-				// 'category'         => 'news',
+				'category'         => $postcategory,
 				'number_posts'     => 2,
 				'wrapper_list_css' => 'news-list',
 				'wrapper_block_css'=> 'module row news', //The wrapper classe
