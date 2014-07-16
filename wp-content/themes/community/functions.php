@@ -79,58 +79,23 @@ you like. Enjoy!
 function bones_register_sidebars() {
 	register_sidebar(array(
 		'id' => 'sidebar1',
-		'name' => __( 'Primary', 'bonestheme' ),
-		'description' => __( 'First (primary) sidebar.', 'bonestheme' ),
+		'name' => __( 'Primary', 'community' ),
+		'description' => __( 'First (primary) sidebar.', 'community' ),
 		'before_widget' => '<div id="%1$s" class="widget primary %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
 	register_sidebar(array(
-		'id' => 'home-sidebar',
-		'name' => __( 'Home Sidebar', 'bonestheme' ),
-		'description' => __( 'A homepage widget area.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="home-sidebar">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="module-heading">',
-		'after_title' => '</h4>',
+		'id' => 'home-modules',
+		'name' => __( 'Homepage Modules', 'community' ),
+		'description' => __( 'Modules for the Homepage', 'community' ),
+		'before_widget' => '<article id="%1$s" class="module row events %2$s">',
+		'after_widget' => '</article>',
+		'before_title' => '<h2 class="module-heading">',
+		'after_title' => '</h2>',
 	));
-	register_sidebar(array(
-		'id' => 'footer1',
-		'name' => __( 'Footer 1', 'bonestheme' ),
-		'description' => __( 'First footer widget area.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget footer-widget-1 %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
-	register_sidebar(array(
-		'id' => 'footer2',
-		'name' => __( 'Footer 2', 'bonestheme' ),
-		'description' => __( 'Second footer widget area.', 'bonestheme' ),
-		'before_widget' => '<nav id="%1$s" class="widget footer-widget-2 %2$s">',
-		'after_widget' => '</nav>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
-	register_sidebar(array(
-		'id' => 'footer3',
-		'name' => __( 'Footer 3', 'bonestheme' ),
-		'description' => __( 'Third footer widget area.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget footer-widget-3 %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
-	register_sidebar(array(
-		'id' => 'footer4',
-		'name' => __( 'Footer 4', 'bonestheme' ),
-		'description' => __( 'Fourth footer widget area.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget footer-widget-4 %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
+
 	/*
 
 	To call the sidebar in your template, you can just copy
@@ -151,8 +116,8 @@ add_theme_support( 'menus' );
 // registering wp3+ menus
 register_nav_menus(
 	array(
-		'secondary-nav' => __( 'The Secondary Menu', 'bonestheme' ),   // secondary nav in header
-		'utility-nav' => __( 'The Utility Menu', 'bonestheme' ),   // utility nav in header
+		'secondary-nav' => __( 'The Secondary Menu', 'community' ),   // secondary nav in header
+		'utility-nav' => __( 'The Utility Menu', 'community' ),   // utility nav in header
 	)
 );
 
@@ -162,7 +127,7 @@ function bones_secondary_nav() {
 	wp_nav_menu(array(
 		'container' => false,                           // remove nav container
 		'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
-		'menu' => __( 'The Secondary Menu', 'bonestheme' ),  // nav name
+		'menu' => __( 'The Secondary Menu', 'community' ),  // nav name
 		'menu_class' => 'nav second-nav clearfix',         // adding custom nav class
 		'theme_location' => 'second-nav',                 // where it's located in the theme
 		'before' => '',                                 // before the menu
@@ -179,7 +144,7 @@ function bones_utility_nav() {
 	wp_nav_menu(array(
 		'container' => false,                           // remove nav container
 		'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
-		'menu' => __( 'Utility Menu', 'bonestheme' ),  // nav name
+		'menu' => __( 'Utility Menu', 'community' ),  // nav name
 		'menu_class' => 'nav utility-nav clearfix',         // adding custom nav class
 		'theme_location' => 'utility-nav',                 // where it's located in the theme
 		'before' => '',                                 // before the menu
@@ -275,13 +240,13 @@ function bones_comments( $comment, $args, $depth ) {
 				?>
 				<img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=32" class="load-gravatar avatar avatar-48 photo" height="32" width="32" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
 				<?php // end custom gravatar call ?>
-				<?php printf(__( '<cite class="fn">%s</cite>', 'bonestheme' ), get_comment_author_link()) ?>
-				<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'bonestheme' )); ?> </a></time>
-				<?php edit_comment_link(__( '(Edit)', 'bonestheme' ),'  ','') ?>
+				<?php printf(__( '<cite class="fn">%s</cite>', 'community' ), get_comment_author_link()) ?>
+				<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'community' )); ?> </a></time>
+				<?php edit_comment_link(__( '(Edit)', 'community' ),'  ','') ?>
 			</header>
 			<?php if ($comment->comment_approved == '0') : ?>
 				<div class="alert alert-info">
-					<p><?php _e( 'Your comment is awaiting moderation.', 'bonestheme' ) ?></p>
+					<p><?php _e( 'Your comment is awaiting moderation.', 'community' ) ?></p>
 				</div>
 			<?php endif; ?>
 			<section class="comment_content clearfix">
@@ -298,8 +263,8 @@ function bones_comments( $comment, $args, $depth ) {
 // Search Form
 function bones_wpsearch($form) {
 	$form = '<form role="search" class="search reveal" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-	<label class="screen-reader-text" for="s">' . __( 'Search for:', 'bonestheme' ) . '</label>
-	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search', 'bonestheme' ) . '" />
+	<label class="screen-reader-text" for="s">' . __( 'Search for:', 'community' ) . '</label>
+	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search', 'community' ) . '" />
 	<button type="submit" id="searchsubmit"></button>
 	</form>';
 	return $form;
@@ -367,7 +332,6 @@ function community_customize_register( $wp_customize ) {
         'settings' => 'community_options[featured_category]',
         'priority' => 1,
     ) ) );
-
 
 	// Look & Feel - To be implemented later
 
