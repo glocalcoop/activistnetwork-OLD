@@ -292,7 +292,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 	                'name'             => '_customize-dropdown-categories-' . $this->id,
 	                'echo'             => 0,
 	                'hide_empty'       => false,
-	                'show_option_none' => '&mdash; ' . __('Select', 'reactor') . ' &mdash;',
+	                'show_option_none' => '&mdash; ' . __('Select', 'community') . ' &mdash;',
 	                'hide_if_empty'    => false,
 	                'selected'         => $this->value(),
 	            )
