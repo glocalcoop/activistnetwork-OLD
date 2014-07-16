@@ -4,8 +4,6 @@ Author: Pea, Glocal
 URL: htp://glocal.coop
 */
 
-include_once( 'library/metaboxes/metabox-functions.php' );
-
 $args = array(
 	'flex-width'    => true,
 	'width'         => 960,
@@ -14,6 +12,7 @@ $args = array(
 	'header-text'   => false,
 );
 add_theme_support( 'custom-header', $args );
+
 
 
 ?>
