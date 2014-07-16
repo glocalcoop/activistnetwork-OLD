@@ -154,11 +154,12 @@
 					<li id="site-promo">
 						<h3 class="post-title">Join the community</h3>
 						<div class="promo-icons"><i></i><i></i><i></i><i></i></div>
-						<a class="button" href="/register" title="Create a site">Create a Site</a>
+						<a class="button" href="<?php echo wp_registration_url(); ?>" title="Create a site">Create a Site</a>
 					</li>
 
 				</ul>
 			</article>
+			
 
 			<?php } else { // If multisite isn't enabled, show a recent posts module for the site ?>
 
