@@ -33,7 +33,7 @@ Post Formats, refer to the type of content which is connected to templates in th
 * **link**  - A link to another site. Themes may wish to use the first href tag in the post content as the external link for that post. An alternative approach could be if the post consists only of a URL, then that will be the URL and the title (post_title) will be the name attached to the anchor for it.
 * **image**  - A single image. The first image tag in the post could be considered the image. Alternatively, if the post consists only of a URL, that will be the image URL and the title of the post (post_title) will be the title attribute for the image.
 * **quote**  - A quotation. Probably will contain a blockquote holding the quote content. Alternatively, the quote may be just the content, with the source/author being the title.
-* **video**  - A single video. The first <video /> tag or object/embed in the post content could be considered the video. Alternatively, if the post consists only of a URL, that will be the video URL. May also contain the video as an attachment to the post, if video support is enabled on the blog (like via a plugin).
+* **video**  - A single video. The first video tag or object/embed in the post content could be considered the video. Alternatively, if the post consists only of a URL, that will be the video URL. May also contain the video as an attachment to the post, if video support is enabled on the blog (like via a plugin).
 * **audio**  - An audio file. Could be used for Podcasting.
 * <del>**chat**  - A chat transcript, like so:</del> 
 
