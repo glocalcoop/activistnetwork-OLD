@@ -422,6 +422,15 @@ function get_excerpt_by_id($post_id, $length='55', $trailer=' ...') {
 	return $the_excerpt;
 }
 
+// Hack to fix title on static homepage
+add_filter( 'wp_title', 'community_hack_wp_title_for_home' );
+
+function community_hack_wp_title_for_home( $title ) {
+  if( empty( $title ) && ( is_home() || is_front_page() ) ) {
+    return __( 'Home', 'community' ) . ' | ';
+  }
+  return $title;
+}
 
 
 ?>
