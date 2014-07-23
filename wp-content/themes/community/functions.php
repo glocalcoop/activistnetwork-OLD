@@ -310,6 +310,10 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 }
 
 function community_customize_register( $wp_customize ) {
+
+	if(function_exists('community_home_category')) {
+		$postcategory = community_home_category();
+	}
 	// Section
 	// Homepage - Post Categories
 	$wp_customize->add_section( 'community_homepage' , array(
@@ -333,6 +337,23 @@ function community_customize_register( $wp_customize ) {
         'priority' => 1,
     ) ) );
 
+
+	// Homepage Post Heading
+    $wp_customize->add_setting('post_heading', array(
+        'default'        => $postcategory,
+        'capability'     => 'manage_options',
+        'type'           => 'option',
+ 
+    ));
+ 
+    $wp_customize->add_control('community_post_heading', array(
+        'label'      => __('Homepage Posts Heading', 'community'),
+        'section'    => 'community_homepage',
+        'settings'   => 'post_heading',
+        'type' => 'text',
+    ));
+ 
+
 	// Look & Feel - To be implemented later
 
 
@@ -343,12 +364,20 @@ add_action( 'customize_register', 'community_customize_register' );
 // Return the category name selected in theme customization
 function community_home_category() {
 	$homecategory = get_option("community_options");
+	$homeheading = get_option("post_heading");
 	if (!empty($homecategory)) {
 	    foreach ($homecategory as $key => $option)
 	        $options[$key] = $option;
 	    	$categoryname = get_cat_name($option);
 	}
 	return $categoryname;
+	return $homeheading;
+}
+
+// Return the header entered in theme customization
+function community_home_header() {
+	$homeheading = get_option("post_heading", "Lastest");
+	return $homeheading;
 }
 
 
@@ -430,6 +459,17 @@ function community_hack_wp_title_for_home( $title ) {
     return __( 'Home', 'community' ) . ' | ';
   }
   return $title;
+}
+
+// Remove unused menus
+add_action( 'after_setup_theme', 'remove_theme_customization_community', 20); 
+
+function remove_theme_customization_community() {
+
+	unregister_nav_menu( 'secondary-nav' );
+	unregister_nav_menu( 'utility-nav' );
+	unregister_nav_menu( 'footer-links' );
+
 }
 
 

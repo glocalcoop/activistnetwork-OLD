@@ -57,12 +57,18 @@
 			if(function_exists('community_home_category')) {
 				$postcategory = community_home_category(); // Get the category from theme customization 
 				$categoryid = get_option("community_options");
-				if(!empty($postcategory)) {
-					$categorytitle = $postcategory;
-				} else {
-					$categorytitle = 'Latest';
+			}
+
+			if(function_exists('community_home_header')) {
+				$heading = community_home_header(); // Get the header text from theme customization 
+				if(!empty($heading)) {
+					$postheading = $heading;
+				} elseif(!empty($postcategory)) {
+					$postheading = $postcategory;
 				}
-				// get_categories (not get_the_category)
+				else {
+					$postheading = 'Latest'; // Fallback header text. Change to whatever you'd like.
+				}
 			}
 			?>
 
@@ -70,8 +76,8 @@
 			if(function_exists( 'network_latest_posts' )) {
 
 				$parameters = array(
-				'title'         => $categorytitle,
-				'title_link'    => '/news/',
+				'title'         => $postheading,
+				'title_link'    => '',
 				'title_only'    => 'false',
 				'auto_excerpt'  => 'true',
 				'full_meta'		=> 'true',
