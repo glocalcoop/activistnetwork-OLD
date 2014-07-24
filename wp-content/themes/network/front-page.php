@@ -55,8 +55,8 @@
 
 			<?php 
 			// Get the category from theme customization 
-			$featuredcategory = get_cat_name(get_option("featured_category")); 
-			$categoryid = get_option("featured_category");
+			$featuredcategory = get_cat_name(get_option("options_featured_category")); 
+			$categoryid = get_option("options_featured_category");
 			
 			// If a category is selected, get the slug
 			if(!empty($featuredcategory)) {
@@ -65,7 +65,7 @@
 			}
 
 			// Get the header text from theme customization 
-			$heading = get_option("post_heading"); 
+			$heading = get_option("options_post_heading"); 
 			if(!empty($heading)) {
 				$postheading = $heading;
 			} elseif(!empty($featuredcategory)) {
