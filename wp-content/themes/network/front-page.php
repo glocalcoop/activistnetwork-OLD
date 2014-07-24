@@ -54,22 +54,27 @@
 			</script>
 
 			<?php 
-			if(function_exists('community_home_category')) {
-				$postcategory = community_home_category(); // Get the category from theme customization 
-				$categoryid = get_option("community_options");
+			// Get the category from theme customization 
+			$featuredcategory = get_cat_name(get_option("featured_category")); 
+			$categoryid = get_option("featured_category");
+			
+			// If a category is selected, get the slug
+			if(!empty($featuredcategory)) {
+				$categoryslug = get_category( $categoryid );
+				$featuredcatslug = '/' . $categoryslug->slug . '/';
 			}
 
-			if(function_exists('community_home_header')) {
-				$heading = community_home_header(); // Get the header text from theme customization 
-				if(!empty($heading)) {
-					$postheading = $heading;
-				} elseif(!empty($postcategory)) {
-					$postheading = $postcategory;
-				}
-				else {
-					$postheading = 'Latest'; // Fallback header text. Change to whatever you'd like.
-				}
+			// Get the header text from theme customization 
+			$heading = get_option("post_heading"); 
+			if(!empty($heading)) {
+				$postheading = $heading;
+			} elseif(!empty($featuredcategory)) {
+				$postheading = $featuredcategory;
 			}
+			else {
+				$postheading = 'Latest'; // Fallback header text. Change to whatever you'd like.
+			}
+
 			?>
 
 			<?php
@@ -77,14 +82,14 @@
 
 				$parameters = array(
 				'title'         => $postheading,
-				'title_link'    => '',
+				'title_link'    => '/news/', 
 				'title_only'    => 'false',
 				'auto_excerpt'  => 'true',
 				'full_meta'		=> 'true',
-				'category'         => $postcategory,
+				'category'         => $featuredcategory,
 				'number_posts'     => 2,
 				'wrapper_list_css' => 'news-list',
-				'wrapper_block_css'=> 'module row news', //The wrapper classe
+				'wrapper_block_css'=> 'module row news', //The wrapper class
 				'instance'         => 'news-module', //The wrapper ID
 				);
 				// Execute
