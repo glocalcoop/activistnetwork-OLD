@@ -322,7 +322,7 @@ function glocal_network_customize_register( $wp_customize ) {
 	) );
 
 	// Setting
-	$wp_customize->add_setting('featured_category', array(
+	$wp_customize->add_setting('options_featured_category', array(
         'default'        => '',
         'type'           => 'option',
         'capability'     => 'manage_options',
@@ -333,13 +333,13 @@ function glocal_network_customize_register( $wp_customize ) {
         'label'    => __('Homepage Post Category', 'glocal-network'),
         'section'  => 'glocal_network_homepage',
         'type'     => 'dropdown-categories',
-        'settings' => 'featured_category',
+        'settings' => 'options_featured_category',
         'priority' => 1,
     ) ) );
 
 
 	// Homepage Post Heading
-    $wp_customize->add_setting('post_heading', array(
+    $wp_customize->add_setting('options_post_heading', array(
         'default'        => $postcategory,
         'capability'     => 'manage_options',
         'type'           => 'option',
@@ -349,7 +349,7 @@ function glocal_network_customize_register( $wp_customize ) {
     $wp_customize->add_control('featured_category_post_heading', array(
         'label'      => __('Homepage Posts Heading', 'glocal-network'),
         'section'    => 'glocal_network_homepage',
-        'settings'   => 'post_heading',
+        'settings'   => 'options_post_heading',
         'type' => 'text',
     ));
  
