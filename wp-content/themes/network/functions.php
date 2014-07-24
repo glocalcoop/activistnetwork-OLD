@@ -79,8 +79,8 @@ you like. Enjoy!
 function bones_register_sidebars() {
 	register_sidebar(array(
 		'id' => 'sidebar1',
-		'name' => __( 'Primary', 'community' ),
-		'description' => __( 'First (primary) sidebar.', 'community' ),
+		'name' => __( 'Primary', 'glocal-network' ),
+		'description' => __( 'First (primary) sidebar.', 'glocal-network' ),
 		'before_widget' => '<div id="%1$s" class="widget primary %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -88,8 +88,8 @@ function bones_register_sidebars() {
 	));
 	register_sidebar(array(
 		'id' => 'home-modules',
-		'name' => __( 'Homepage Modules', 'community' ),
-		'description' => __( 'Modules for the Homepage', 'community' ),
+		'name' => __( 'Homepage Modules', 'glocal-network' ),
+		'description' => __( 'Modules for the Homepage', 'glocal-network' ),
 		'before_widget' => '<article id="%1$s" class="module row events %2$s">',
 		'after_widget' => '</article>',
 		'before_title' => '<h2 class="module-heading">',
@@ -116,8 +116,8 @@ add_theme_support( 'menus' );
 // registering wp3+ menus
 register_nav_menus(
 	array(
-		'secondary-nav' => __( 'The Secondary Menu', 'community' ),   // secondary nav in header
-		'utility-nav' => __( 'The Utility Menu', 'community' ),   // utility nav in header
+		'secondary-nav' => __( 'The Secondary Menu', 'glocal-network' ),   // secondary nav in header
+		'utility-nav' => __( 'The Utility Menu', 'glocal-network' ),   // utility nav in header
 	)
 );
 
@@ -127,7 +127,7 @@ function bones_secondary_nav() {
 	wp_nav_menu(array(
 		'container' => false,                           // remove nav container
 		'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
-		'menu' => __( 'The Secondary Menu', 'community' ),  // nav name
+		'menu' => __( 'The Secondary Menu', 'glocal-network' ),  // nav name
 		'menu_class' => 'nav second-nav clearfix',         // adding custom nav class
 		'theme_location' => 'second-nav',                 // where it's located in the theme
 		'before' => '',                                 // before the menu
@@ -144,7 +144,7 @@ function bones_utility_nav() {
 	wp_nav_menu(array(
 		'container' => false,                           // remove nav container
 		'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
-		'menu' => __( 'Utility Menu', 'community' ),  // nav name
+		'menu' => __( 'Utility Menu', 'glocal-network' ),  // nav name
 		'menu_class' => 'nav utility-nav clearfix',         // adding custom nav class
 		'theme_location' => 'utility-nav',                 // where it's located in the theme
 		'before' => '',                                 // before the menu
@@ -174,7 +174,7 @@ function community_theme_features()  {
 	add_theme_support( 'html5', $markup );	
 
 	// Add theme support for Translation
-	load_theme_textdomain( 'community', get_template_directory() . '/library/language' );	
+	load_theme_textdomain( 'glocal-network', get_template_directory() . '/library/language' );	
 }
 
 // Hook into the 'after_setup_theme' action
@@ -240,13 +240,13 @@ function bones_comments( $comment, $args, $depth ) {
 				?>
 				<img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=32" class="load-gravatar avatar avatar-48 photo" height="32" width="32" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
 				<?php // end custom gravatar call ?>
-				<?php printf(__( '<cite class="fn">%s</cite>', 'community' ), get_comment_author_link()) ?>
-				<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'community' )); ?> </a></time>
-				<?php edit_comment_link(__( '(Edit)', 'community' ),'  ','') ?>
+				<?php printf(__( '<cite class="fn">%s</cite>', 'glocal-network' ), get_comment_author_link()) ?>
+				<time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'glocal-network' )); ?> </a></time>
+				<?php edit_comment_link(__( '(Edit)', 'glocal-network' ),'  ','') ?>
 			</header>
 			<?php if ($comment->comment_approved == '0') : ?>
 				<div class="alert alert-info">
-					<p><?php _e( 'Your comment is awaiting moderation.', 'community' ) ?></p>
+					<p><?php _e( 'Your comment is awaiting moderation.', 'glocal-network' ) ?></p>
 				</div>
 			<?php endif; ?>
 			<section class="comment_content clearfix">
@@ -263,8 +263,8 @@ function bones_comments( $comment, $args, $depth ) {
 // Search Form
 function bones_wpsearch($form) {
 	$form = '<form role="search" class="search reveal" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-	<label class="screen-reader-text" for="s">' . __( 'Search for:', 'community' ) . '</label>
-	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search', 'community' ) . '" />
+	<label class="screen-reader-text" for="s">' . __( 'Search for:', 'glocal-network' ) . '</label>
+	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search', 'glocal-network' ) . '" />
 	<button type="submit" id="searchsubmit"></button>
 	</form>';
 	return $form;
@@ -292,7 +292,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 	                'name'             => '_customize-dropdown-categories-' . $this->id,
 	                'echo'             => 0,
 	                'hide_empty'       => false,
-	                'show_option_none' => '&mdash; ' . __('Select', 'community') . ' &mdash;',
+	                'show_option_none' => '&mdash; ' . __('Select', 'glocal-network') . ' &mdash;',
 	                'hide_if_empty'    => false,
 	                'selected'         => $this->value(),
 	            )
@@ -309,31 +309,31 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 	}
 }
 
-function community_customize_register( $wp_customize ) {
+function glocal_network_customize_register( $wp_customize ) {
 
-	if(function_exists('community_home_category')) {
-		$postcategory = community_home_category();
+	if(function_exists('glocal_network_home_category')) {
+		$postcategory = glocal_network_home_category();
 	}
 	// Section
 	// Homepage - Post Categories
-	$wp_customize->add_section( 'community_homepage' , array(
-	    'title'      => __( 'Homepage', 'community' ),
+	$wp_customize->add_section( 'glocal_network_homepage' , array(
+	    'title'      => __( 'Homepage', 'glocal-network' ),
 	    'priority'   => 30,
 	) );
 
 	// Setting
-	$wp_customize->add_setting('community_options[featured_category]', array(
+	$wp_customize->add_setting('featured_category', array(
         'default'        => '',
         'type'           => 'option',
         'capability'     => 'manage_options',
     ) );
 
 	// Control
-    $wp_customize->add_control( new WP_Customize_Dropdown_Categories_Control( $wp_customize, 'community_featured_category', array( 
-        'label'    => __('Homepage Post Category', 'community'),
-        'section'  => 'community_homepage',
+    $wp_customize->add_control( new WP_Customize_Dropdown_Categories_Control( $wp_customize, 'glocal_network_featured_category', array( 
+        'label'    => __('Homepage Post Category', 'glocal-network'),
+        'section'  => 'glocal_network_homepage',
         'type'     => 'dropdown-categories',
-        'settings' => 'community_options[featured_category]',
+        'settings' => 'featured_category',
         'priority' => 1,
     ) ) );
 
@@ -346,9 +346,9 @@ function community_customize_register( $wp_customize ) {
  
     ));
  
-    $wp_customize->add_control('community_post_heading', array(
-        'label'      => __('Homepage Posts Heading', 'community'),
-        'section'    => 'community_homepage',
+    $wp_customize->add_control('featured_category_post_heading', array(
+        'label'      => __('Homepage Posts Heading', 'glocal-network'),
+        'section'    => 'glocal_network_homepage',
         'settings'   => 'post_heading',
         'type' => 'text',
     ));
@@ -358,11 +358,11 @@ function community_customize_register( $wp_customize ) {
 
 
 }
-add_action( 'customize_register', 'community_customize_register' );
+add_action( 'customize_register', 'glocal_network_customize_register' );
 
 
 // Return the category name selected in theme customization
-function community_home_category() {
+function glocal_network_community_home_category() {
 	$homecategory = get_option("community_options");
 	$homeheading = get_option("post_heading");
 	if (!empty($homecategory)) {
@@ -375,7 +375,7 @@ function community_home_category() {
 }
 
 // Return the header entered in theme customization
-function community_home_header() {
+function glocal_network_home_header() {
 	$homeheading = get_option("post_heading", "Lastest");
 	return $homeheading;
 }
@@ -456,7 +456,7 @@ add_filter( 'wp_title', 'community_hack_wp_title_for_home' );
 
 function community_hack_wp_title_for_home( $title ) {
   if( empty( $title ) && ( is_home() || is_front_page() ) ) {
-    return __( 'Home', 'community' ) . ' | ';
+    return __( 'Home', 'glocal-network' ) . ' | ';
   }
   return $title;
 }
