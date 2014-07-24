@@ -82,7 +82,7 @@
 
 				$parameters = array(
 				'title'         => $postheading,
-				'title_link'    => '/news/', 
+				'title_link'    => '/news/', //Lists to news page. Change to whatever you'd like (or leave empty).
 				'title_only'    => 'false',
 				'auto_excerpt'  => 'true',
 				'full_meta'		=> 'true',
