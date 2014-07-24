@@ -1,0 +1,18 @@
+/*
+Theme Name:   Network Subsite
+Theme URI:    http://glocal.coop
+Description:  Child theme for a sub-site, based on the Community theme
+Author:       Glocal Coop
+Author URI:   http://glocal.coop
+Template:     network
+Version:      1.0.0
+Tags:         two-columns, right-sidebar, responsive-layout
+Text Domain:  glocal-subsite
+
+License: GPL3
+License URI: https://gnu.org/licenses/gpl-3.0-standalone.html
+
+*/
+
+@import url("../network/style.css");
+
