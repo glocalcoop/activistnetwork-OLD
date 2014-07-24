@@ -1,0 +1,115 @@
+// CONTAINERS 
+
+
+// standardize box model across browsers! IE8 and up. bit.ly/1eXrOej 
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+// base
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: $base9;
+}
+
+
+hr {
+	border: 0;
+	height: 1px;
+	background: $hr-color;
+	margin:2rem 0 4rem 0;
+}
+
+
+// FULL-WIDTH ROWS
+// for bg colors etc 
+
+#content {
+    padding-top: 20px;
+    .directory & {
+        padding-bottom: $space-double;
+    }
+}
+
+
+// OUTER CONTAINERS
+// centered, w/max-width, using Bourbon Neat grid
+
+.inner-header,
+#inner-content,
+.inner-footer {
+    @include outer-container;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+// ONE-COLUMN CONTENT 
+
+.home-start,
+div[role='main'].main-news,
+.sites-list,
+.networks-list {
+    @include row();
+}
+
+
+// TWO-COLUMN CONTENT 
+
+// sidebar
+div[role='complementary'] {
+	@include breakpoint(md) {@include span-columns(4);}
+}
+
+// main
+div[role='main'] {
+    padding-bottom: 60px; 
+	@include breakpoint(md) {@include span-columns(12); }
+    // single page template 
+    .page-template-page-iframe-php & {
+        @include fill-parent; 
+        padding: 0;
+    }
+}
+
+
+
+// CUSTOM CONTAINERS 
+
+.home-intro {
+    background: $white;
+    margin: 20px 0;
+    @include pad($space $space 0);
+    @include breakpoint(md) {@include span-columns(4); }
+    h1 {
+        margin-bottom: $space-third;
+        line-height: 1.1;
+    }
+    p {
+        line-height: 1.5;
+    }
+}
+
+.home-feature {
+    max-height: 480px;
+    overflow: hidden; 
+    border-top: 1px solid $hr-color;
+    @include breakpoint(md) {@include span-columns(12); border: 0;}
+}
+
+.home-modules {
+    padding-bottom: 30px;
+    .row {
+        clear: both;
+        border-top: 1px solid $hr-color;
+        padding: 20px 0;
+    }
+}
+
+
+

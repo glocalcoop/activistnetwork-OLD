@@ -1,0 +1,191 @@
+
+// MODULES
+
+
+// HOME PAGE POSTS
+
+
+.home .module-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.home .post-excerpt {
+    @include font-size($epsilon);
+    line-height: 1.5;
+}
+
+.news, 
+.events, 
+.sites {
+    .module-heading {
+        @include font-size($epsilon);
+        text-transform: uppercase; 
+        letter-spacing: $tracking;}    
+} 
+
+
+// HIGHLIGHTED CATEGORY PROMO
+
+.highlights .module-heading {
+    color: $white;
+    background: $base7 url('http://dev.sites.nycprepared.org/wp-content/uploads/2014/01/CarolinaKroon7.png') no-repeat center center;
+    background-size: cover; 
+    padding: 20px;
+    margin-bottom: 0;
+    height: 150px;
+    overflow: hidden;
+	@include breakpoint(sm) {@include span-columns(8); height: 300px;}
+}
+
+.highlights-list {
+    background: $white;
+    height: 300px;
+    overflow-y: scroll;
+    margin: 0;
+	@include breakpoint(sm) {@include span-columns(8);}
+    li {
+        border-bottom: 1px solid $base8;
+        padding: 10px;
+        margin-bottom: 0;
+        @include breakpoint(sm) {padding: 10px 20px;}
+    }
+    .post-title {
+        margin: .25em 0 0;
+        @include font-size($delta);
+    }
+    .post-excerpt {
+        margin: .25em 0 .5em;
+    }
+    .location {
+        text-transform: uppercase; 
+        letter-spacing: $tracking;
+        @include font-size($micro);
+        color: $quiet-color;
+        white-space: nowrap;
+        margin-left: 3px;
+    }
+    .meta {
+        display: none;
+    }
+}
+
+
+
+
+// SITES GRID
+
+.networks-list,
+.sites-list {
+    clear: both;
+    padding: 0;
+    @include fill-parent;
+    li {
+        background: $white;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        height: 260px;
+        overflow: hidden;
+    	@include span-columns(8); 
+    	@include omega(2n);
+    	@include breakpoint(md) {@include omega-reset(2n); @include span-columns(4); @include omega(4n);}
+    }
+    li:hover {
+        box-shadow: 0 $space-third $space 0 rgba(0,0,0,.2);
+        position: relative;
+        z-index: $layer4;
+    }
+    .item-image {
+        display: block;
+        width: 100%;
+        height: 180px;
+        background-color: $base7;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        // image is added in php
+    }
+    a {
+        display: block;
+    }
+    .item-title {
+        text-transform: uppercase; 
+        letter-spacing: $tracking;
+        margin: 0;
+        padding: 5px 10px 3px;
+        @include font-size($epsilon);
+    }
+    .meta {
+        margin: 0;
+        padding: 0 10px 10px;
+        @include font-size($nano);
+        color: $quiet-color;
+    }
+}
+
+.networks-list .item-image {
+	background-size: contain;
+	background-color: $white;
+	margin: $space-half;
+}
+
+
+// 'create a site' promo
+#site-promo {
+    background: $yellow;
+    padding: 20px;
+    .post-title {
+        color: $white;
+        margin: 0;
+    }
+    .promo-icons {
+        padding: 10px 0;
+        color: $white;
+        white-space: nowrap;
+        i {
+            @include font-icon-base($family:"ios7-icon"); 
+            @extend %ios7-store;
+            @include font-size($alpha);
+            line-height: 1;
+        }
+    }
+    .button {
+        background: $base1;
+        background: rgba(0,0,0,.3);
+        &:hover {
+            background: $white;
+            color: $orange;
+        }
+    }
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+
+// isotope modules -- widths and margins determined in JS
+
+#isotope.view-grid {
+    li {
+        width: 285px;
+        margin-right: 20px;
+    }
+}
+
+#isotope.view-list {
+    li {
+        width: 100%;
+        height: 100px;
+    }
+    .item-image {
+    	height: 100%; 
+    	width: 100px; 
+    	float: left; 
+    	margin-right: $space-half;
+    }    
+    .item-title {
+        padding-top: $space-half;
+    }
+}
+

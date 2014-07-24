@@ -1,0 +1,1 @@
+<?php the_tags( '<h6 class="tags">' . __( 'Tags:', 'glocal-network' ) . '</h6> ', ', ', '' ); ?>

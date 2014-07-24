@@ -1,0 +1,3370 @@
+/* COMMUNITY CSS */
+/* This stylesheet was written in Sass and compiled locally */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000310}}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000319}}
+body {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000341}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000352}}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000361}}
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000371}}
+[hidden],
+template {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000379}}
+a {
+  background: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000387}}
+a:active,
+a:hover {
+  outline: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\0000395}}
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003103}}
+b,
+strong {
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003110}}
+dfn {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003118}}
+h1 {
+  font-size: 2em;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003126}}
+mark {
+  background: #ff0;
+  color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003134}}
+small {
+  font-size: 80%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003142}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003149}}
+sup {
+  top: -0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003153}}
+sub {
+  bottom: -0.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003161}}
+img {
+  border: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003167}}
+svg:not(:root) {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003174}}
+figure {
+  margin: 1em 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003180}}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003189}}
+pre {
+  overflow: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003199}}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003218}}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003227}}
+button {
+  overflow: visible; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003238}}
+button,
+select {
+  text-transform: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003252}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003261}}
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003269}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003278}}
+input {
+  line-height: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003290}}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003301}}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003310}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003323}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003330}}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003340}}
+legend {
+  border: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003348}}
+textarea {
+  overflow: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003356}}
+optgroup {
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003364}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/vendor\/_normalize\.scss}line{font-family:\00003370}}
+td,
+th {
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_grid\.scss}line{font-family:\000032}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000340}}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000386}}
+.is-hidden {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000390}}
+.fullwidth {
+  width: 100%; }
+
+@font-face {
+  font-family: 'entypo';
+  src: url("../fonts/fonts/entypo.eot");
+  src: url("../fonts/fonts/entypo.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/entypo.woff") format("woff"), url("../fonts/fonts/entypo.ttf") format("truetype"), url("../fonts/fonts/entypo.svg#entypo") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'entypo-social';
+  src: url("../fonts/fonts/entypo-social.eot");
+  src: url("../fonts/fonts/entypo-social.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/entypo-social.woff") format("woff"), url("../fonts/fonts/entypo-social.ttf") format("truetype"), url("../fonts/fonts/entypo-social.svg#entypo-social") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ios7-icon';
+  src: url("../fonts/fonts/ios7-icon.woff") format("woff"), url("../fonts/fonts/ios7-icon.ttf") format("truetype"), url("../fonts/fonts/ios7-icon.svg#ios7-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000356}}
+[class^="icon-"] {
+  display: inline-block;
+  -webkit-text-rendering: geometricPrecision;
+  -moz-text-rendering: geometricPrecision;
+  -ms-text-rendering: geometricPrecision;
+  -o-text-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_entypo\.scss}line{font-family:\000036}}
+s
+.nav-social .email a:before {
+  content: '\2709'; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_entypo\.scss}line{font-family:\00003108}}
+s
+.nav-social .rss a:before {
+  content: '\E73A'; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_entypo\.scss}line{font-family:\00003242}}
+s
+.nav-social .github a:before {
+  content: '\F300'; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_entypo\.scss}line{font-family:\00003248}}
+s
+.nav-social .twitter a:before {
+  content: '\F309'; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_entypo\.scss}line{font-family:\00003250}}
+s
+.nav-social .facebook a:before {
+  content: '\F30C'; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\000034}}
+html {
+  line-height: 1.5;
+  font-size: 80%; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\000034}}
+    html {
+      font-size: 90%; } }
+  @media (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\000034}}
+    html {
+      font-size: 100%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000311}}
+body {
+  font-family: "Lato", Helvetica, Verdana, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #333231; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000331}}
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizelegibility;
+  font-weight: 300;
+  color: #1a1919;
+  margin-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000336}}
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000341}}
+h1, h2 {
+  line-height: 1.2;
+  margin-bottom: 24px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000346}}
+h3, h4, h5 {
+  line-height: 1.3;
+  margin-bottom: 24px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000351}}
+h6, small {
+  line-height: 1.2;
+  margin-bottom: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000357}}
+h1 {
+  font-size: 48px;
+  font-size: 3rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000361}}
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000365}}
+h3 {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000369}}
+h4 {
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000373}}
+h5 {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000377}}
+h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000386}}
+p, li, dt, dd {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-size: 1.125rem; }
+  @media (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000386}}
+    p, li, dt, dd {
+      max-width: 40em;
+      line-height: 1.75; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\0000394}}
+input, label, select, textarea {
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+  font-family: "Lato", Helvetica, Verdana, sans-serif;
+  font-weight: 300; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003101}}
+small {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003105}}
+.milli {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003113}}
+b, strong {
+  font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003117}}
+i, em {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003125}}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003129}}
+  ul ul, ul ol, ol ul, ol ol {
+    margin: 0 24px 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003134}}
+li {
+  margin-bottom: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003140}}
+blockquote {
+  padding: 0 10% 0 0;
+  margin: 24px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003143}}
+  blockquote p, blockquote li {
+    color: #999894;
+    font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003152}}
+code,
+kbd,
+pre,
+samp {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_typography\.scss}line{font-family:\00003157}}
+pre {
+  padding: 1em 24px;
+  margin: 24px 0;
+  display: block;
+  background: #333231;
+  color: white; }
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+/* for sites that are read right to left (i.e. hebrew) */
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\000035}}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000312}}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f5f3ed; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000321}}
+hr {
+  border: 0;
+  height: 1px;
+  background: #b8b6b2;
+  margin: 2rem 0 4rem 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000332}}
+#content {
+  padding-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000334}}
+  .directory #content {
+    padding-bottom: 48px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000345}}
+.inner-header,
+#inner-content,
+.inner-footer {
+  *zoom: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 5%;
+  margin-right: 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+  .inner-header:before, .inner-header:after,
+  #inner-content:before,
+  #inner-content:after,
+  .inner-footer:before,
+  .inner-footer:after {
+    content: " ";
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+  .inner-header:after,
+  #inner-content:after,
+  .inner-footer:after {
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000357}}
+.home-start,
+div[role='main'].main-news,
+.sites-list,
+.networks-list {
+  *zoom: 1;
+  display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000318}}
+  .home-start:before, .home-start:after,
+  div[role='main'].main-news:before,
+  div[role='main'].main-news:after,
+  .sites-list:before,
+  .sites-list:after,
+  .networks-list:before,
+  .networks-list:after {
+    content: " ";
+    display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000323}}
+  .home-start:after,
+  div[role='main'].main-news:after,
+  .sites-list:after,
+  .networks-list:after {
+    clear: both; }
+
+@media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000365}}
+  div[role='complementary'] {
+    display: block;
+    float: left;
+    margin-right: 1.75788%;
+    width: 23.68159%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+    div[role='complementary']:last-child {
+      margin-right: 0; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000370}}
+div[role='main'] {
+  padding-bottom: 60px; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000370}}
+    div[role='main'] {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 74.56053%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      div[role='main']:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000374}}
+  .page-template-page-iframe-php div[role='main'] {
+    width: 100%;
+    padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000384}}
+.home-intro {
+  background: white;
+  margin: 20px 0;
+  padding: 24px 24px 0; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000384}}
+    .home-intro {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 23.68159%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .home-intro:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000389}}
+  .home-intro h1 {
+    margin-bottom: 8px;
+    line-height: 1.1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000393}}
+  .home-intro p {
+    line-height: 1.5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000398}}
+.home-feature {
+  max-height: 480px;
+  overflow: hidden;
+  border-top: 1px solid #b8b6b2; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\0000398}}
+    .home-feature {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 74.56053%;
+      border: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .home-feature:last-child {
+        margin-right: 0; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\00003105}}
+.home-modules {
+  padding-bottom: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_containers\.scss}line{font-family:\00003107}}
+  .home-modules .row {
+    clear: both;
+    border-top: 1px solid #b8b6b2;
+    padding: 20px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\000034}}
+.header-global {
+  background: #fffdf7; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\000038}}
+.domain-title {
+  display: none;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1;
+  float: left;
+  margin: 0;
+  white-space: nowrap; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\000038}}
+    .domain-title {
+      display: block; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000316}}
+  .domain-title a, .domain-title a:visited {
+    display: block;
+    color: #333231;
+    font-weight: 700;
+    padding: 20px 20px 20px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000326}}
+.nav-anchors {
+  margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000328}}
+  .nav-anchors li {
+    display: inline-block;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000331}}
+    .nav-anchors li:last-child {
+      float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000335}}
+  .nav-anchors .anchor-menu {
+    font-size: 18px;
+    font-size: 1.125rem;
+    display: block;
+    padding: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    .nav-anchors .anchor-menu:before {
+      font-family: "ios7-icon";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000341}}
+    .nav-anchors .anchor-menu:before {
+      float: right;
+      margin-left: 7px;
+      margin-top: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000347}}
+  .nav-anchors .anchor-search {
+    font-size: 22px;
+    font-size: 1.375rem;
+    display: block;
+    padding: 16px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    .nav-anchors .anchor-search:before {
+      font-family: "ios7-icon";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000326}}
+    .nav-anchors {
+      display: none; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000360}}
+.nav-global {
+  background: transparent;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000363}}
+  .nav-global a {
+    color: #333231; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000366}}
+  .nav-global a:hover {
+    color: #00a99d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000369}}
+  .nav-global .search-form {
+    float: right;
+    border-top: 1px solid #f5f3ed; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000369}}
+      .nav-global .search-form {
+        border: 0;
+        padding: 5px 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000374}}
+  .nav-global .nav {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 4;
+    background: white; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000374}}
+      .nav-global .nav {
+        position: static;
+        padding-right: 5px;
+        background: transparent; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000382}}
+  .nav-global .nav li {
+    line-height: 1; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000382}}
+      .nav-global .nav li {
+        display: inline-block;
+        font-size: 16px;
+        font-size: 1rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000386}}
+    .nav-global .nav li a,
+    .nav-global .nav li a:visited {
+      padding: 10px 20px;
+      color: #333231; }
+      @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000386}}
+        .nav-global .nav li a,
+        .nav-global .nav li a:visited {
+          padding: 20px 10px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000392}}
+    .nav-global .nav li a:focus,
+    .nav-global .nav li a:hover {
+      background: #333231;
+      color: white; }
+      @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\0000392}}
+        .nav-global .nav li a:focus,
+        .nav-global .nav li a:hover {
+          background: transparent;
+          color: #00a99d; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003100}}
+  .nav-global .nav li.current-menu-item,
+  .nav-global .nav li.current_page_item,
+  .nav-global .nav li.current-page-ancestor {
+    display: none;
+    position: relative; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003100}}
+      .nav-global .nav li.current-menu-item,
+      .nav-global .nav li.current_page_item,
+      .nav-global .nav li.current-page-ancestor {
+        display: inline-block; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003104}}
+    .nav-global .nav li.current-menu-item:after,
+    .nav-global .nav li.current_page_item:after,
+    .nav-global .nav li.current-page-ancestor:after {
+      content: '';
+      height: 0;
+      width: 0;
+      position: absolute;
+      top: auto;
+      left: 50%;
+      bottom: 0;
+      z-index: 1;
+      border: solid transparent;
+      border-bottom-color: #f5f3ed;
+      border-width: 10px;
+      margin-left: -10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003118}}
+    .nav-global .nav li.current-menu-item a,
+    .nav-global .nav li.current_page_item a,
+    .nav-global .nav li.current-page-ancestor a {
+      color: #00a99d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003130}}
+li.current-menu-item a:hover,
+li.current_page_item a:hover {
+  color: #333231;
+  cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003138}}
+.nav-local {
+  background: #4d4c4a;
+  height: 44px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003141}}
+  .nav-local .search-form {
+    float: right;
+    margin: 0 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003145}}
+  .nav-local .nav li {
+    font-size: 100%;
+    display: block;
+    margin: 0;
+    margin-right: -2px; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003145}}
+      .nav-local .nav li {
+        display: inline-block; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003151}}
+    .nav-local .nav li.current-menu-item a {
+      background: #00a99d;
+      color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003156}}
+  .nav-local .nav li a {
+    display: block;
+    padding: 8px 15px;
+    color: #00a99d;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003156}}
+      .nav-local .nav li a {
+        color: white; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003163}}
+    .nav-local .nav li a:hover {
+      color: #333231; }
+      @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003163}}
+        .nav-local .nav li a:hover {
+          background: #00a99d;
+          color: white; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003168}}
+  .nav-local #searchform #searchsubmit {
+    background: #00a99d;
+    border-color: #00a99d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003177}}
+.js .nav {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-in-out;
+  -moz-transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003181}}
+  .js .nav.active {
+    max-height: 160px;
+    overflow: visible;
+    background: white; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_header\.scss}line{font-family:\00003177}}
+    .js .nav {
+      max-height: none; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\000033}}
+.footer {
+  background: #e6e4df; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\000035}}
+  .footer .global {
+    padding: 30px 0; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\000035}}
+      .footer .global {
+        position: relative; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000311}}
+.footer-logo {
+  margin: 0;
+  line-height: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000320}}
+.footer .widget {
+  background: white;
+  margin-bottom: 30px; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000320}}
+    .footer .widget {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 23.68159%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .footer .widget:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000324}}
+  .footer .widget ul {
+    margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000327}}
+  .footer .widget li {
+    font-size: 16px;
+    font-size: 1rem;
+    color: #333231;
+    padding: 0;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000333}}
+  .footer .widget a, .footer .widget a:visited {
+    color: #00a99d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000342}}
+.footer-slug {
+  background: #d1cfcb;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000350}}
+s
+.nav-social {
+  margin: 15px 15px 15px 0;
+  padding: 0;
+  float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000354}}
+  s
+  .nav-social li {
+    font-size: 40px;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000365}}
+  s
+  .nav-social a {
+    display: block;
+    height: 100%;
+    line-height: 22px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000370}}
+  s
+  .nav-social .facebook a {
+    background: #247cc9;
+    border-color: #247cc9;
+    color: white !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000361}}
+    s
+    .nav-social .facebook a:hover, s
+    .nav-social .facebook a:focus {
+      background: white;
+      color: #247cc9 !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    s
+    .nav-social .facebook a:before {
+      font-family: "entypo-social";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000371}}
+  s
+  .nav-social .twitter a {
+    background: #29abe2;
+    border-color: #29abe2;
+    color: white !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000361}}
+    s
+    .nav-social .twitter a:hover, s
+    .nav-social .twitter a:focus {
+      background: white;
+      color: #29abe2 !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    s
+    .nav-social .twitter a:before {
+      font-family: "entypo-social";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000372}}
+  s
+  .nav-social .github a {
+    background: #00a99d;
+    border-color: #00a99d;
+    color: white !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000361}}
+    s
+    .nav-social .github a:hover, s
+    .nav-social .github a:focus {
+      background: white;
+      color: #00a99d !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    s
+    .nav-social .github a:before {
+      font-family: "entypo-social";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000373}}
+  s
+  .nav-social .email a {
+    background: #22b573;
+    border-color: #22b573;
+    color: white !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000361}}
+    s
+    .nav-social .email a:hover, s
+    .nav-social .email a:focus {
+      background: white;
+      color: #22b573 !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    s
+    .nav-social .email a:before {
+      font-family: "entypo";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000374}}
+  s
+  .nav-social .rss a {
+    background: #ff931e;
+    border-color: #ff931e;
+    color: white !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000361}}
+    s
+    .nav-social .rss a:hover, s
+    .nav-social .rss a:focus {
+      background: white;
+      color: #ff931e !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    s
+    .nav-social .rss a:before {
+      font-family: "entypo";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000378}}
+  .community-group s
+  .nav-social, .community-partner s
+  .nav-social {
+    float: right;
+    margin: 5px 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000387}}
+.copyright {
+  font-size: 10px;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #757472;
+  display: inline-block;
+  margin: 15px 0;
+  height: 30px;
+  line-height: 30px; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_footer\.scss}line{font-family:\0000387}}
+    .copyright {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\000036}}
+.sidebar p {
+  line-height: 1.3;
+  font-size: 16px;
+  font-size: 1rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000311}}
+.widgettitle {
+  margin: -5px 0 0.5em;
+  color: white;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-size: 1rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000318}}
+.widget {
+  padding: 20px;
+  margin: 0 0 20px;
+  background: #999894;
+  color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000323}}
+  .widget a, .widget a:visited {
+    color: white;
+    font-weight: 300;
+    display: block;
+    padding: 0.5em 20px 0.5em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000328}}
+    .widget a:hover, .widget a:visited:hover {
+      color: white;
+      padding-left: 15px;
+      padding-right: 5px;
+      background: #333231;
+      background: rgba(0, 0, 0, 0.1); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000336}}
+  .widget ul {
+    border-top: 1px solid #333231;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000341}}
+  .widget li {
+    border-bottom: 1px solid #333231;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+    /* deep nesting */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000349}}
+    .widget li ul {
+      margin: 0;
+      padding-left: 20px;
+      border: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000354}}
+    .widget li li {
+      border: 0;
+      padding: 0;
+      color: #b8b6b2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000360}}
+  .widget form {
+    background: transparent;
+    padding: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000364}}
+  .widget label {
+    margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000369}}
+  .widget input[type="text"],
+  .widget input[type="password"],
+  .widget input[type='email'] {
+    padding: 2px 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000378}}
+.widget_search {
+  padding: 5px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000387}}
+.widget_recent_entries li,
+.widget_em_widget li {
+  font-size: 22px;
+  font-size: 1.375rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000389}}
+  .widget_recent_entries li li,
+  .widget_em_widget li li {
+    font-size: 18px;
+    font-size: 1.125rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\0000399}}
+.widget_archive li,
+.widget_meta li {
+  width: 49%;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\00003111}}
+#wp-calendar {
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\00003113}}
+  #wp-calendar td {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\00003116}}
+  #wp-calendar td#prev {
+    text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_sidebar\.scss}line{font-family:\00003119}}
+  #wp-calendar td#next {
+    text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\000033}}
+.header-local {
+  padding-top: 24px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\000035}}
+  .header-local .inner-header {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\000038}}
+  .header-local .nav-social {
+    position: absolute;
+    right: 0;
+    top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000313}}
+  .header-local h1.h2 {
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000319}}
+.site-banner {
+  border: 5px solid white;
+  width: 100%;
+  height: 150px;
+  clear: both;
+  overflow: visible;
+  position: relative; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000319}}
+    .site-banner {
+      height: auto;
+      min-height: 140px;
+      max-height: 300px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000329}}
+.banner-inner {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  background-color: #e6e4df; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000329}}
+    .banner-inner {
+      height: auto;
+      min-height: 130px;
+      max-height: 290px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000335}}
+  .banner-inner img {
+    width: 100%;
+    height: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000341}}
+.site-name {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin: 0;
+  padding: 20px;
+  background: white;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000353}}
+  .site-name a {
+    color: #1a1919; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000355}}
+    .site-name a:hover {
+      color: #00a99d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000366}}
+.network-header .social-links {
+  float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000369}}
+.network-header .banner {
+  background: white;
+  padding: 24px;
+  margin-bottom: 24px; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000369}}
+    .network-header .banner {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 23.68159%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .network-header .banner:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000374}}
+  .network-header .banner img {
+    width: 100%;
+    height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_banners\.scss}line{font-family:\0000379}}
+.network-header .entry-title {
+  padding-top: 1em; }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+/*
+all navs have a .nav class applied via the wp_menu function; this 
+is so we can easily write one group of styles for the navs on the 
+site so our css is cleaner and more scalable.
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000313}}
+.nav {
+  margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000315}}
+  .nav li {
+    margin: 0;
+    white-space: nowrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000318}}
+    .nav li a {
+      display: block;
+      text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000325}}
+ul.children {
+  margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000327}}
+  ul.children li {
+    display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000335}}
+.toggle {
+  float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000337}}
+  .toggle li {
+    display: inline-block;
+    color: #00a99d;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000343}}
+    .toggle li.is-on {
+      background: white;
+      color: #333231; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000347}}
+    .toggle li:hover {
+      background: white;
+      cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000359}}
+.filter,
+.sort {
+  max-height: 2.5em;
+  padding-top: 2.5em;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 24px;
+  -webkit-transition: max-height 0.25s ease;
+  -moz-transition: max-height 0.25s ease;
+  transition: max-height 0.25s ease; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000359}}
+    .filter,
+    .sort {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 49.12106%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .filter:last-child,
+      .sort:last-child {
+        margin-right: 0; } }
+  @media (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000359}}
+    .filter,
+    .sort {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 23.68159%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .filter:last-child,
+      .sort:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000368}}
+  .filter:hover,
+  .sort:hover {
+    max-height: 10em;
+    cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000372}}
+  .filter li,
+  .sort li {
+    line-height: 2.5em;
+    display: block;
+    padding: 0 1em;
+    margin: 0;
+    background: white;
+    color: #333231;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-size: 1rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000384}}
+    .filter li:hover,
+    .sort li:hover {
+      background: #00dccc;
+      color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000388}}
+    .filter li.is-on,
+    .sort li.is-on {
+      font-size: 16px;
+      font-size: 1rem;
+      background: #00a99d;
+      color: white;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+      .filter li.is-on:before,
+      .sort li.is-on:before {
+        font-family: "ios7-icon";
+        font-style: normal;
+        font-size: inherit;
+        line-height: inherit;
+        margin-right: 0;
+        text-align: center;
+        display: inline-block;
+        color: inherit;
+        vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\0000397}}
+      .filter li.is-on:before,
+      .sort li.is-on:before {
+        float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\00003108}}
+.pagination,
+.wp-prev-next {
+  margin: 1.1em 0 2.2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\00003111}}
+.pagination {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\00003113}}
+  .pagination ul {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    clear: both;
+    margin: 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\00003119}}
+    .pagination ul li {
+      padding: 0;
+      margin: 0;
+      float: left;
+      display: inline;
+      overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\00003125}}
+      .pagination ul li a, .pagination ul li span {
+        margin: 0;
+        text-decoration: none;
+        padding: 0;
+        line-height: 1em;
+        font-size: 1em;
+        font-weight: 300;
+        padding: .5em;
+        min-width: 1em;
+        display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\00003136}}
+      .pagination ul li span.current {
+        font-weight: bold; }
+
+/* fallback previous & next links */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\00003151}}
+.wp-prev-next .prev-link {
+  float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_menus\.scss}line{font-family:\00003155}}
+.wp-prev-next .next-link {
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\000035}}
+a,
+a:visited {
+  color: #00a99d;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  /* on click */
+  /* mobile tap color */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000312}}
+  a:hover, a:focus,
+  a:visited:hover,
+  a:visited:focus {
+    color: #247cc9; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000322}}
+  a:link,
+  a:visited:link {
+    /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000333}}
+.excerpt-read-more {
+  font-size: 80%;
+  white-space: nowrap;
+  padding-left: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000347}}
+button,
+.button {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-weight: 700;
+  padding: .5em 2em;
+  text-align: center;
+  border: 0;
+  background: #00a99d;
+  color: white;
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000361}}
+  button:link, button:visited,
+  .button:link,
+  .button:visited {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000365}}
+  button:hover, button:focus,
+  .button:hover,
+  .button:focus {
+    background: #00dccc;
+    color: white !important; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000347}}
+    button,
+    .button {
+      font-size: 16px;
+      font-size: 1rem; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000388}}
+.home-intro .button {
+  margin-bottom: 10px;
+  margin-right: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\0000395}}
+.sidebar .button,
+.sidebar input[type='submit'] {
+  background: #4d4c4a;
+  background: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_buttons\.scss}line{font-family:\00003100}}
+  .sidebar .button:hover,
+  .sidebar input[type='submit']:hover {
+    background: white;
+    color: #333231; }
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000313}}
+.page-title,
+.archive-title,
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  margin: 24px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000321}}
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333231; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000325}}
+  .directory .subtitle {
+    margin-top: 48px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000333}}
+.entry-title.single-title {
+  margin-bottom: .3em; }
+
+/* want to style individual post classes? Booya! */
+/* post by id (i.e. post-3) */
+/* general post style */
+/* general article on a page style */
+/* general style on an attatchment */
+/* sticky post style */
+/* hentry class */
+/* style by category (i.e. category-videos) */
+/* style by tag (i.e. tag-news) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000351}}
+.byline {
+  margin: 0;
+  color: #b8b6b2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-size: 0.9375rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000357}}
+  .byline a {
+    color: #b8b6b2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000363}}
+.single-post .entry-content {
+  padding-top: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000366}}
+.single-post .entry-content p:first-child {
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000372}}
+.post .entry-content {
+  /*
+  image alignment on a screen this size may be
+  a bit difficult. It's set to start aligning
+  and floating images at the next breakpoint,
+  but it's up to you. Feel free to change it up.
+  */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000373}}
+  .post .entry-content h1 {
+    margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000377}}
+  .post .entry-content h2, .post .entry-content h3, .post .entry-content h4 {
+    margin-top: 1.8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000381}}
+  .post .entry-content p {
+    max-width: 40em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000386}}
+  .post .entry-content ul, .post .entry-content ol {
+    padding: 0 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000391}}
+  .post .entry-content ul {
+    list-style: square; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\0000395}}
+  .post .entry-content ol {
+    list-style: decimal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\00003102}}
+  .post .entry-content dl {
+    border-top: 1px solid white;
+    padding-top: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\00003106}}
+  .post .entry-content dt {
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\00003109}}
+  .post .entry-content dd {
+    margin-left: 375px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\00003112}}
+  .post .entry-content img {
+    margin: 0 0 20px 0;
+    max-width: 100%;
+    height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\00003123}}
+  .post .entry-content .alignleft, .post .entry-content img.alignleft {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\00003124}}
+  .post .entry-content .alignright, .post .entry-content img.alignright {
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_posts\.scss}line{font-family:\00003126}}
+  .post .entry-content video, .post .entry-content object {
+    max-width: 100%;
+    height: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\000038}}
+.home .module-heading {
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000313}}
+.home .post-excerpt {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000321}}
+.news .module-heading,
+.events .module-heading,
+.sites .module-heading {
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000330}}
+.highlights .module-heading {
+  color: white;
+  background: #d1cfcb url("http://dev.sites.nycprepared.org/wp-content/uploads/2014/01/CarolinaKroon7.png") no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  margin-bottom: 0;
+  height: 150px;
+  overflow: hidden; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000330}}
+    .highlights .module-heading {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 49.12106%;
+      height: 300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .highlights .module-heading:last-child {
+        margin-right: 0; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000341}}
+.highlights-list {
+  background: white;
+  height: 300px;
+  overflow-y: scroll;
+  margin: 0; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000341}}
+    .highlights-list {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 49.12106%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .highlights-list:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000347}}
+  .highlights-list li {
+    border-bottom: 1px solid #e6e4df;
+    padding: 10px;
+    margin-bottom: 0; }
+    @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000347}}
+      .highlights-list li {
+        padding: 10px 20px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000353}}
+  .highlights-list .post-title {
+    margin: .25em 0 0;
+    font-size: 22px;
+    font-size: 1.375rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000357}}
+  .highlights-list .post-excerpt {
+    margin: .25em 0 .5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000360}}
+  .highlights-list .location {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #b8b6b2;
+    white-space: nowrap;
+    margin-left: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000368}}
+  .highlights-list .meta {
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000379}}
+.networks-list,
+.sites-list {
+  clear: both;
+  padding: 0;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000383}}
+  .networks-list li,
+  .sites-list li {
+    background: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    height: 260px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin-right: 1.75788%;
+    width: 49.12106%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+    .networks-list li:last-child,
+    .sites-list li:last-child {
+      margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+    .networks-list li:nth-child(2n),
+    .sites-list li:nth-child(2n) {
+      margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+    .networks-list li:nth-child(2n+1),
+    .sites-list li:nth-child(2n+1) {
+      clear: left; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000383}}
+      .networks-list li,
+      .sites-list li {
+        display: block;
+        float: left;
+        margin-right: 1.75788%;
+        width: 23.68159%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\000039}}
+        .networks-list li:nth-child(2n),
+        .sites-list li:nth-child(2n) {
+          margin-right: 1.75788%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000310}}
+        .networks-list li:nth-child(2n+1),
+        .sites-list li:nth-child(2n+1) {
+          clear: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+        .networks-list li:last-child,
+        .sites-list li:last-child {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+        .networks-list li:nth-child(4n),
+        .sites-list li:nth-child(4n) {
+          margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+        .networks-list li:nth-child(4n+1),
+        .sites-list li:nth-child(4n+1) {
+          clear: left; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000394}}
+  .networks-list li:hover,
+  .sites-list li:hover {
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\0000399}}
+  .networks-list .item-image,
+  .sites-list .item-image {
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-color: #d1cfcb;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003109}}
+  .networks-list a,
+  .sites-list a {
+    display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003112}}
+  .networks-list .item-title,
+  .sites-list .item-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 5px 10px 3px;
+    font-size: 18px;
+    font-size: 1.125rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003119}}
+  .networks-list .meta,
+  .sites-list .meta {
+    margin: 0;
+    padding: 0 10px 10px;
+    font-size: 11px;
+    font-size: 0.6875rem;
+    color: #b8b6b2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003127}}
+.networks-list .item-image {
+  background-size: contain;
+  background-color: white;
+  margin: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003135}}
+#site-promo {
+  background: #fbb03b;
+  padding: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003138}}
+  #site-promo .post-title {
+    color: white;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003142}}
+  #site-promo .promo-icons {
+    padding: 10px 0;
+    color: white;
+    white-space: nowrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003146}}
+    #site-promo .promo-icons i {
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+      #site-promo .promo-icons i:before {
+        font-family: "ios7-icon";
+        font-style: normal;
+        font-size: inherit;
+        line-height: inherit;
+        margin-right: 0;
+        text-align: center;
+        display: inline-block;
+        color: inherit;
+        vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003153}}
+  #site-promo .button {
+    background: #1a1919;
+    background: rgba(0, 0, 0, 0.3); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003156}}
+    #site-promo .button:hover {
+      background: white;
+      color: #ff931e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003161}}
+  #site-promo:hover {
+    box-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003170}}
+#isotope.view-grid li {
+  width: 285px;
+  margin-right: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003177}}
+#isotope.view-list li {
+  width: 100%;
+  height: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003181}}
+#isotope.view-list .item-image {
+  height: 100%;
+  width: 100px;
+  float: left;
+  margin-right: 12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_modules\.scss}line{font-family:\00003187}}
+#isotope.view-list .item-title {
+  padding-top: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\000034}}
+.news-list li {
+  background: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  height: 300px;
+  overflow: hidden; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\000034}}
+    .news-list li {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 49.12106%;
+      padding: 10px 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .news-list li:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000313}}
+.news-list .post-title {
+  margin: .25em 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000316}}
+.news-list .post-excerpt {
+  margin: .25em 0 .5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000319}}
+.news-list .post-date {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b8b6b2;
+  white-space: nowrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000325}}
+.news-list .meta h6 {
+  display: inline-block;
+  margin-right: 6px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000341}}
+.news-articles .post {
+  border-top: 1px solid #d1cfcb;
+  padding-top: 20px;
+  width: 100%;
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000348}}
+.news-articles .post-header,
+.news-articles .post-footer {
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000348}}
+    .news-articles .post-header,
+    .news-articles .post-footer {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 14.70196%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .news-articles .post-header:last-child,
+      .news-articles .post-footer:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000352}}
+  .news-articles .post-header h6, .news-articles .post-header p, .news-articles .post-header li,
+  .news-articles .post-footer h6,
+  .news-articles .post-footer p,
+  .news-articles .post-footer li {
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #999894;
+    display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000356}}
+    .news-articles .post-header h6:after, .news-articles .post-header p:after, .news-articles .post-header li:after,
+    .news-articles .post-footer h6:after,
+    .news-articles .post-footer p:after,
+    .news-articles .post-footer li:after {
+      content: ' / ';
+      letter-spacing: 5px; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000352}}
+      .news-articles .post-header h6, .news-articles .post-header p, .news-articles .post-header li,
+      .news-articles .post-footer h6,
+      .news-articles .post-footer p,
+      .news-articles .post-footer li {
+        display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000360}}
+        .news-articles .post-header h6:after, .news-articles .post-header p:after, .news-articles .post-header li:after,
+        .news-articles .post-footer h6:after,
+        .news-articles .post-footer p:after,
+        .news-articles .post-footer li:after {
+          content: none; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000362}}
+  .news-articles .post-header a, .news-articles .post-header a:visited,
+  .news-articles .post-footer a,
+  .news-articles .post-footer a:visited {
+    color: #999894; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000364}}
+    .news-articles .post-header a:hover, .news-articles .post-header a:visited:hover,
+    .news-articles .post-footer a:hover,
+    .news-articles .post-footer a:visited:hover {
+      color: #333231; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000369}}
+.news-articles .post-body {
+  padding-bottom: 10px; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000369}}
+    .news-articles .post-body {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .news-articles .post-body:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000372}}
+  .news-articles .post-body p {
+    margin: .25em 0 .75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000376}}
+.news-articles .post-title {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000386}}
+.network-posts ul {
+  border-bottom: 1px solid #d1cfcb; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000389}}
+.network-posts li {
+  border-top: 1px solid #d1cfcb;
+  padding: 20px 0 10px;
+  max-width: none;
+  width: 100%;
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\0000396}}
+.network-posts .post-title {
+  font-size: 36px;
+  font-size: 2.25rem;
+  margin-bottom: 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\00003100}}
+.network-posts .post-excerpt {
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-bottom: 12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\00003104}}
+.network-posts .meta h6 {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #999894;
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\00003108}}
+  .network-posts .meta h6:after {
+    content: ' / ';
+    letter-spacing: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\00003112}}
+  .network-posts .meta h6:last-child:after {
+    content: ''; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\00003115}}
+  .network-posts .meta h6 a, .network-posts .meta h6 a:visited {
+    color: #999894; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_news\.scss}line{font-family:\00003117}}
+    .network-posts .meta h6 a:hover, .network-posts .meta h6 a:visited:hover {
+      color: #333231; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_images\.scss}line{font-family:\000033}}
+img, video, object {
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_images\.scss}line{font-family:\0000318}}
+.entry-content img {
+  image-border: 5px solid white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_images\.scss}line{font-family:\0000325}}
+.wp-caption {
+  max-width: 100%;
+  background: white;
+  margin-bottom: 1em;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_images\.scss}line{font-family:\0000332}}
+  .wp-caption img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0 !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_images\.scss}line{font-family:\0000338}}
+  .wp-caption p.wp-caption-text {
+    font-size: 16;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0;
+    padding: 0px 10px 10px; }
+
+/******************************************************************
+ FORMS 
+******************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\000036}}
+form {
+  background: #e6e4df;
+  padding: 20px; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\000036}}
+    form {
+      padding: 40px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000310}}
+  form p {
+    margin-bottom: .25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000315}}
+fieldset {
+  border: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000323}}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type='email'] {
+  padding: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000327}}
+input[type='submit'] {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-appearance: button;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  background: #333231;
+  color: white;
+  line-height: 1.2;
+  white-space: inherit;
+  margin: 0;
+  padding: .6em 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000341}}
+  input[type='submit']:hover {
+    background: white;
+    color: #333231; }
+
+/******************************************************************
+ SEARCH FORM 
+******************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000352}}
+.search-form {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000352}}
+    .search-form {
+      display: inline-block;
+      width: auto;
+      float: right; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000360}}
+.js .search-form {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-in-out;
+  -moz-transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000364}}
+  .js .search-form.active {
+    max-height: 50px; }
+  @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000360}}
+    .js .search-form {
+      max-height: none; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000371}}
+#searchform {
+  background: transparent;
+  margin: 10px 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000375}}
+  #searchform label {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000378}}
+  #searchform #s {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1;
+    width: 270px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+    margin: 0;
+    vertical-align: top; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000378}}
+      #searchform #s {
+        font-size: 14px;
+        font-size: 0.875rem;
+        width: 140px;
+        height: 24px;
+        line-height: 24px;
+        padding: 2px 5px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000390}}
+  #searchform #searchsubmit {
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin-left: -4px;
+    vertical-align: top;
+    background: #4d4c4a;
+    border: 1px solid #4d4c4a;
+    border-radius: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    #searchform #searchsubmit:before {
+      font-family: "ios7-icon";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 0;
+      text-align: center;
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\0000390}}
+      #searchform #searchsubmit {
+        font-size: 16px;
+        font-size: 1rem;
+        height: 24px;
+        width: 24px;
+        line-height: 24px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003105}}
+    #searchform #searchsubmit:hover {
+      background: white;
+      border-color: #b8b6b2; }
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003117}}
+.respond-form {
+  padding-bottom: 2.2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003120}}
+  .respond-form form li {
+    list-style-type: none;
+    clear: both;
+    margin-bottom: 0.7335em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003125}}
+    .respond-form form li label,
+    .respond-form form li small {
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003132}}
+  .respond-form form input[type=text],
+  .respond-form form input[type=email],
+  .respond-form form input[type=url],
+  .respond-form form textarea {
+    padding: 4px 8px;
+    background: white;
+    border: 1px solid #b8b6b2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003136}}
+    .respond-form form input[type=text]:focus,
+    .respond-form form input[type=email]:focus,
+    .respond-form form input[type=url]:focus,
+    .respond-form form textarea:focus {
+      border-color: #29abe2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003139}}
+    .respond-form form input[type=text]:invalid,
+    .respond-form form input[type=email]:invalid,
+    .respond-form form input[type=url]:invalid,
+    .respond-form form textarea:invalid {
+      outline: none;
+      border-color: #f15a24;
+      background-color: #fffdf7;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003152}}
+  .respond-form form input[type=text],
+  .respond-form form input[type=email],
+  .respond-form form input[type=url] {
+    max-width: 400px;
+    min-width: 250px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003157}}
+  .respond-form form textarea {
+    resize: none;
+    width: 97.3%;
+    height: 150px; }
+
+/* comment submit button */
+/* comment form title */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003170}}
+#comment-form-title {
+  margin: 1.5em 0 .5em; }
+
+/* cancel comment reply link */
+/* logged in comments */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003180}}
+.comments-logged-in-as {
+  line-height: 1; }
+
+/* allowed tags */
+/* no comments */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003189}}
+.nocomments {
+  margin: 0 20px 1.1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003194}}
+#comment-form-elements {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_forms\.scss}line{font-family:\00003199}}
+#comment-form-elements + p {
+  margin: 0 0 30px; }
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+/* h3 comment title */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\000036}}
+#comments {
+  /* number of comments span */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000323}}
+.commentlist {
+  /* general comment classes */
+  /* vcard */
+  /* end .commentlist .vcard */
+  /* comment meta */
+  /* comment content */
+  /* end .commentlist .comment_content */
+  /* comment reply link */
+  /* end .commentlist .comment-reply-link */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000325}}
+  .commentlist li {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    padding: 0.7335em 10px;
+    /* end .commentlist li ul.children */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000333}}
+    .commentlist li:last-child {
+      margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000337}}
+    .commentlist li ul.children {
+      margin: 0;
+      /* variations */
+      /* change number for different depth */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000355}}
+  .commentlist li[class*=depth-] {
+    margin-top: 1.1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000359}}
+  .commentlist li.depth-1 {
+    margin-left: 0;
+    margin-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000364}}
+  .commentlist li:not(.depth-1) {
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 0;
+    padding-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000378}}
+  .commentlist .odd {
+    background: #eee; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000381}}
+  .commentlist .even {
+    background: #fefefe; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000396}}
+  .commentlist .vcard {
+    margin-left: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\0000399}}
+    .commentlist .vcard cite.fn {
+      font-weight: 700;
+      font-style: normal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\00003107}}
+    .commentlist .vcard time {
+      float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\00003110}}
+      .commentlist .vcard time a {
+        color: #999;
+        text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\00003114}}
+        .commentlist .vcard time a:hover {
+          text-decoration: underline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\00003124}}
+    .commentlist .vcard img.avatar {
+      position: absolute;
+      left: 10px;
+      padding: 2px;
+      border: 1px solid #cecece;
+      background: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\00003149}}
+  .commentlist .comment_content {
+    margin-left: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\00003152}}
+    .commentlist .comment_content p {
+      margin: 0.7335em 0 1.5em;
+      font-size: 1em;
+      line-height: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\00003161}}
+  .commentlist .comment-reply-link {
+    text-decoration: none;
+    float: right;
+    background: #4598bb;
+    padding: 3px 5px;
+    color: #fff;
+    opacity: 0.65;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 0.9em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_comments\.scss}line{font-family:\00003173}}
+    .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
+      opacity: 1; }
+
+/* end .commentlist */
+/*********************
+ALERTS AND NOTICES
+*********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_alerts\.scss}line{font-family:\000036}}
+.alert-help, .alert-info, .alert-error, .alert-success {
+  padding: 20px;
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_alerts\.scss}line{font-family:\0000311}}
+.alert-help {
+  background: #29abe2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_alerts\.scss}line{font-family:\0000316}}
+.alert-info {
+  background: #333231; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_alerts\.scss}line{font-family:\0000321}}
+.alert-error {
+  background: #f15a24; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_alerts\.scss}line{font-family:\0000326}}
+.alert-success {
+  background: #22b573; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_alerts\.scss}line{font-family:\0000334}}
+.respond-form .alert {
+  margin: 40px -40px -40px;
+  padding: 20px 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/base\/_alerts\.scss}line{font-family:\0000338}}
+  .respond-form .alert code,
+  .respond-form .alert p {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\000033}}
+.wp-biographia-container-top {
+  background: transparent !important;
+  background: rgba(255, 255, 255, 0.7) !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  margin: 24px 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000311}}
+.wp-biographia-container-around {
+  background: transparent;
+  border-color: #b8b6b2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000316}}
+.wp-biographia-container-none {
+  background: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000320}}
+.wp-biographia-pic {
+  background: transparent;
+  border: 0;
+  padding: 5px !important;
+  height: 70px !important;
+  width: 70px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000327}}
+.wp-biographia-avatar {
+  max-width: 60px;
+  height: auto;
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000334}}
+.wp-biographia-text {
+  margin-left: 80px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000338}}
+.wp-biographia-text h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin: .5em 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000345}}
+.wp-biographia-links ul {
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000348}}
+.wp-biographia-links li {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 0;
+  margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_biographia\.scss}line{font-family:\0000353}}
+.wp-biographia-links li:first-child {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\000033}}
+div.bx-wrapper {
+  position: relative;
+  margin: 20px auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\000036}}
+  div.bx-wrapper .bx-viewport {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000312}}
+  div.bx-wrapper .bxslider {
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000315}}
+  div.bx-wrapper .featured-post {
+    max-width: none;
+    min-height: 390px;
+    background-size: cover;
+    background-position: center center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000321}}
+  div.bx-wrapper a {
+    display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000324}}
+  div.bx-wrapper .bx-caption {
+    background: rgba(255, 255, 255, 0.8);
+    bottom: 10px;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000328}}
+    div.bx-wrapper .bx-caption span {
+      color: #333231;
+      font-family: "Lato", Helvetica, Verdana, sans-serif;
+      font-size: 22px;
+      font-size: 1.375rem;
+      margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000335}}
+  div.bx-wrapper .bx-pager.bx-default-pager {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    width: 30%;
+    z-index: 100;
+    text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000342}}
+    div.bx-wrapper .bx-pager.bx-default-pager a {
+      background: #f5f3ed;
+      text-indent: 9999px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000347}}
+    div.bx-wrapper .bx-pager.bx-default-pager a:hover,
+    div.bx-wrapper .bx-pager.bx-default-pager a.active {
+      background: #333231; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000356}}
+article.home-feature div.bx-wrapper .bx-viewport {
+  border: 5px solid white;
+  background: #333231; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000366}}
+.bx-wrapper .bx-controls-direction a {
+  background: none;
+  color: #00a99d;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+  .bx-wrapper .bx-controls-direction a:before {
+    font-family: "ios7-icon";
+    font-style: normal;
+    font-size: inherit;
+    line-height: inherit;
+    margin-right: 0;
+    text-align: center;
+    display: inline-block;
+    color: inherit;
+    vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000372}}
+.bx-wrapper .bx-controls-direction a:hover {
+  color: #247cc9; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000375}}
+.bx-wrapper .bx-controls-direction .bx-prev {
+  left: -40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000379}}
+.bx-wrapper .bx-controls-direction .bx-next {
+  right: -40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_bxslider\.scss}line{font-family:\0000386}}
+.home-modules .bx-wrapper .bx-controls-direction a {
+  font-size: 36px;
+  font-size: 2.25rem;
+  height: 48px;
+  margin-top: -24px;
+  text-indent: 0;
+  line-height: 48px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\000033}}
+.alo_easymail_widget_form {
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\000035}}
+  .alo_easymail_widget_form td, .alo_easymail_widget_form label {
+    font-size: 16px;
+    vertical-align: top;
+    white-space: nowrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\0000310}}
+  .alo_easymail_widget_form label {
+    vertical-align: middle;
+    margin-right: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\0000315}}
+  .alo_easymail_widget_form .input-radio,
+  .alo_easymail_widget_form .input-checkbox {
+    margin: 0 3px 7px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\0000318}}
+  .alo_easymail_widget_form .input-text {
+    padding: 0 5px;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\0000322}}
+  .alo_easymail_widget_form .input-submit {
+    width: 100%;
+    margin-top: .5em;
+    padding: .5em 1em;
+    font-size: 15px;
+    font-size: 0.9375rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\0000330}}
+  .sidebar .alo_easymail_widget_form {
+    padding: 20px 0;
+    background: transparent;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\0000337}}
+    .sidebar .alo_easymail_widget_form td {
+      white-space: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_easymail\.scss}line{font-family:\0000348}}
+.alo_easymail_lists_table {
+  font-size: 14px;
+  margin-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\000039}}
+.page-events #main {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000316}}
+.em-events-search-form {
+  background: white;
+  padding: 2px 10px; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000316}}
+    .em-events-search-form {
+      padding: 2px 20px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000321}}
+div.css-search {
+  background: transparent;
+  border-color: #d1cfcb;
+  padding: 0;
+  max-width: 800px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000326}}
+  div.css-search div.em-search-main {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000328}}
+    div.css-search div.em-search-main div.em-search-field {
+      background: transparent;
+      padding: 0;
+      font-size: 28px;
+      font-size: 1.75rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+      div.css-search div.em-search-main div.em-search-field:before {
+        font-family: "ios7-icon";
+        font-style: normal;
+        font-size: inherit;
+        line-height: inherit;
+        margin-right: 0;
+        text-align: center;
+        display: inline-block;
+        color: inherit;
+        vertical-align: middle; }
+      @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000328}}
+        div.css-search div.em-search-main div.em-search-field {
+          font-size: 36px;
+          font-size: 2.25rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000334}}
+      div.css-search div.em-search-main div.em-search-field input {
+        font-size: 20px;
+        font-size: 1.25rem;
+        color: #b8b6b2; }
+        @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000334}}
+          div.css-search div.em-search-main div.em-search-field input {
+            font-size: 24px;
+            font-size: 1.5rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/css3\/_placeholder\.scss}line{font-family:\000038}}
+        div.css-search div.em-search-main div.em-search-field input::-webkit-input-placeholder {
+          font-size: 20px;
+          font-size: 1.25rem;
+          line-height: 16px;
+          color: #b8b6b2; }
+          @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/css3\/_placeholder\.scss}line{font-family:\000038}}
+            div.css-search div.em-search-main div.em-search-field input::-webkit-input-placeholder {
+              font-size: 24px;
+              font-size: 1.5rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/css3\/_placeholder\.scss}line{font-family:\0000314}}
+        div.css-search div.em-search-main div.em-search-field input:-moz-placeholder {
+          font-size: 20px;
+          font-size: 1.25rem;
+          line-height: 16px;
+          color: #b8b6b2; }
+          @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/css3\/_placeholder\.scss}line{font-family:\0000314}}
+            div.css-search div.em-search-main div.em-search-field input:-moz-placeholder {
+              font-size: 24px;
+              font-size: 1.5rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/css3\/_placeholder\.scss}line{font-family:\0000319}}
+        div.css-search div.em-search-main div.em-search-field input::-moz-placeholder {
+          font-size: 20px;
+          font-size: 1.25rem;
+          line-height: 16px;
+          color: #b8b6b2; }
+          @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/css3\/_placeholder\.scss}line{font-family:\0000319}}
+            div.css-search div.em-search-main div.em-search-field input::-moz-placeholder {
+              font-size: 24px;
+              font-size: 1.5rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/css3\/_placeholder\.scss}line{font-family:\0000324}}
+        div.css-search div.em-search-main div.em-search-field input:-ms-input-placeholder {
+          font-size: 20px;
+          font-size: 1.25rem;
+          line-height: 16px;
+          color: #b8b6b2; }
+          @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/bourbon\/css3\/_placeholder\.scss}line{font-family:\0000324}}
+            div.css-search div.em-search-main div.em-search-field input:-ms-input-placeholder {
+              font-size: 24px;
+              font-size: 1.5rem; } }
+    @media (min-width: 321px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000349}}
+      div.css-search div.em-search-main div.em-search-geo {
+        display: inline-block; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000353}}
+    div.css-search div.em-search-main .em-search-submit {
+      font-size: 28px;
+      font-size: 1.75rem;
+      background: #999894;
+      box-shadow: inherit;
+      height: 40px;
+      width: 40px;
+      border-radius: 0;
+      text-shadow: none;
+      padding: 0;
+      border: 0;
+      margin: 0;
+      top: 7px;
+      right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+      div.css-search div.em-search-main .em-search-submit:before {
+        font-family: "ios7-icon";
+        font-style: normal;
+        font-size: inherit;
+        line-height: inherit;
+        margin-right: 0;
+        text-align: center;
+        display: inline-block;
+        color: inherit;
+        vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000368}}
+      div.css-search div.em-search-main .em-search-submit img {
+        display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000371}}
+      div.css-search div.em-search-main .em-search-submit:hover {
+        background: #00a99d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000376}}
+  div.css-search.has-advanced div.em-search-main {
+    padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000385}}
+.css-events-list {
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000387}}
+  .css-events-list p {
+    margin: 0;
+    line-height: 1.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000391}}
+  .css-events-list a {
+    color: #00a99d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000394}}
+  .css-events-list .event-list-header {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\0000397}}
+  .css-events-list .event {
+    border-top: 1px solid #b8b6b2;
+    padding: 10px 0;
+    clear: both; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003102}}
+    .css-events-list .event-header {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 10.96186%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .css-events-list .event-header:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003104}}
+  .css-events-list .event-header .meta {
+    margin: .35em 0;
+    line-height: 1.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003108}}
+  .css-events-list .event-header span {
+    padding-right: 5px; }
+    @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003108}}
+      .css-events-list .event-header span {
+        display: block; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003112}}
+  .css-events-list .event-header .event-time {
+    font-size: 75%;
+    margin-top: .75em; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003117}}
+    .css-events-list .event-content {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 87.28027%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .css-events-list .event-content:last-child {
+        margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003120}}
+  .css-events-list .event-image {
+    border: 5px solid white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003122}}
+    .css-events-list .event-image img {
+      display: block;
+      margin: 0; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003120}}
+      .css-events-list .event-image {
+        float: right;
+        width: 33%;
+        height: auto;
+        max-height: 300px;
+        margin-left: 20px;
+        margin-bottom: 10px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003128}}
+  .css-events-list .event-title {
+    margin: .75em 0 .25em; }
+    @media (min-width: 769px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003128}}
+      .css-events-list .event-title {
+        margin-top: .25em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003132}}
+  .css-events-list .event-location {
+    color: #b8b6b2;
+    margin-bottom: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003135}}
+    .css-events-list .event-location span {
+      display: block; }
+      @media (min-width: 321px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003135}}
+        .css-events-list .event-location span {
+          display: inline;
+          padding-right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003137}}
+          .css-events-list .event-location span:after {
+            content: ' /'; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003138}}
+      .css-events-list .event-location span:last-child:after {
+        content: ''; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003141}}
+  .css-events-list .event-description {
+    margin-bottom: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003147}}
+#em-wrapper > p:last-child {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  clear: both;
+  color: #d1cfcb; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003159}}
+.single-event .byline {
+  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003162}}
+.single-event .event-image {
+  border: 5px solid white;
+  max-height: 150px;
+  overflow: hidden;
+  margin-bottom: 1.5em; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003162}}
+    .single-event .event-image {
+      max-height: 300px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003168}}
+  .single-event .event-image img {
+    border: 0;
+    display: block; }
+@media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003173}}
+  .single-event .event-details {
+    float: left;
+    width: 33%; } }
+@media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003175}}
+  .single-event .event-details h4 span {
+    display: block; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003180}}
+.single-event .date-time,
+.single-event .location {
+  margin: .75em 0;
+  line-height: 1.5; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003180}}
+    .single-event .date-time,
+    .single-event .location {
+      margin-bottom: 1.5em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003184}}
+  .single-event .date-time span,
+  .single-event .location span {
+    margin-right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003189}}
+.single-event .event-time,
+.single-event .location-address {
+  font-size: 75%;
+  display: block; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003189}}
+    .single-event .event-time,
+    .single-event .location-address {
+      margin-top: .75em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003194}}
+.single-event .tools {
+  margin: 1.5em 0;
+  margin-right: 10px; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003194}}
+    .single-event .tools {
+      margin-top: 2.25em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003199}}
+.single-event .event-description {
+  margin: 2em 0; }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003199}}
+    .single-event .event-description {
+      padding-left: 34%;
+      padding-right: 20px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003203}}
+.single-event .event-map {
+  border: 5px solid white;
+  margin: 1.5em 0;
+  width: 100%;
+  height: 220px;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003210}}
+.single-event .event-footer {
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003216}}
+ul.event-categories {
+  margin: 0;
+  margin-top: -18px;
+  padding: 0;
+  list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003221}}
+  ul.event-categories li {
+    display: inline;
+    margin-right: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003228}}
+.em-booking {
+  margin: 10px 0px 30px 0px;
+  background: #e6e4df;
+  background: rgba(0, 0, 0, 0.1); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003233}}
+.em-booking-form-details {
+  padding: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003236}}
+.em-tickets-spaces {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003239}}
+.em-booking-form label {
+  margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003242}}
+.em-booking-form-details textarea {
+  width: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003251}}
+table.em-calendar {
+  width: 100%;
+  margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003254}}
+  table.em-calendar a, table.em-calendar a:hover {
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003258}}
+  table.em-calendar td.eventful-today,
+  table.em-calendar td.eventless-today {
+    background: transparent !important;
+    border: 1px solid white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003263}}
+  table.em-calendar td.eventless-pre,
+  table.em-calendar td.eventless-post {
+    color: #999894; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003268}}
+  table.em-calendar td.eventful a,
+  table.em-calendar td.eventful-today a {
+    color: white;
+    background: #00a99d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003271}}
+    table.em-calendar td.eventful a:hover,
+    table.em-calendar td.eventful-today a:hover {
+      background-color: #00dccc; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003278}}
+.all-events-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003291}}
+.home-modules .events-list li {
+  background: #00a99d;
+  color: white;
+  max-height: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  -webkit-transition: background 0.25s ease;
+  -moz-transition: background 0.25s ease;
+  transition: background 0.25s ease; }
+  @media (min-width: 321px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003291}}
+    .home-modules .events-list li {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 49.12106%;
+      display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .home-modules .events-list li:last-child {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+      .home-modules .events-list li:nth-child(2n) {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+      .home-modules .events-list li:nth-child(2n+1) {
+        clear: left; } }
+  @media (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003291}}
+    .home-modules .events-list li {
+      display: block;
+      float: left;
+      margin-right: 1.75788%;
+      width: 23.68159%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_span-columns\.scss}line{font-family:\0000341}}
+      .home-modules .events-list li:last-child {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\000039}}
+      .home-modules .events-list li:nth-child(2n) {
+        margin-right: 1.75788%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/_custom\.scss}line{font-family:\0000310}}
+      .home-modules .events-list li:nth-child(2n+1) {
+        clear: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+      .home-modules .events-list li:nth-child(4n) {
+        margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/mixins\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+      .home-modules .events-list li:nth-child(4n+1) {
+        clear: left; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003300}}
+  .home-modules .events-list li:hover {
+    background: #247cc9;
+    cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003305}}
+.home-modules .events-list .event-promo {
+  background: #00dccc;
+  height: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003308}}
+  .home-modules .events-list .event-promo a {
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 95px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003316}}
+.home-modules .event-start {
+  float: left;
+  width: 24%;
+  text-align: center;
+  color: white;
+  border-right: 1px solid white;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 10px 0 0;
+  padding: 10px 0;
+  line-height: 1.1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003326}}
+  .home-modules .event-start .event-date {
+    display: block;
+    font-size: 250%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003331}}
+.home-modules .event-title {
+  width: 70%;
+  margin: 0;
+  padding: 10px 0;
+  max-height: 90px;
+  overflow: hidden; }
+  @media (min-width: 321px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003331}}
+    .home-modules .event-title {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.3; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_eventmanager\.scss}line{font-family:\00003338}}
+  .home-modules .event-title a {
+    display: block;
+    color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\000033}}
+.login {
+  padding: 0 0 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\000036}}
+  .login p.error,
+  .login p.message {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #333231;
+    border: 0;
+    font-size: 18px;
+    font-size: 1.125rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000313}}
+  .login p.error {
+    background-color: #fac6b4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000316}}
+  .login p.message {
+    background-color: #feecd1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000319}}
+  .login form label {
+    margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000324}}
+#pass-strength-result {
+  background-color: #e6e4df;
+  border-color: #b8b6b2 !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000327}}
+  #pass-strength-result.bad {
+    background-color: #ffdcb7;
+    border-color: #ff931e !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000332}}
+  #pass-strength-result.good {
+    background-color: #feecd1;
+    border-color: #fbb03b !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000336}}
+  #pass-strength-result.short {
+    background-color: #fac6b4;
+    border-color: #f15a24 !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000340}}
+  #pass-strength-result.strong {
+    background-color: #87e9bd;
+    border-color: #22b573 !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000347}}
+.tml-action-links li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px 10px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000358}}
+.widget_theme_my_login .widgettitle {
+  max-width: 75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000361}}
+.widget_theme_my_login .login {
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000364}}
+.widget_theme_my_login .tml-user-avatar {
+  float: right;
+  position: absolute;
+  top: -30px;
+  right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/plugins\/_thememylogin\.scss}line{font-family:\0000369}}
+  .widget_theme_my_login .tml-user-avatar img {
+    border: 3px solid white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\000033}}
+.logo-NYCP {
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 20px;
+  color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000312}}
+  .logo-NYCP span {
+    display: inline-block;
+    border: 3px solid white;
+    padding: 3px 5px;
+    margin-left: 5px;
+    -webkit-transition: border-color 0.25s ease;
+    -moz-transition: border-color 0.25s ease;
+    transition: border-color 0.25s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000319}}
+  .logo-NYCP:visited {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000324}}
+  .logo-NYCP:hover, .logo-NYCP:focus, .logo-NYCP:visited:hover {
+    color: #333231; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000326}}
+    .logo-NYCP:hover span, .logo-NYCP:focus span, .logo-NYCP:visited:hover span {
+      border-color: #333231; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000332}}
+.tagline-NYCP {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #999894; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000346}}
+#nav_menu-5,
+#nav_menu-4,
+#nav_menu-3,
+#nav_menu-2 {
+  padding-top: 0;
+  padding-bottom: 10px;
+  margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000350}}
+  #nav_menu-5 .widgettitle,
+  #nav_menu-4 .widgettitle,
+  #nav_menu-3 .widgettitle,
+  #nav_menu-2 .widgettitle {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000353}}
+  #nav_menu-5 ul,
+  #nav_menu-4 ul,
+  #nav_menu-3 ul,
+  #nav_menu-2 ul {
+    border-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000356}}
+  #nav_menu-5 a:hover,
+  #nav_menu-4 a:hover,
+  #nav_menu-3 a:hover,
+  #nav_menu-2 a:hover {
+    color: #333231; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000359}}
+  #nav_menu-5 li:first-child,
+  #nav_menu-4 li:first-child,
+  #nav_menu-3 li:first-child,
+  #nav_menu-2 li:first-child {
+    font-size: 28px;
+    font-size: 1.75rem;
+    padding-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/webfonts\/_mixins\.scss}line{font-family:\0000343}}
+    #nav_menu-5 li:first-child:before,
+    #nav_menu-4 li:first-child:before,
+    #nav_menu-3 li:first-child:before,
+    #nav_menu-2 li:first-child:before {
+      font-family: "ios7-icon";
+      font-style: normal;
+      font-size: inherit;
+      line-height: inherit;
+      margin-right: 10px;
+      text-align: center;
+      display: inline-block;
+      color: #00a99d;
+      vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000363}}
+    #nav_menu-5 li:first-child:before,
+    #nav_menu-4 li:first-child:before,
+    #nav_menu-3 li:first-child:before,
+    #nav_menu-2 li:first-child:before {
+      -webkit-transition: color 0.25s ease;
+      -moz-transition: color 0.25s ease;
+      transition: color 0.25s ease; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000367}}
+    #nav_menu-5 li:first-child:hover a, #nav_menu-5 li:first-child:hover:before,
+    #nav_menu-4 li:first-child:hover a,
+    #nav_menu-4 li:first-child:hover:before,
+    #nav_menu-3 li:first-child:hover a,
+    #nav_menu-3 li:first-child:hover:before,
+    #nav_menu-2 li:first-child:hover a,
+    #nav_menu-2 li:first-child:hover:before {
+      color: #333231; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000370}}
+    #nav_menu-5 li:first-child a,
+    #nav_menu-4 li:first-child a,
+    #nav_menu-3 li:first-child a,
+    #nav_menu-2 li:first-child a {
+      display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000373}}
+    #nav_menu-5 li:first-child a:hover,
+    #nav_menu-4 li:first-child a:hover,
+    #nav_menu-3 li:first-child a:hover,
+    #nav_menu-2 li:first-child a:hover {
+      padding: 0.5em 20px 0.5em 0;
+      background: transparent;
+      color: #333231; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000384}}
+#nav_menu-3 li:first-child:before {
+  position: relative;
+  top: -5px; }
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_sidebar\.scss}line{font-family:\000039}}
+.community-network .sidebar .widget:first-child {
+  background: #22b573; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_sidebar\.scss}line{font-family:\0000312}}
+.community-network .sidebar .widget:nth-child(2) {
+  background: #00a99d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_sidebar\.scss}line{font-family:\0000315}}
+.community-network .sidebar .widget:nth-child(3) {
+  background: #29abe2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_sidebar\.scss}line{font-family:\0000318}}
+.community-network .sidebar .widget:nth-child(4) {
+  background: #247cc9; }
