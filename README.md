@@ -1,10 +1,8 @@
 Activist Network
 =========
 
-The Activist network is a pre-configured WordPress Multisite that allows activists & organizers to create a space where groups and projects can have their own website within a network and the news, events & user profiles are shared across the network and highlighted on the main site.
+The Activist network is a pre-configured WordPress Multisite that allows activists & organizers to create a space in which groups and projects can have their own website within a network. Groups' news, events & user profiles are shared across the network and highlighted on the main site.
 
-
-The flow chart below provides an idea of what a network would look like with one main site displaying the data and being the face of the network for each sub site to communicate and share with their communities
 
 ## Functionality
 
@@ -18,34 +16,7 @@ News is the posts (or blog) section of the site. Content here can be formatted a
 
 ### Taxonomy
 
-
-The default taxonomies in WordPress are the Categories & Tags. This can be used as default and through provide training & documentation on best practices for usage.
-
-
-### Post Formats
-
-
-Post Formats, refer to the type of content which is connected to templates in the theme. The formats available in WordPress for use are:
-
-
-* **aside**  - Typically styled without a title. Similar to a Facebook note update.
-* **gallery**  - A gallery of images. Post will likely contain a gallery shortcode and will have image attachments.
-* **link**  - A link to another site. Themes may wish to use the first href tag in the post content as the external link for that post. An alternative approach could be if the post consists only of a URL, then that will be the URL and the title (post_title) will be the name attached to the anchor for it.
-* **image**  - A single image. The first image tag in the post could be considered the image. Alternatively, if the post consists only of a URL, that will be the image URL and the title of the post (post_title) will be the title attribute for the image.
-* **quote**  - A quotation. Probably will contain a blockquote holding the quote content. Alternatively, the quote may be just the content, with the source/author being the title.
-* **video**  - A single video. The first video tag or object/embed in the post content could be considered the video. Alternatively, if the post consists only of a URL, that will be the video URL. May also contain the video as an attachment to the post, if video support is enabled on the blog (like via a plugin).
-* **audio**  - An audio file. Could be used for Podcasting.
-* <del>**chat**  - A chat transcript, like so:</del> 
-
-
-### Social Integration
-
-
-Explore using Keyring to accomplish this around post formats. This actually archives data on the site as opposed to the only leaving on commercial/proprietary network.
-
-
-* [[http://wordpress.org/plugins/keyring/|http://wordpress.org/plugins/keyring/]]
-* [[http://wordpress.org/plugins/keyring-social-importers/|http://wordpress.org/plugins/keyring-social-importers/]]
+The default taxonomies in WordPress are the Categories & Tags. Categories are global across sites to provide easy organization and navigation.
 
 
 ## Events
