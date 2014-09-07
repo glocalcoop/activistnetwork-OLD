@@ -4,7 +4,7 @@ Theme URI:    http://glocal.coop
 Description:  Child theme for a sub-site, based on the Network Hub theme
 Author:       Glocal Coop
 Author URI:   http://glocal.coop
-Template:     network
+Template:     network-start
 Version:      1.0.0
 Tags:         two-columns, right-sidebar, responsive-layout
 Text Domain:  glocal-subsite
@@ -14,5 +14,5 @@ License URI: https://gnu.org/licenses/gpl-3.0-standalone.html
 
 */
 
-@import url("../network/style.css");
+@import url("../network-start/style.css");
 
