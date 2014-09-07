@@ -173,6 +173,9 @@ function community_theme_features()  {
 	$markup = array( 'search-form', );
 	add_theme_support( 'html5', $markup );	
 
+	// Add custom header (which may not be used in the header)
+	add_theme_support( 'custom-header' );
+
 	// Add theme support for Translation
 	load_theme_textdomain( 'glocal-network', get_template_directory() . '/library/language' );	
 }
