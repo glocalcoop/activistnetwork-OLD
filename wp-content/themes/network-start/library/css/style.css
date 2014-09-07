@@ -3229,7 +3229,7 @@ table.em-calendar {
     border: 3px solid white; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\000033}}
-.logo-NYCP {
+.logo-main {
   font-size: 18px;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -3240,7 +3240,7 @@ table.em-calendar {
   margin-right: 20px;
   color: white; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000312}}
-  .logo-NYCP span {
+  .logo-main span {
     display: inline-block;
     border: 3px solid white;
     padding: 3px 5px;
@@ -3249,17 +3249,17 @@ table.em-calendar {
     -moz-transition: border-color 0.25s ease;
     transition: border-color 0.25s ease; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000319}}
-  .logo-NYCP:visited {
+  .logo-main:visited {
     color: white; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000324}}
-  .logo-NYCP:hover, .logo-NYCP:focus, .logo-NYCP:visited:hover {
+  .logo-main:hover, .logo-main:focus, .logo-main:visited:hover {
     color: #333231; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000326}}
-    .logo-NYCP:hover span, .logo-NYCP:focus span, .logo-NYCP:visited:hover span {
+    .logo-main:hover span, .logo-main:focus span, .logo-main:visited:hover span {
       border-color: #333231; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/activistnetwork\/wp-content\/themes\/network-start\/library\/sass\/custom\/_footer\.scss}line{font-family:\0000332}}
-.tagline-NYCP {
+.tagline-main {
   font-size: 13px;
   font-size: 0.8125rem;
   text-transform: uppercase;
