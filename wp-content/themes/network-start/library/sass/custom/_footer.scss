@@ -1,6 +1,6 @@
 // NYCP FOOTER
 
-.logo-NYCP {
+.logo-main {
     @include font-size($epsilon);
     text-transform: uppercase; 
         letter-spacing: $tracking;
@@ -29,7 +29,7 @@
     }
 }
 
-.tagline-NYCP {
+.tagline-main {
     @include font-size(13);
 	text-transform: uppercase;
 	letter-spacing: $tracking;
