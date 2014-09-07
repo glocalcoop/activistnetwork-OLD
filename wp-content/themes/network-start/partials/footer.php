@@ -7,7 +7,7 @@
 				<div class="inner-footer">
 
 					<section class="global site-meta first">
-						<h2 class="footer-logo"><a class="logo-NYCP" href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" class="logo-MAIN" /></a><span class="tagline-NYCP"><?php bloginfo('description'); ?></span></h2>
+						<h2 class="footer-logo"><a class="logo-main" href="<?php echo home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" class="logo-main" /><span class="tagline-NYCP"><?php bloginfo('description'); ?></span></a></h2>
 					</section>
 					
 					<section class="widgets">
