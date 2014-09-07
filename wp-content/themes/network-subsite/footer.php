@@ -1,8 +1,14 @@
 			<footer class="footer" role="contentinfo">
 				<div class="inner-footer">
 
+					<?php
+					if(function_exists('community_get_site_image')) {
+						$header = community_get_site_image('1');
+					}
+					?>
+
 					<section class="global site-meta first">
-						<a href="http://nycprepared.org"><img src="/multisite/wp-content/themes/community/library/images/NYCPbadgeKO.png" alt="NYCPbadgeKO" width="140" height="140" /></a>
+						<h2 class="footer-logo"><a class="logo-main" href="<?php echo get_blog_details( '1' )->siteurl; ?>"><img src="<?php if($header) { echo $header; } ?>" alt="<?php echo get_blog_details( '1' )->blogname; ?>" class="logo-main" /><span class="tagline-main"><?php echo get_blog_details( '1' )->blogname; ?></span></a></h2>
 					</section>
 					
 					<section class="widgets">
