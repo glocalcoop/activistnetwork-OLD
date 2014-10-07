@@ -12,7 +12,9 @@
     margin-top: 15px;
     margin-right: 15px;
     img {
-      fill: $text-color; 
+      fill: $text-color;
+      max-height: 40px;
+      width: auto;
     }
     &:hover img {
       fill: $anchor-color; 
@@ -206,7 +208,6 @@
         }
     }
 }
-
 
 // LOCAL NAV -- BREAKPOINT 1
 
