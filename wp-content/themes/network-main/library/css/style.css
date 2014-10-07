@@ -946,17 +946,22 @@ main.main-news,
         position: relative; } }
 
 /* line 11, ../sass/modules/_footer.scss */
+.footer-logo img {
+  max-height: 80px;
+  width: auto; }
+
+/* line 16, ../sass/modules/_footer.scss */
 .footer .widgettitle {
   display: none; }
 
-/* line 15, ../sass/modules/_footer.scss */
+/* line 20, ../sass/modules/_footer.scss */
 .footer .widget {
   background: #fff;
   margin-bottom: 30px; }
-  /* line 18, ../sass/modules/_footer.scss */
+  /* line 23, ../sass/modules/_footer.scss */
   .footer .widget ul {
     margin-bottom: 0; }
-  /* line 21, ../sass/modules/_footer.scss */
+  /* line 26, ../sass/modules/_footer.scss */
   .footer .widget li {
     font-size: 16px;
     font-size: 1rem;
@@ -964,11 +969,11 @@ main.main-news,
     padding: 0;
     margin: 0;
     display: block !important; }
-  /* line 28, ../sass/modules/_footer.scss */
+  /* line 33, ../sass/modules/_footer.scss */
   .footer .widget a, .footer .widget a:visited {
     color: #00a99d; }
   @media (min-width: 481px) {
-    /* line 15, ../sass/modules/_footer.scss */
+    /* line 20, ../sass/modules/_footer.scss */
     .footer .widget {
       display: block;
       float: left;
@@ -979,17 +984,17 @@ main.main-news,
       .footer .widget:last-child {
         margin-right: 0; } }
 
-/* line 41, ../sass/modules/_footer.scss */
+/* line 46, ../sass/modules/_footer.scss */
 .footer-slug {
   background: #d1cfcb;
   clear: both; }
 
-/* line 49, ../sass/modules/_footer.scss */
+/* line 54, ../sass/modules/_footer.scss */
 .nav-social {
   margin: 15px 15px 15px 0;
   padding: 0;
   float: left; }
-  /* line 53, ../sass/modules/_footer.scss */
+  /* line 58, ../sass/modules/_footer.scss */
   .nav-social li {
     font-size: 40px;
     font-size: 2.5rem;
@@ -1002,12 +1007,12 @@ main.main-news,
     text-align: center;
     border-radius: 0;
     margin-right: 2px; }
-  /* line 65, ../sass/modules/_footer.scss */
+  /* line 70, ../sass/modules/_footer.scss */
   .nav-social a {
     display: block;
     height: 100%;
     line-height: 30px; }
-  /* line 70, ../sass/modules/_footer.scss */
+  /* line 75, ../sass/modules/_footer.scss */
   .nav-social .facebook a {
     background: #247cc9;
     border-color: #247cc9;
@@ -1027,7 +1032,7 @@ main.main-news,
       display: inline-block;
       color: inherit;
       vertical-align: middle; }
-  /* line 71, ../sass/modules/_footer.scss */
+  /* line 76, ../sass/modules/_footer.scss */
   .nav-social .twitter a {
     background: #29abe2;
     border-color: #29abe2;
@@ -1047,7 +1052,7 @@ main.main-news,
       display: inline-block;
       color: inherit;
       vertical-align: middle; }
-  /* line 72, ../sass/modules/_footer.scss */
+  /* line 77, ../sass/modules/_footer.scss */
   .nav-social .github a {
     background: #00a99d;
     border-color: #00a99d;
@@ -1067,7 +1072,7 @@ main.main-news,
       display: inline-block;
       color: inherit;
       vertical-align: middle; }
-  /* line 73, ../sass/modules/_footer.scss */
+  /* line 78, ../sass/modules/_footer.scss */
   .nav-social .email a {
     background: #22b573;
     border-color: #22b573;
@@ -1087,7 +1092,7 @@ main.main-news,
       display: inline-block;
       color: inherit;
       vertical-align: middle; }
-  /* line 74, ../sass/modules/_footer.scss */
+  /* line 79, ../sass/modules/_footer.scss */
   .nav-social .rss a {
     background: #ff931e;
     border-color: #ff931e;
@@ -1107,7 +1112,7 @@ main.main-news,
       display: inline-block;
       color: inherit;
       vertical-align: middle; }
-  /* line 75, ../sass/modules/_footer.scss */
+  /* line 80, ../sass/modules/_footer.scss */
   .nav-social .network a {
     background: #000;
     border-color: #000;
@@ -1127,15 +1132,15 @@ main.main-news,
       display: inline-block;
       color: inherit;
       vertical-align: middle; }
-  /* line 78, ../sass/modules/_footer.scss */
+  /* line 83, ../sass/modules/_footer.scss */
   .glocal-group .nav-social, .glocal-partner .nav-social {
     float: right;
     margin: 5px 15px; }
-  /* line 84, ../sass/modules/_footer.scss */
+  /* line 89, ../sass/modules/_footer.scss */
   .nav-social h4.widgettitle {
     display: none; }
 
-/* line 90, ../sass/modules/_footer.scss */
+/* line 95, ../sass/modules/_footer.scss */
 .copyright {
   font-size: 10px;
   font-size: 0.625rem;
@@ -1146,7 +1151,7 @@ main.main-news,
   margin: 15px 0;
   height: 30px;
   line-height: 30px; }
-  /* line 99, ../sass/modules/_footer.scss */
+  /* line 104, ../sass/modules/_footer.scss */
   .copyright .copyleft {
     font-size: 30px;
     font-size: 1.875rem; }
@@ -1162,7 +1167,7 @@ main.main-news,
       color: inherit;
       vertical-align: middle; }
   @media (min-width: 769px) {
-    /* line 90, ../sass/modules/_footer.scss */
+    /* line 95, ../sass/modules/_footer.scss */
     .copyright {
       font-size: 12px;
       font-size: 0.75rem; } }
