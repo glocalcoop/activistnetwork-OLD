@@ -9,7 +9,7 @@
     display: none;
     @include breakpoint(md) {display: block;}
     float: left;
-    margin-top: 15px;
+    // margin-top: 15px;
     margin-right: 15px;
     img {
       fill: $text-color;

@@ -720,7 +720,6 @@ main.main-news,
 .domain-logo {
   display: none;
   float: left;
-  margin-top: 15px;
   margin-right: 15px; }
   @media (min-width: 769px) {
     /* line 8, ../sass/modules/_header.scss */
