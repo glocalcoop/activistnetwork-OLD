@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Sites
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="content">
