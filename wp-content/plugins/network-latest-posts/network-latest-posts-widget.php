@@ -1,7 +1,7 @@
 <?php
 /*
     Network Latest Posts Widget
-    Version 3.5.6
+    Version 3.5.5
     Author L'Elite
     Author URI http://laelite.info/
  */
@@ -77,8 +77,8 @@ class NLposts_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'nlposts_widget', // Base ID
-            'Network Latest Posts', // Name
-            array( 'description' => __( 'Network Latest Posts Widget', 'trans-nlp' ), ) // Args
+            'Multisite Latest Posts', // Name
+            array( 'description' => __( 'Displays the Latest Posts from your Multisite Network in a Widget', 'trans-nlp' ), ) // Args
         );
     }
 

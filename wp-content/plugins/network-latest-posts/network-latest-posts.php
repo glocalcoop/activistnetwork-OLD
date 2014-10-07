@@ -1,27 +1,13 @@
 <?php
 /*
-Plugin Name: Network Latest Posts
-Plugin URI: http://en.8elite.com/network-latest-posts
-Description: Display the latest posts from the blogs in your network using it as a function, shortcode or widget.
-Version: 3.6
-Author: Jose Luis SAYAGO
-Author URI: http://laelite.info/
+Plugin Name: Network Posts (Custom)
+Description: Display the latest posts from the blogs in your network using it as a function, shortcode or widget. Based on Network Latest Posts plugin (http://en.8elite.com/network-latest-posts).
+Author: Pea, Glocal
+Author URI: http://glocal.coop
+Version: 0.1
+License: GPL
  */
-/*  Copyright 2007 - 2014  L'Elite (email : opensource@laelite.info)
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as
-    published by the Free Software Foundation.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
- */
 /* Comments
  *
  * Network Latest Posts version 3.0 has been totally rewritten,
@@ -198,13 +184,13 @@ function network_latest_posts( $parameters ) {
         'number_posts'     => 10,            // Number of posts to be displayed
         'time_frame'       => 0,             // Time frame to look for posts in days
         'title_only'       => TRUE,          // Display the post title only
-        'display_type'     => 'ulist',       // Display content as a: olist (ordered), ulist (unordered), block
+        'display_type'     => 'block',       // Display content as a: olist (ordered), ulist (unordered), block
         'blog_id'          => NULL,          // ID(s) of the blog(s) you want to display the latest posts
         'ignore_blog'      => NULL,          // ID(s) of the blog(s) you want to ignore
         'thumbnail'        => FALSE,         // Display the thumbnail
         'thumbnail_wh'     => '80x80',       // Thumbnail Width & Height in pixels
         'thumbnail_class'  => NULL,          // Thumbnail CSS class
-        'thumbnail_filler' => 'placeholder', // Replacement image for posts without thumbnail (placeholder, kittens, puppies)
+        'thumbnail_filler' => '', // Replacement image for posts without thumbnail (placeholder, kittens, puppies)
         'thumbnail_custom' => FALSE,         // Pull thumbnails from custom fields
         'thumbnail_field'  => NULL,          // Custom field containing image url
         'thumbnail_url'    => NULL,          // Custom thumbnail URL
@@ -642,8 +628,40 @@ function network_latest_posts( $parameters ) {
             foreach( $pages[$pag-1] as $field ) {
                 // Open item box
                 $item_o = $html_tags['item_o'];
-                $item_o = str_replace("'>"," nlposts-siteid-".$all_blogkeys[$field->guid]."'>", $item_o);
+                $item_o = str_replace("'>"," siteid-".$all_blogkeys[$field->guid]."'>", $item_o);
                 echo $item_o;
+
+                // Meta
+                if( $full_meta === 'true' ) {
+                    // Open meta box
+                    echo $html_tags['meta_o'];
+                    // Set metainfo
+                    $author = get_user_by('id',$field->post_author);
+                    $format = (string)${'date_format_'.$all_blogkeys[$field->guid]};
+                    $datepost = date_i18n($format, strtotime(trim( $field->post_date) ) );
+                    $blog_name = '<a href="'.${'blog_url_'.$all_blogkeys[$field->guid]}.'">'.${'blog_name_'.$all_blogkeys[$field->guid]}."</a>";
+                    // The network's root (main blog) is called 'blog',
+                    // so we have to set this up because the url ignores the root's subdirectory
+                    if( $all_blogkeys[$field->guid] == 1 ) {
+                        // Author's page for the main blog
+                        $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/blog/author/'.$author->user_login;
+                    } else {
+                        // Author's page for other blogs
+                        $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/author/'.$author->user_login;
+                    }
+                    // Print metainfo
+                    // Changed to display more semantice mark-up - PEA 9/30/2014
+                    // echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                    $author_link = '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                    echo '<h6 class="blog-name">' . $blog_name . '</h6>';
+                    echo '<h6 class="post-date date">' . $datepost . '</h6>';
+                    echo '<h6 class="post-author">' . $author_link . '</h6>';
+                    // Close meta box
+                    echo $html_tags['meta_c'];
+                }
+
+                // Wrap Caption
+                echo $html_tags['caption_o'];
                 // Thumbnails
                 if( $thumbnail === 'true' ) {
                     // Open thumbnail container
@@ -672,67 +690,49 @@ function network_latest_posts( $parameters ) {
                     if( !empty($thumb_html) ) {
                         // Display the thumbnail
                         echo "<a href='".$all_permalinks[$field->guid]."'>$thumb_html</a>";
-                    // Thumbnail not found
-                    } else {
-                        // Put a placeholder with the post title
-                        switch($thumbnail_filler) {
-                            // Placeholder provided by Placehold.it
-                            case 'placeholder':
-                                echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placehold.it/".$thumbnail_wh."&text=".$field->post_title."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
-                                break;
-                            // Just for fun Kittens thanks to PlaceKitten
-                            case 'kittens':
-                                echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placekitten.com/".$thumbnail_size[0]."/".$thumbnail_size[1]."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
-                                break;
-                            // More fun Puppies thanks to PlaceDog
-                            case 'puppies':
-                                echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placedog.com/".$thumbnail_size[0]."/".$thumbnail_size[1]."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
-                                break;
-                            case 'custom':
-                                if( !empty( $thumbnail_url ) ) {
-                                    echo "<a href='".$all_permalinks[$field->guid]."'><img src='".$thumbnail_url."' alt='".$field->post_title."' title='".$field->post_title."' width='".$thumbnail_size[0]."' height='".$thumbnail_size[1]."' /></a>";
-                                } else {
-                                    echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placehold.it/".$thumbnail_wh."&text=".$field->post_title."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
-                                }
-                                break;
-                            // Boring by default ;)
-                            default:
-                                echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placehold.it/".$thumbnail_wh."&text=".$field->post_title."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
-                                break;
-                        }
                     }
+                    // Don't use placeholder images - PEA
+                    // Thumbnail not found
+                    //  else {
+                    //     // Put a placeholder with the post title
+                    //     switch($thumbnail_filler) {
+                    //         // Placeholder provided by Placehold.it
+                    //         case 'placeholder':
+                    //             echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placehold.it/".$thumbnail_wh."&text=".$field->post_title."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
+                    //             break;
+                    //         // Just for fun Kittens thanks to PlaceKitten
+                    //         case 'kittens':
+                    //             echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placekitten.com/".$thumbnail_size[0]."/".$thumbnail_size[1]."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
+                    //             break;
+                    //         // More fun Puppies thanks to PlaceDog
+                    //         case 'puppies':
+                    //             echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placedog.com/".$thumbnail_size[0]."/".$thumbnail_size[1]."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
+                    //             break;
+                    //         case 'custom':
+                    //             if( !empty( $thumbnail_url ) ) {
+                    //                 echo "<a href='".$all_permalinks[$field->guid]."'><img src='".$thumbnail_url."' alt='".$field->post_title."' title='".$field->post_title."' width='".$thumbnail_size[0]."' height='".$thumbnail_size[1]."' /></a>";
+                    //             } else {
+                    //                 echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placehold.it/".$thumbnail_wh."&text=".$field->post_title."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
+                    //             }
+                    //             break;
+                    //         // Boring by default ;)
+                    //         default:
+                    //             echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placehold.it/".$thumbnail_wh."&text=".$field->post_title."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
+                    //             break;
+                    //     }
+                    // }
                     // Back the current blog
                     restore_current_blog();
-                    // Wrap Caption
-                    echo $html_tags['caption_o'];
+                    // Close thumbnail item placeholder
+                    echo $html_tags['thumbnail_ic'];
+                    // Close thumbnail container
+                    echo $html_tags['thumbnail_c'];
                     // Open title box
                     echo $html_tags['title_o'];
                     // Print the title
                     echo "<a href='".$all_permalinks[$field->guid]."'>".$field->post_title."</a>";
                     // Close the title box
                     echo $html_tags['title_c'];
-                    if( $full_meta === 'true' ) {
-                        // Open meta box
-                        echo $html_tags['meta_o'];
-                        // Set metainfo
-                        $author = get_user_by('id',$field->post_author);
-                        $format = (string)${'date_format_'.$all_blogkeys[$field->guid]};
-                        $datepost = date_i18n($format, strtotime(trim( $field->post_date) ) );
-                        $blog_name = '<a href="'.${'blog_url_'.$all_blogkeys[$field->guid]}.'">'.${'blog_name_'.$all_blogkeys[$field->guid]}."</a>";
-                        // The network's root (main blog) is called 'blog',
-                        // so we have to set this up because the url ignores the root's subdirectory
-                        if( $all_blogkeys[$field->guid] == 1 ) {
-                            // Author's page for the main blog
-                            $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/blog/author/'.$author->user_login;
-                        } else {
-                            // Author's page for other blogs
-                            $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/author/'.$author->user_login;
-                        }
-                        // Print metainfo
-                        echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
-                        // Close meta box
-                        echo $html_tags['meta_c'];
-                    }
                     // Print the content
                     if( $title_only === 'false' ) {
                         // Open excerpt wrapper
@@ -757,10 +757,6 @@ function network_latest_posts( $parameters ) {
                     }
                     // Close Caption
                     echo $html_tags['caption_c'];
-                    // Close thumbnail item placeholder
-                    echo $html_tags['thumbnail_ic'];
-                    // Close thumbnail container
-                    echo $html_tags['thumbnail_c'];
                 } else {
                     // Wrap Caption
                     echo $html_tags['caption_o'];
@@ -788,7 +784,12 @@ function network_latest_posts( $parameters ) {
                             $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/author/'.$author->user_login;
                         }
                         // Print metainfo
-                        echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        // Changed to display more semantice mark-up - PEA 9/30/2014
+                        // echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        $author_link = '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        echo '<h6 class="blog-name">' . $blog_name . '</h6>';
+                        echo '<h6 class="post-date date">' . $datepost . '</h6>';
+                        echo '<h6 class="post-author">' . $author_link . '</h6>';
                         // Close meta box
                         echo $html_tags['meta_c'];
                     }
@@ -923,7 +924,7 @@ function network_latest_posts( $parameters ) {
                                 break;
                             // Boring by default ;)
                             default:
-                                echo "<a href='".$all_permalinks[$field->guid]."'><img src='http://placehold.it/".$thumbnail_wh."&text=".$field->post_title."' alt='".$field->post_title."' title='".$field->post_title."' /></a>";
+                                echo "<a href='".$all_permalinks[$field->guid]."'>$thumb_html</a>";
                                 break;
                         }
                     }
@@ -955,7 +956,12 @@ function network_latest_posts( $parameters ) {
                             $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/author/'.$author->user_login;
                         }
                         // Print metainfo
-                        echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        // Changed to display more semantice mark-up - PEA 9/30/2014
+                        // echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        $author_link = '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        echo '<h6 class="blog-name">' . $blog_name . '</h6>';
+                        echo '<h6 class="post-date date">' . $datepost . '</h6>';
+                        echo '<h6 class="post-author">' . $author_link . '</h6>';
                         // Close meta box
                         echo $html_tags['meta_c'];
                     }
@@ -1014,7 +1020,12 @@ function network_latest_posts( $parameters ) {
                             $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/author/'.$author->user_login;
                         }
                         // Print metainfo
-                        echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        // Changed to display more semantice mark-up - PEA 9/30/2014
+                        // echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        $author_link = '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                        echo '<h6 class="blog-name">' . $blog_name . '</h6>';
+                        echo '<h6 class="post-date date">' . $datepost . '</h6>';
+                        echo '<h6 class="post-author">' . $author_link . '</h6>';
                         // Close meta box
                         echo $html_tags['meta_c'];
                     }
@@ -1174,28 +1185,28 @@ function nlp_display_type($display_type, $instance, $wrapper_list_css, $wrapper_
         // Unordered list
         case "ulist":
                 $html_tags = array(
-                    'wrapper_o' => "<ul class='nlposts-wrapper nlposts-ulist $wrapper_list_css'>",
-                    'wrapper_c' => "</ul>",
-                    'wtitle_o' => "<h2 class='nlposts-ulist-wtitle'>",
+                    'wtitle_o' => "<!--wtitle_o-->",
+                    'wrapper_c' => "",
+                    'wtitle_o' => "<h2 class='module-heading'><!--wtitle_o-->", //Page Title
                     'wtitle_c' => "</h2>",
-                    'item_o' => "<li class='nlposts-ulist-litem'>",
+                    'item_o' => "<li class='list-item'><!--item_o-->", //Post Wrapper
                     'item_c' => "</li>",
-                    'content_o' => "<div class='nlposts-container nlposts-ulist-container $nlp_instance'>",
-                    'content_c' => "</div>",
-                    'meta_o' => "<span class='nlposts-ulist-meta'>",
-                    'meta_c' => "</span>",
-                    'thumbnail_o' => "<ul class='nlposts-ulist-thumbnail thumbnails'>",
-                    'thumbnail_c' => "</ul>",
-                    'thumbnail_io' => "<li class='nlposts-ulist-thumbnail-litem span3'><div class='thumbnail'>",
-                    'thumbnail_ic' => "</div></li>",
-                    'pagination_o' => "<div class='nlposts-ulist-pagination pagination'>",
+                    'content_o' => "<ul class='$wrapper_list_css'><!--content_o-->", //Body - Title, Image, Excerpt
+                    'content_c' => "</ul>",
+                    'meta_o' => "<header class='post-header'><div class='meta'><!--meta_o-->",
+                    'meta_c' => "</div></header>",
+                    'thumbnail_o' => "<!--thumbnail_o-->",
+                    'thumbnail_c' => "",
+                    'thumbnail_io' => "<div class='post-image'><!--thumbnail_io-->",
+                    'thumbnail_ic' => "</div>",
+                    'pagination_o' => "<div class='nlposts-block-pagination pagination'><!--pagination_o-->",
                     'pagination_c' => "</div>",
-                    'title_o' => "<h3 class='nlposts-ulist-title'>",
+                    'title_o' => "<h3 class='post-title'><!--title_o-->",
                     'title_c' => "</h3>",
-                    'excerpt_o' => "<ul class='nlposts-ulist-excerpt'><li>",
-                    'excerpt_c' => "</li></ul>",
-                    'caption_o' => "<div class='nlposts-caption'>",
-                    'caption_c' => "</div>"
+                    'excerpt_o' => "<div class='post-excerpt'><!--excerpt_o--><p>",
+                    'excerpt_c' => "</p></div>",
+                    'caption_o' => "<section class='post-body'><!--caption_o-->",
+                    'caption_c' => "</section>"
                 );
                 $html_tags = apply_filters( 'nlposts_ulist_output', $html_tags );
                 break;
@@ -1227,59 +1238,58 @@ function nlp_display_type($display_type, $instance, $wrapper_list_css, $wrapper_
                 );
                 $html_tags = apply_filters( 'nlposts_olist_output', $html_tags );
                 break;
-            // Block
+            // Changed to make more semantic - PEA //
             case "block":
                 $html_tags = array(
-                    'wrapper_o' => "<div class='nlposts-wrapper nlposts-block $wrapper_block_css'>",
-                    'wrapper_c' => "</div>",
-                    'wtitle_o' => "<h2 class='nlposts-block-wtitle'>",
+                    'wtitle_o' => "<!--wtitle_o-->",
+                    'wrapper_c' => "",
+                    'wtitle_o' => "<h2 class='page-title'><!--wtitle_o-->", //Page Title
                     'wtitle_c' => "</h2>",
-                    'item_o' => "<div class='nlposts-block-item'>",
-                    'item_c' => "</div>",
-                    'content_o' => "<div class='nlposts-container nlposts-block-container $nlp_instance'>",
-                    'content_c' => "</div>",
-                    'meta_o' => "<span class='nlposts-block-meta'>",
-                    'meta_c' => "</span>",
-                    'thumbnail_o' => "<ul class='nlposts-block-thumbnail thumbnails'>",
-                    'thumbnail_c' => "</ul>",
-                    'thumbnail_io' => "<li class='nlposts-block-thumbnail-litem span3'>",
-                    'thumbnail_ic' => "</li>",
-                    'pagination_o' => "<div class='nlposts-block-pagination pagination'>",
+                    'item_o' => "<article class='post'><!--item_o-->", //Post Wrapper
+                    'item_c' => "</article>",
+                    'content_o' => "<!--content_o-->", //Body - Title, Image, Excerpt
+                    'content_c' => "",
+                    'meta_o' => "<header class='post-header'><div class='meta'><!--meta_o-->",
+                    'meta_c' => "</div></header>",
+                    'thumbnail_o' => "<!--thumbnail_o-->",
+                    'thumbnail_c' => "",
+                    'thumbnail_io' => "<div class='post-image'><!--thumbnail_io-->",
+                    'thumbnail_ic' => "</div>",
+                    'pagination_o' => "<div class='nlposts-block-pagination pagination'><!--pagination_o-->",
                     'pagination_c' => "</div>",
-                    'title_o' => "<h3 class='nlposts-block-title'>",
+                    'title_o' => "<h3 class='post-title'><!--title_o-->",
                     'title_c' => "</h3>",
-                    'excerpt_o' => "<div class='nlposts-block-excerpt'><p>",
+                    'excerpt_o' => "<div class='post-excerpt'><!--excerpt_o--><p>",
                     'excerpt_c' => "</p></div>",
-                    'caption_o' => "<div class='nlposts-caption'>",
-                    'caption_c' => "</div>"
+                    'caption_o' => "<section class='post-body'><!--caption_o-->",
+                    'caption_c' => "</section>"
                 );
                 $html_tags = apply_filters( 'nlposts_block_output', $html_tags );
                 break;
             default:
-                // Unordered list
                 $html_tags = array(
-                    'wrapper_o' => "<ul class='nlposts-wrapper nlposts-ulist $wrapper_list_css'>",
-                    'wrapper_c' => "</ul>",
-                    'wtitle_o' => "<h2 class='nlposts-ulist-wtitle'>",
+                    'wtitle_o' => "<!--wtitle_o-->",
+                    'wrapper_c' => "",
+                    'wtitle_o' => "<h2 class='module-heading'><!--wtitle_o-->", //Page Title
                     'wtitle_c' => "</h2>",
-                    'item_o' => "<li class='nlposts-ulist-litem'>",
+                    'item_o' => "<li class='list-item'><!--item_o-->", //Post Wrapper
                     'item_c' => "</li>",
-                    'content_o' => "<div class='nlposts-container nlposts-ulist-container $nlp_instance'>",
-                    'content_c' => "</div>",
-                    'meta_o' => "<span class='nlposts-ulist-meta'>",
-                    'meta_c' => "</span>",
-                    'thumbnail_o' => "<ul class='nlposts-ulist-thumbnail thumbnails'>",
-                    'thumbnail_c' => "</ul>",
-                    'thumbnail_io' => "<li class='nlposts-ulist-thumbnail-litem span3'>",
-                    'thumbnail_ic' => "</li>",
-                    'pagination_o' => "<div class='nlposts-ulist-pagination pagination'>",
+                    'content_o' => "<ul class='$wrapper_list_css'><!--content_o-->", //Body - Title, Image, Excerpt
+                    'content_c' => "</ul>",
+                    'meta_o' => "<header class='post-header'><div class='meta'><!--meta_o-->",
+                    'meta_c' => "</div></header>",
+                    'thumbnail_o' => "<!--thumbnail_o-->",
+                    'thumbnail_c' => "",
+                    'thumbnail_io' => "<div class='post-image'><!--thumbnail_io-->",
+                    'thumbnail_ic' => "</div>",
+                    'pagination_o' => "<div class='nlposts-block-pagination pagination'><!--pagination_o-->",
                     'pagination_c' => "</div>",
-                    'title_o' => "<h3 class='nlposts-ulist-title'>",
+                    'title_o' => "<h3 class='post-title'><!--title_o-->",
                     'title_c' => "</h3>",
-                    'excerpt_o' => "<ul class='nlposts-ulist-excerpt'><li>",
-                    'excerpt_c' => "</li></ul>",
-                    'caption_o' => "<div class='nlposts-caption'>",
-                    'caption_c' => "</div>"
+                    'excerpt_o' => "<div class='post-excerpt'><!--excerpt_o--><p>",
+                    'excerpt_c' => "</p></div>",
+                    'caption_o' => "<section class='post-body'><!--caption_o-->",
+                    'caption_c' => "</section>"
                 );
                 $html_tags = apply_filters( 'nlposts_default_output', $html_tags );
                 break;
@@ -1395,8 +1405,9 @@ function nlp_shortcode_plugin($plugin_array) {
 }
 // Hook the shortcode button into TinyMCE
 add_action('init', 'nlp_shortcode_button');
+// Don't use the plugin styles (ever) - PEA 9/30/2014
 // Load styles
-add_action('wp_head','nlp_load_styles',10,1);
+//add_action('wp_head','nlp_load_styles',10,1);
 // Run this stuff
 add_action("admin_enqueue_scripts","network_latest_posts_init");
 // Languages
