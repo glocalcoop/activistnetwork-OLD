@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Sites
+Template Name: Sites Directory
 */
 ?>
 
@@ -23,7 +23,7 @@ Template Name: Sites
 				</header>
 
 
-				<section class="directory-content" itemprop="articleBody" rel="main">
+				<!-- <section class="directory-content" itemprop="articleBody" rel="main">
 
 				  <h4 class="subtitle">Networks</h4>
 
@@ -61,12 +61,12 @@ Template Name: Sites
 
 					</ul>
 					
-				</section>
+				</section> -->
 
 
 				<section class="directory-content" itemprop="articleBody" rel="main">
 
-				    <h4 class="subtitle">Sites</h4>
+				    <!-- <h4 class="subtitle">Sites</h4> -->
 
 					<ul class="filter js-menu">
 						<li data-filter="*" class="is-on">All Networks</li>
