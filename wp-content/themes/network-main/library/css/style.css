@@ -819,11 +819,6 @@ main.main-news,
     .nav-global .menu a:hover {
       background: #333231;
       color: #fff; }
-    /* line 92, ../sass/modules/_header.scss */
-    .nav-global .menu li.current-menu-item,
-    .nav-global .menu li.current_page_item,
-    .nav-global .menu li.current-page-ancestor {
-      display: none; }
 
 @media (min-width: 769px) {
   /* line 104, ../sass/modules/_header.scss */
