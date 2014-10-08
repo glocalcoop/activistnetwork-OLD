@@ -5,8 +5,13 @@
 		<?php  // Get the site info for the main site
 		if(function_exists('get_blog_details')) {
 			$global_site_details = get_blog_details(1);
+		} else {
+			get_template_part( 'partials/error', 'multisite' );
 		}
-		$global_site_header = glocal_get_site_image(1);
+		if(function_exists('glocal_get_site_image')) {
+			$global_site_header = glocal_get_site_image(1);
+		}
+		
 		?>
 
 		<a class="domain-logo global-logo logo-NYCP" href="<?php echo $global_site_details->siteurl; ?>"><img src="<?php echo $global_site_header; ?>" alt="<?php echo $global_site_details->blogname; ?>" /></a>
