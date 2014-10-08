@@ -32,7 +32,7 @@
 			if(function_exists('glocal_home_category')) {
 				$postcategory = glocal_home_category(); // Get the category from theme customization 
 				$categoryid = get_option("glocal_options");
-			}
+			} 
 
 			if(function_exists('glocal_home_header')) {
 				$heading = glocal_home_header(); // Get the header text from theme customization 
@@ -67,6 +67,8 @@
 				);
 				// Execute
 				$hightlights_posts = network_latest_posts($parameters);
+			} else {
+				echo 'Please activate the Network Posts plugin to display this content';
 			}
 			?>
 
@@ -117,6 +119,8 @@
 				);
 				// Execute
 				$recent_posts = network_latest_posts($parameters);
+			} else {
+				echo 'Please activate the Network Posts plugin to display this content';
 			}
 			?>
 			</article>

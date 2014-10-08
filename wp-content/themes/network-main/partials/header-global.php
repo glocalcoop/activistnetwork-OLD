@@ -3,7 +3,9 @@
 	<div class="wrap">
 		
 		<?php  // Get the site info for the main site
-		$global_site_details = get_blog_details(1);
+		if(function_exists('get_blog_details')) {
+			$global_site_details = get_blog_details(1);
+		}
 		$global_site_header = glocal_get_site_image(1);
 		?>
 
