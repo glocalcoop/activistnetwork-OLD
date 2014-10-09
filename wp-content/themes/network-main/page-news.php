@@ -50,6 +50,8 @@
 			);
 			// Execute
 			$posts = network_latest_posts($parameters);
+		} else {
+			get_template_part( 'partials/error', 'plugin' );
 		}
 		?>
 
