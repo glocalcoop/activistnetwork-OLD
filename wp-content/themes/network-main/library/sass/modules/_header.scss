@@ -146,7 +146,8 @@
                     margin-left: -10px;
                 }
                 a {
-                    color: $anchor-color;
+                    color: $text-color;
+                    font-weight: bold;
                 }
         	}
         }
