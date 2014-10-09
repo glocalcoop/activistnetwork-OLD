@@ -1910,7 +1910,7 @@ POSTS & CONTENT STYLES
 /* line 44, ../sass/modules/_lists.scss */
 .highlights .module-heading {
   color: #fff;
-  background: #d1cfcb url("http://dev.sites.nycprepared.org/wp-content/uploads/2014/01/CarolinaKroon7.png") no-repeat center center;
+  background: #d1cfcb url("../images/home-highlight02.jpg") no-repeat center center;
   background-size: cover;
   padding: 22px;
   margin-bottom: 0;
