@@ -869,9 +869,42 @@ function network_latest_posts( $parameters ) {
             foreach( $all_posts as $field ) {
                 // Open item box
                 $item_o = $html_tags['item_o'];
-                $item_o = str_replace("'>"," nlposts-siteid-".$all_blogkeys[$field->guid]."'>", $item_o);
+                $item_o = str_replace("'>"," siteid-".$all_blogkeys[$field->guid]."'>", $item_o);
                 echo $item_o;
-                // Thumbnails
+
+                // Meta
+                if( $full_meta === 'true' ) {
+                    // Open meta box
+                    echo $html_tags['meta_o'];
+                    // Set metainfo
+                    $author = get_user_by('id',$field->post_author);
+                    $format = (string)${'date_format_'.$all_blogkeys[$field->guid]};
+                    $datepost = date_i18n($format, strtotime(trim( $field->post_date) ) );
+                    $blog_name = '<a href="'.${'blog_url_'.$all_blogkeys[$field->guid]}.'">'.${'blog_name_'.$all_blogkeys[$field->guid]}."</a>";
+                    // The network's root (main blog) is called 'blog',
+                    // so we have to set this up because the url ignores the root's subdirectory
+                    if( $all_blogkeys[$field->guid] == 1 ) {
+                        // Author's page for the main blog
+                        $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/blog/author/'.$author->user_login;
+                    } else {
+                        // Author's page for other blogs
+                        $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/author/'.$author->user_login;
+                    }
+                    // Print metainfo
+                    // Changed to display more semantice mark-up - PEA 9/30/2014
+                    // echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                    $author_link = '<a href="' . $author_url . '">' . $author->display_name . '</a>';
+                    echo '<h6 class="blog-name">' . $blog_name . '</h6>';
+                    echo '<h6 class="post-date date">' . $datepost . '</h6>';
+                    echo '<h6 class="post-author">' . $author_link . '</h6>';
+                    // Close meta box
+                    echo $html_tags['meta_c'];
+                }
+
+                // Wrap Caption
+                echo $html_tags['caption_o'];
+
+                // Thumbnail
                 if( $thumbnail === 'true' ) {
                     // Open thumbnail container
                     echo $html_tags['thumbnail_o'];
@@ -930,41 +963,17 @@ function network_latest_posts( $parameters ) {
                     }
                     // Back the current blog
                     restore_current_blog();
-                    // Wrap Caption
-                    echo $html_tags['caption_o'];
+
+                    // Close thumbnail item placeholder
+                    echo $html_tags['thumbnail_ic'];
+                    // Close thumbnail container
+                    echo $html_tags['thumbnail_c'];
                     // Open title box
                     echo $html_tags['title_o'];
                     // Print the title
                     echo "<a href='".$all_permalinks[$field->guid]."'>".$field->post_title."</a>";
                     // Close the title box
                     echo $html_tags['title_c'];
-                    if( $full_meta === 'true' ) {
-                        // Open meta box
-                        echo $html_tags['meta_o'];
-                        // Set metainfo
-                        $author = get_user_by('id',$field->post_author);
-                        $format = (string)${'date_format_'.$all_blogkeys[$field->guid]};
-                        $datepost = date_i18n($format, strtotime(trim( $field->post_date) ) );
-                        $blog_name = '<a href="'.${'blog_url_'.$all_blogkeys[$field->guid]}.'">'.${'blog_name_'.$all_blogkeys[$field->guid]}."</a>";
-                        // The network's root (main blog) is called 'blog',
-                        // so we have to set this up because the url ignores the root's subdirectory
-                        if( $all_blogkeys[$field->guid] == 1 ) {
-                            // Author's page for the main blog
-                            $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/blog/author/'.$author->user_login;
-                        } else {
-                            // Author's page for other blogs
-                            $author_url = ${'blog_url_'.$all_blogkeys[$field->guid]}.'/author/'.$author->user_login;
-                        }
-                        // Print metainfo
-                        // Changed to display more semantice mark-up - PEA 9/30/2014
-                        // echo $blog_name . ' - ' . __('Published on','trans-nlp') . ' ' . $datepost . ' ' . __('by','trans-nlp') . ' ' . '<a href="' . $author_url . '">' . $author->display_name . '</a>';
-                        $author_link = '<a href="' . $author_url . '">' . $author->display_name . '</a>';
-                        echo '<h6 class="blog-name">' . $blog_name . '</h6>';
-                        echo '<h6 class="post-date date">' . $datepost . '</h6>';
-                        echo '<h6 class="post-author">' . $author_link . '</h6>';
-                        // Close meta box
-                        echo $html_tags['meta_c'];
-                    }
                     // Print the content
                     if( $title_only === 'false' ) {
                         // Open excerpt wrapper
@@ -989,10 +998,6 @@ function network_latest_posts( $parameters ) {
                     }
                     // Close caption
                     echo $html_tags['caption_c'];
-                    // Close thumbnail item placeholder
-                    echo $html_tags['thumbnail_ic'];
-                    // Close thumbnail container
-                    echo $html_tags['thumbnail_c'];
                 } else {
                     // Wrap Caption
                     echo $html_tags['caption_o'];
