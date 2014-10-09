@@ -24,15 +24,6 @@ Template Name: Sites Directory
 
 				<section class="directory-content" itemprop="articleBody" rel="main">
 
-					<!-- <ul class="filter js-menu">
-						<li data-filter="*" class="is-on">All Networks</li>
-						<?php
-						$networks = get_posts('post_type=network');
-						foreach ($networks as $network) {											
-						?>
-	                        <li data-filter=".network-<?php echo $network->post_name; ?>"><?php echo $network->post_title; ?></li>
-						<?php } ?>
-					</ul> -->
 
 					<ul class="sort js-menu">
 						<li data-sort="id" class="is-on">Most Recently Added</li>
