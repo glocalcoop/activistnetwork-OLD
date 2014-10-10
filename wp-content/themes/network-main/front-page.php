@@ -175,7 +175,7 @@
 
 					<li class="directory-promo" id="promo-directory">
 						<a href="/directory" title="Directory">
-    						<h3 class="post-title">Join the glocal</h3>
+    						<h3 class="post-title">Join the Network</h3>
     						<div class="promo-icons"><i class="icon"></i><i class="icon"></i><i class="icon"></i><i class="icon"></i></div>
 						</a>
 					</li>

@@ -89,7 +89,7 @@ Template Name: Sites Directory
 
         					<li class="isomote directory-promo" id="promo-builder">
         						<a href="/sites/get-a-website" title="Get a website">
-            						<h3 class="post-title">Get a free website</h3>
+            						<h3 class="post-title">Get a Network Site</h3>
             						<div class="promo-icons"><i class="icon"></i></div>
         						</a>
         					</li>
