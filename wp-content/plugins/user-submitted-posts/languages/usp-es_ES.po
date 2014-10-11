@@ -1,0 +1,691 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: User Submitted Posts\n"
+"POT-Creation-Date: 2014-01-23 23:35-0000\n"
+"PO-Revision-Date: 2014-01-24 23:17-0000\n"
+"Last-Translator: Maria Iglesias <miglesias@globalcultura.com>\n"
+"Language-Team: Monzilla Media <http://perishablepress.com/contact/>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../user-submitted-posts.php:27 ../user-submitted-posts.php:59
+msgid "User Submitted Posts"
+msgstr ""
+
+#: ../user-submitted-posts.php:49
+msgid "requires WordPress 3.3 or higher, and has been deactivated!"
+msgstr "requiere WordPress 3.3 o superior. Ha sido desactivado"
+
+#: ../user-submitted-posts.php:50
+msgid "Please return to the "
+msgstr "Por favor regrese a "
+
+#: ../user-submitted-posts.php:50
+msgid "WordPress Admin area"
+msgstr "&Aacute;rea de Administraci&oacute;n de Wordpress"
+
+#: ../user-submitted-posts.php:50
+msgid "to upgrade WordPress and try again."
+msgstr "para actualizar Wordpress y vuelva a intentarlo"
+
+#: ../user-submitted-posts.php:59
+msgid "Submitted"
+msgstr "Enviado"
+
+#: ../user-submitted-posts.php:118
+msgid "An error occurred. Please go back and try again."
+msgstr ""
+"Ha ocurrido un error. Vuelve atr&aacute;s e int&eacute;ntalo de nuevo, por "
+"favor"
+
+#: ../user-submitted-posts.php:255
+msgid "USP"
+msgstr ""
+
+#: ../user-submitted-posts.php:432
+msgid "Settings"
+msgstr "Configuraci&oacute;n"
+
+#: ../user-submitted-posts.php:469
+msgid ""
+"There was an error. Please ensure that you have added a title, some content, "
+"and that you have uploaded only images."
+msgstr ""
+"Se ha producido un error. Por favor, aseg&uacute;rate de que has incluido "
+"el  t&iacute;tulo, has a&ntilde;adido alg&uacute;n contenido y, si has "
+"adjuntado un archivo, aeg&uacute;rate de que es una imagen"
+
+#: ../user-submitted-posts.php:511
+msgid ""
+"Classic form + styles (<small><em><strong>Note:</strong> the &ldquo;"
+"classic&rdquo; form is deprecated and will be removed in a future version.</"
+"em></small>)"
+msgstr ""
+
+#: ../user-submitted-posts.php:515
+msgid "HTML5 form + styles"
+msgstr ""
+
+#: ../user-submitted-posts.php:519
+msgid "Disable stylesheet"
+msgstr "Desactivar estilo"
+
+#: ../user-submitted-posts.php:674
+msgid "Toggle all panels"
+msgstr "Alternar los paneles"
+
+#: ../user-submitted-posts.php:682
+msgid "Overview"
+msgstr "Generalidades"
+
+#: ../user-submitted-posts.php:686
+msgid "(USP) enables your visitors to submit posts from anywhere on your site."
+msgstr ""
+"permite a sus visitantes enviar entradas desde cualquier lugar en su sitio"
+
+#: ../user-submitted-posts.php:687
+msgid ""
+"To implement, customize your options and then include the USP form via "
+"shortcode or template tag."
+msgstr ""
+"Para implementarlo, configure sus opciones y, a continuaci&oacute;n, incluya "
+"el formulario de USP mediante un \"shortcode\" o una etiqueta de plantilla."
+
+#: ../user-submitted-posts.php:688
+msgid ""
+"Use the shortcode to display the upload form on a post or page, or use the "
+"template tag to display the upload form anywhere in your theme template."
+msgstr ""
+"Use el \"shortcode\" para incluir el formulario de USP en una entrada o una "
+"p&aacute;gina. Use la etiqueta de plantilla para incluir el formulario de "
+"USP en cualquier lugar de su plantilla"
+
+#: ../user-submitted-posts.php:691
+msgid "To configure your settings, visit the"
+msgstr "Para configurar sus opciones, visite"
+
+#: ../user-submitted-posts.php:691
+msgid "Options panel"
+msgstr "Panel de opciones"
+
+#: ../user-submitted-posts.php:692
+msgid "For the shortcode and template tag, visit"
+msgstr "Para \"shortcode\" o etiqueta de plantilla"
+
+#: ../user-submitted-posts.php:692 ../user-submitted-posts.php:991
+msgid "Shortcode &amp; Template Tag"
+msgstr "Shortcode &amp; Etiqueta de plantilla"
+
+#: ../user-submitted-posts.php:693
+msgid "For more information check the"
+msgstr "Para m&aacute;s informaci&oacute;n vea "
+
+#: ../user-submitted-posts.php:694
+msgid "and"
+msgstr "y"
+
+#: ../user-submitted-posts.php:694
+msgid "USP Homepage"
+msgstr "el sitio web de USP "
+
+#: ../user-submitted-posts.php:695
+msgid "If you like this plugin, please"
+msgstr "Si le gusta este plugin, por favor "
+
+#: ../user-submitted-posts.php:696
+msgid "Click here to rate and review this plugin on WordPress.org"
+msgstr ""
+"Haga clic aqu&iacute; para valorar y puntuar este plugin en WordPress.org"
+
+#: ../user-submitted-posts.php:697
+msgid "rate it at the Plugin Directory"
+msgstr "punt&uacute;elo en el Directorio de plugins"
+
+#: ../user-submitted-posts.php:705
+msgid "Options"
+msgstr "Opciones"
+
+#: ../user-submitted-posts.php:707
+msgid ""
+"Here you may configure options for USP. See the <code>readme.txt</code> for "
+"more information."
+msgstr ""
+"Aqu&iacute; puede configurar las opciones para USP. Vea <code>readme.txt</"
+"code> para obtener m&aacute;s informaci&oacute;n."
+
+#: ../user-submitted-posts.php:708
+msgid "Show/hide the following form fields"
+msgstr "Mostrar/ocultar los siguientes campos del formulario"
+
+#: ../user-submitted-posts.php:712 ../user-submitted-posts.php:718
+#: ../user-submitted-posts.php:724 ../user-submitted-posts.php:730
+#: ../user-submitted-posts.php:736 ../user-submitted-posts.php:742
+#: ../user-submitted-posts.php:748 ../user-submitted-posts.php:754
+msgid "Show"
+msgstr "Mostrar"
+
+#: ../user-submitted-posts.php:713 ../user-submitted-posts.php:719
+#: ../user-submitted-posts.php:725 ../user-submitted-posts.php:731
+#: ../user-submitted-posts.php:737 ../user-submitted-posts.php:743
+#: ../user-submitted-posts.php:749 ../user-submitted-posts.php:755
+msgid "Hide"
+msgstr "Ocultar"
+
+#: ../user-submitted-posts.php:714
+msgid "User Name"
+msgstr "Nombre de usuario"
+
+#: ../user-submitted-posts.php:720
+msgid "Post URL"
+msgstr "URL"
+
+#: ../user-submitted-posts.php:726 ../views/submission-form-classic.php:44
+#: ../views/submission-form.php:44 ../views/submission-form.php:45
+msgid "Post Title"
+msgstr "T&iacute;tulo de la entrada"
+
+#: ../user-submitted-posts.php:732 ../views/submission-form-classic.php:51
+#: ../views/submission-form.php:49 ../views/submission-form.php:50
+msgid "Post Tags"
+msgstr "Etiquetas"
+
+#: ../user-submitted-posts.php:738 ../views/submission-form-classic.php:58
+#: ../views/submission-form.php:59
+msgid "Post Category"
+msgstr "Categor&iacute;a"
+
+#: ../user-submitted-posts.php:744 ../views/submission-form-classic.php:96
+#: ../views/submission-form.php:87 ../views/submission-form.php:88
+msgid "Post Content"
+msgstr "Contenido"
+
+#: ../user-submitted-posts.php:750
+msgid "Post Images"
+msgstr "Im&aacute;genes"
+
+#: ../user-submitted-posts.php:756
+msgid "Challenge question (Captcha)"
+msgstr "Captcha"
+
+#: ../user-submitted-posts.php:759
+msgid "Choose some general form options"
+msgstr "Elija algunas opciones generales del formulario"
+
+#: ../user-submitted-posts.php:763
+msgid "Form style"
+msgstr "Estilo"
+
+#: ../user-submitted-posts.php:781
+msgid ""
+"HTML5 is recommended. If upgrading and the new form looks weird, choose the "
+"Classic version."
+msgstr ""
+"Se recomienda HTML5. Si la actualizaci&oacute;n no se ve correctamente, "
+"seleccione la versi&oacute;n Cl&aacute;sica"
+
+#: ../user-submitted-posts.php:782
+msgid ""
+"To disable the plugin&rsquo;s stylesheet, choose Disable. Note: complete "
+"list of CSS hooks for the submission form at"
+msgstr ""
+"Para deshabilitar la hoja de estilo del plugin, seleccione Deshabilitar. La "
+"lista completa de las etiquetas de CSS para el formulario en"
+
+#: ../user-submitted-posts.php:783
+msgid "CSS Hooks for User Submitted Posts"
+msgstr "Etiquetas CSS para User Submitted Posts"
+
+#: ../user-submitted-posts.php:788
+msgid "Include JavaScript?"
+msgstr "&iquest;Incluir Javascript?"
+
+#: ../user-submitted-posts.php:790
+msgid ""
+"Check this box if you want to include the external JavaScript file. Note: if "
+"you&rsquo;re not allowing image uploads, leave this option unchecked."
+msgstr ""
+"Marque esta casilla si desea incluir el archivo externo de JavaScript. Nota: "
+"si no est&aacute; permitiendo la subida de im&aacute;genes, deje esta "
+"casilla sin marcar."
+
+#: ../user-submitted-posts.php:793
+msgid "Targeted Loading"
+msgstr ""
+
+#: ../user-submitted-posts.php:795
+msgid ""
+"When enabled, external CSS &amp; JavaScript files are loaded on every page. "
+"Here you may specify the URL of the USP form to load resources only on that "
+"page. Note: leave blank to load on all pages."
+msgstr ""
+"Cuando est&aacute; habilitado, los archivos CSS y Javascript externos se "
+"cargan en cada p&aacute;gina. Puede especificar la URL del formulario de USP "
+"para cargar los recursos s&oacute;lo en esa p&aacute;gina. Nota: dejar en "
+"blanco para cargar en todas las p&aacute;ginas."
+
+#: ../user-submitted-posts.php:798
+msgid "Categories"
+msgstr "Categor&iacute;as"
+
+#: ../user-submitted-posts.php:811
+msgid "Select which categories may be assigned to submitted posts."
+msgstr ""
+"Seleccione las categor&iacute;s que pueden ser asignadas a las entradas "
+"enviadas"
+
+#: ../user-submitted-posts.php:815
+msgid "Assigned Author"
+msgstr "Autor asignado"
+
+#: ../user-submitted-posts.php:825
+msgid ""
+"Specify the user that should be assigned as author for user-submitted posts."
+msgstr ""
+"Especifique el usuario que debe ser asignado como autor de los mensajes "
+"enviados por los usuarios."
+
+#: ../user-submitted-posts.php:829
+msgid "Auto Publish?"
+msgstr "&iquest;Autopublicar?"
+
+#: ../user-submitted-posts.php:832
+msgid "Always moderate"
+msgstr "Moderar siempre"
+
+#: ../user-submitted-posts.php:833
+msgid "Always publish immediately"
+msgstr "Publicar siempre inmediatamente"
+
+#: ../user-submitted-posts.php:838
+msgid ""
+"For submitted posts, you can always moderate (recommended), publish "
+"immediately, or publish after any number of approved posts."
+msgstr ""
+"Las entradas enviadas, pueden guardarse siempre para moderaci&oacute;n "
+"(recomendado), publicarse inmediatamente, o publicarse autom&aacute;"
+"ticamente despu&eacute;s de un n&uacute;mero determinado de env&iacute;os."
+
+#: ../user-submitted-posts.php:842
+msgid "Receive Email Alert"
+msgstr "Recibir alerta por correo electr&oacute;nico"
+
+#: ../user-submitted-posts.php:844
+msgid ""
+"Check this box if you want to be notified via email for new post submissions."
+msgstr ""
+"Marque esta casilla si desea recibir una notificaci&oacute;n por correo "
+"electr&oacute;nico de nuevos env&iacute;os de entradas."
+
+#: ../user-submitted-posts.php:847
+msgid "Enable Rich Text Editor"
+msgstr "Habilitar editor de texto enriquecido"
+
+#: ../user-submitted-posts.php:849
+msgid ""
+"Check this box if you want to enable WP rich text editing for submitted "
+"posts."
+msgstr ""
+"Marque esta casilla si desea habilitar la edici&oacute;n de texto "
+"enriquecido para las entradas."
+
+#: ../user-submitted-posts.php:852
+msgid "Set Uploaded Image as Featured Image"
+msgstr "Establecer la imagen enviada como Imagen destacada de la entrada"
+
+#: ../user-submitted-posts.php:854
+msgid ""
+"Check this box if you want to set submitted images as Featured Images (aka "
+"Post Thumbnails) for posts. \n"
+"\t\t\t\t\t\t\t\t\t\t\tNote: your theme&rsquo;s single.php file must include"
+msgstr ""
+"Marque esta casilla si desea establecer las im&aacute;genes enviadas como "
+"im&aacute;genes destacadas (Miniaturas) para las entradas. Aviso: el archivo "
+"single.php de su tema debe incluir"
+
+#: ../user-submitted-posts.php:855
+msgid "to display Featured Images."
+msgstr "para mostrar Miniaturas"
+
+#: ../user-submitted-posts.php:858
+msgid "Email Address for Alerts"
+msgstr "Direcci&oacute;n de correo electr&oacute;nico para las alertas"
+
+#: ../user-submitted-posts.php:860
+msgid ""
+"If you checked the box to receive email alerts, indicate here the address"
+"(es) to which the emails should be sent."
+msgstr ""
+"Si marc&oacute; la casilla para recibir alertas de correo electr&oacute;"
+"nico, indique aqu&iacute; la/s direcci&oacute;n/es a la que los mensajes de "
+"correo electr&oacute;nico se deben enviar."
+
+#: ../user-submitted-posts.php:861
+msgid "Tip: multiple addresses may be included using a comma, like so:"
+msgstr ""
+"Consejo: pueden incluirse varias direcciones, separ&aacute;ndolas mediante "
+"comas, por ejemplo: "
+
+#: ../user-submitted-posts.php:864
+msgid "Redirect URL"
+msgstr "URL para redirecci&oacute;n"
+
+#: ../user-submitted-posts.php:866
+msgid ""
+"Specify a URL to redirect the user after post-submission. Note: leave blank "
+"to redirect back to current page."
+msgstr ""
+"Especifique una URL para redireccionar al usuario despu&eacute;s del "
+"env&iacute;o de la entrada. Nota: dejar en blanco para redirigir a la misma "
+"p&aacute;gina."
+
+#: ../user-submitted-posts.php:869
+msgid "Success Message"
+msgstr "Mensaje de env&iacute;o correcto"
+
+#: ../user-submitted-posts.php:871
+msgid ""
+"This is the success message that is displayed if post-submission is "
+"successful."
+msgstr ""
+"Este es el mensaje que se muestra si la entrada se ha enviado con &eacute;"
+"xito"
+
+#: ../user-submitted-posts.php:874
+msgid "Error Message"
+msgstr "Mensaje de error"
+
+#: ../user-submitted-posts.php:876
+msgid "This is the error message that is displayed if post-submission fails."
+msgstr ""
+"Este es el mensaje que se muestra si se ha producido alg&uacute;n error al "
+"tratar de enviar la entrada"
+
+#: ../user-submitted-posts.php:879
+msgid "Custom Content"
+msgstr "Contenido personalizado"
+
+#: ../user-submitted-posts.php:881
+msgid ""
+"Here you may specify custom text/markup to be included before the submission "
+"form. Note: leave blank to disable."
+msgstr ""
+"Aqu&iacute; usted puede especificar un texto (puede usar HTML)  para ser "
+"incluido en la cabecera del formulario. Nota: dejar en blanco para "
+"desactivar."
+
+#: ../user-submitted-posts.php:885
+msgid "Use registered user info"
+msgstr "Utilizar informaci&oacute;n de usuario registrado"
+
+#: ../user-submitted-posts.php:889
+msgid "Use registered username for author?"
+msgstr "&iquestUtilizar el nombre de Usuario registrado del autor?"
+
+#: ../user-submitted-posts.php:891
+msgid ""
+"Check this box if you want to automatically use the registered username as "
+"the submitted-post author. Note: this really should only be used when "
+"requiring log-in for submissions."
+msgstr ""
+"Marque esta casilla si desea utilizar autom&aacute;ticamente el nombre de "
+"usuario registrado como nombre de autor para la entrada. Nota: esto s&oacute;"
+"lo se debe utilizar cuando se requiere inicio de sesi&oacute;n para los "
+"env&iacute;os"
+
+#: ../user-submitted-posts.php:894
+msgid "Use registered URL for submitted URL?"
+msgstr "&iquestUtilizar la URL registrada?"
+
+#: ../user-submitted-posts.php:896
+msgid ""
+"Check this box if you want to automatically use the registered user&rsquo;s "
+"specified URL as the submitted-post URL. Note: this really should only be "
+"used when requiring log-in for submissions."
+msgstr ""
+"Marque esta casilla si desea utilizar autom&aacute;ticamente la URL "
+"especificada por el usuario registrado. Nota: esto realmente soacute;lo se "
+"debe utilizar cuando se requiere inicio de sesi&oacute;n para los env&iacute;"
+"os"
+
+#: ../user-submitted-posts.php:899
+msgid "Use a hidden field for submitted category?"
+msgstr "&iquestUtilizar un campo oculto para la categor&iacute;a?"
+
+#: ../user-submitted-posts.php:901
+msgid ""
+"Check this box if you want to use a hidden category field for the submitted "
+"category. Note: this may be used to specify a default category for submitted "
+"posts when the category field is hidden."
+msgstr ""
+"Marque esta casilla si desea utilizar un campo de categor&iacute;a oculto. "
+"Nota: esto puede ser usado para especificar una categor&iacute;a "
+"predeterminada para las entradas cuando el campo de categor&iacute;a "
+"estaacute; oculto."
+
+#: ../user-submitted-posts.php:904
+msgid "Category ID for hidden field"
+msgstr "ID de la categor&iacute;a para el campo oculto"
+
+#: ../user-submitted-posts.php:906
+msgid ""
+"Specify a cateogry (ID) to use as the default category when using the &ldquo;"
+"hidden field&rdquo; option."
+msgstr ""
+"Especifique una categor&iacute;a (ID) para usar como predeterminada cuando "
+"se utiliza la opci&oacute;n \"campo oculto\"."
+
+#: ../user-submitted-posts.php:910
+msgid "Challenge question (captcha)"
+msgstr "Prueba CAPTCHA"
+
+#: ../user-submitted-posts.php:914
+msgid "Challenge Question"
+msgstr "Pregunta"
+
+#: ../user-submitted-posts.php:916
+msgid ""
+"To prevent spam, enter a question that users must answer before submitting "
+"the form."
+msgstr ""
+"Para prevenir el spam, introduzca una pregunta que el autor de la entrada "
+"debe responder antes de enviarla"
+
+#: ../user-submitted-posts.php:919
+msgid "Challenge Response"
+msgstr "Respuesta"
+
+#: ../user-submitted-posts.php:921
+msgid "Enter the <em>only</em> correct answer to the challenge question."
+msgstr ""
+"Introduzca <em>exclusivamente</em> la respuesta correcta a la pregunta de la "
+"prueba CAPTCHA"
+
+#: ../user-submitted-posts.php:924
+msgid "Case-sensitivity"
+msgstr "Distinguir may&uacute;sculas y min&uacute;sculas "
+
+#: ../user-submitted-posts.php:926
+msgid "Check this box if you want the challenge response to be case-sensitive."
+msgstr ""
+"Marque esta casilla si desea que la respuesta a la prueba CAPTCHA distinga "
+"entre may&uacute;sculas y min&uacute;sculas "
+
+#: ../user-submitted-posts.php:930
+msgid "Options for image uploads"
+msgstr "Opciones para adjuntar im&aacute;genes"
+
+#: ../user-submitted-posts.php:934
+msgid "Upload Message"
+msgstr "Mensaje para adjuntar imagen"
+
+#: ../user-submitted-posts.php:936
+msgid ""
+"This is the message that appears next to upload field. Useful to state your "
+"upload guidelines/rules/etc."
+msgstr ""
+"Este es el mensaje que aparece junto al campo de \"Adjuntar imagen\". "
+"&Uacute;til para indicar las directrices, limitaciones etc."
+
+#: ../user-submitted-posts.php:939
+msgid "Minimum number of images"
+msgstr "N&uacute;mero m&iacute;nimo de im&aacute;genes"
+
+#: ../user-submitted-posts.php:948
+msgid "Specify the <em>minimum</em> number of images."
+msgstr ""
+"Especificar el n&uacute;mero <em>m&iacute;nimo </em> de im&aacute;genes"
+
+#: ../user-submitted-posts.php:952
+msgid "Maximum number of images"
+msgstr "N&uacute;mero m&aacute;ximo de im&aacute;genes"
+
+#: ../user-submitted-posts.php:955
+msgid "No Limit"
+msgstr "Ilimitado"
+
+#: ../user-submitted-posts.php:962
+msgid "Specify the <em>maximum</em> number of images."
+msgstr ""
+"Especificar el n&uacute;mero <em> m&aacute;ximo </em> de im&aacute;genes"
+
+#: ../user-submitted-posts.php:966
+msgid "Minimum image width"
+msgstr "Ancho m&iacute;nimo de la imagen"
+
+#: ../user-submitted-posts.php:968
+msgid "Specify a <em>minimum width</em> (in pixels) for uploaded images."
+msgstr ""
+"Especifique un ancho <em> m&iacute;nimo </ em> (en p&iacute;xeles) de las "
+"im&aacute;genes adjuntas."
+
+#: ../user-submitted-posts.php:971
+msgid "Minimum image height"
+msgstr "Altura m&iacute;nima de la imagen"
+
+#: ../user-submitted-posts.php:973
+msgid "Specify a <em>minimum height</em> (in pixels) for uploaded images."
+msgstr ""
+"Especifique una altura <em>m&iacute;nima </ em> (en p&iacute;xeles) de las "
+"im&aacute;genes adjuntas."
+
+#: ../user-submitted-posts.php:976
+msgid "Maximum image width"
+msgstr "Ancho m&aacute;ximo de la imagen"
+
+#: ../user-submitted-posts.php:978
+msgid "Specify a <em>maximum width</em> (in pixels) for uploaded images."
+msgstr ""
+"Especifique un ancho <em>m&aacute;ximo </ em> (en p&iacute;xeles) de las "
+"im&aacute;genes adjuntas."
+
+#: ../user-submitted-posts.php:981
+msgid "Maximum image height"
+msgstr "Altura m&aacute;xima de la imagen"
+
+#: ../user-submitted-posts.php:983
+msgid "Specify a <em>maximum height</em> (in pixels) for uploaded images."
+msgstr ""
+"Especifique una altura <em>m&iacute;nima </ em> (en p&iacute;xeles) de las "
+"im&aacute;genes adjuntas."
+
+#: ../user-submitted-posts.php:987 ../user-submitted-posts.php:1015
+msgid "Save Settings"
+msgstr "Guardar Configuraci&oacute;n"
+
+#: ../user-submitted-posts.php:994
+msgid "Shortcode"
+msgstr ""
+
+#: ../user-submitted-posts.php:995
+msgid "Use this shortcode to display the USP Form on any post or page:"
+msgstr ""
+"Utilice este Shortcode para mostrar el formulario de USP en cualquier "
+"entrada o p&aacute;gina:"
+
+#: ../user-submitted-posts.php:998
+msgid "Template tag"
+msgstr "Etiqueta de plantilla"
+
+#: ../user-submitted-posts.php:999
+msgid ""
+"Use this template tag to display the USP Form anywhere in your theme "
+"template:"
+msgstr ""
+"Utilice esta etiqueta de plantilla para visualizar el formulario de USP en "
+"cualquier lugar en la plantilla de tema:"
+
+#: ../user-submitted-posts.php:1004
+msgid "Restore Default Options"
+msgstr "Restaurar opciones por defecto"
+
+#: ../user-submitted-posts.php:1008
+msgid "Restore default options upon plugin deactivation/reactivation."
+msgstr "Restaurar opiones por defecto al activar / desactivar"
+
+#: ../user-submitted-posts.php:1012
+msgid ""
+"<strong>Tip:</strong> leave this option unchecked to remember your settings. "
+"Or, to go ahead and restore all default options, check the box, save your "
+"settings, and then deactivate/reactivate the plugin."
+msgstr ""
+"Consejo: deje esta opci&oacute;n sin marcar para recordar sus ajustes. O "
+"bien, para seguir adelante y restaurar todas las opciones por defecto, "
+"marque la casilla, guarde la configuraci&oacute;n, y luego desactive / "
+"active el plugin."
+
+#: ../user-submitted-posts.php:1019
+msgid "Updates &amp; Info"
+msgstr "Actualizaciones e Informaci&oacute;n"
+
+#: ../user-submitted-posts.php:1059
+msgid ""
+"Are you sure you want to restore all default options? (this action cannot be "
+"undone)"
+msgstr ""
+"&iquestEst&aacute; seguro de que desea restaurar todas las opciones por "
+"defecto? (esta acci&oacute;n no se puede deshacer)"
+
+#: ../views/submission-form-classic.php:30 ../views/submission-form.php:34
+#: ../views/submission-form.php:35
+msgid "Your Name"
+msgstr "Tu nombre"
+
+#: ../views/submission-form-classic.php:37 ../views/submission-form.php:39
+#: ../views/submission-form.php:40
+msgid "Your URL"
+msgstr "Tu p&aacute;gina Web"
+
+#: ../views/submission-form-classic.php:51
+msgid "(separate with commas)"
+msgstr "(separadas por comas)"
+
+#: ../views/submission-form-classic.php:105 ../views/submission-form.php:94
+msgid "Upload an Image"
+msgstr "Adjuntar imagen"
+
+#: ../views/submission-form-classic.php:117 ../views/submission-form.php:104
+msgid "Add another image"
+msgstr "A tra imagen"
+
+#: ../views/submission-form-classic.php:125 ../views/submission-form.php:112
+msgid "Human verification: leave this field empty."
+msgstr ""
+
+#: ../views/submission-form-classic.php:141 ../views/submission-form.php:128
+msgid "Submit Post"
+msgstr "Enviar publicaci&oacute;n"
+
+#: ../views/submission-form.php:55
+msgid "Antispam Question"
+msgstr "Pregunta AntiSpam"
+
+#~ msgid "Classic form + styles"
+#~ msgstr "Alternar todos los paneles"

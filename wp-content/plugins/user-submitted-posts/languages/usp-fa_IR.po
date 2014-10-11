@@ -1,0 +1,721 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: User submitted Posts\n"
+"POT-Creation-Date: 2014-06-06 20:21+0330\n"
+"PO-Revision-Date: 2014-06-06 22:25+0330\n"
+"Last-Translator: \n"
+"Language-Team: Icomp <support@icomp.ir>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: D:\\WEB\\New folder\\user-submitted-posts\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: D:\\WEB\\New folder\\user-submitted-posts\n"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:25
+#: folder\user-submitted-posts/user-submitted-posts.php:60
+msgid "User Submitted Posts"
+msgstr "ارسال پست میهمان"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:47
+msgid "requires WordPress 3.5 or higher, and has been deactivated!"
+msgstr ""
+"افزونه نیازمند وردپرس 3.5 یا بالاتر است که نسخه وردپرس شما اینگونه نیست. "
+"افزونه غیر فعال شد."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:48
+msgid "Please return to the "
+msgstr "لطفا بازگردید به"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:48
+msgid "WordPress Admin area"
+msgstr "پیشخوان مدیریت وردپرس"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:48
+msgid "to upgrade WordPress and try again."
+msgstr "برای به روز رسانی وردپرس و تلاش مجدد"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:60
+msgid "Submitted"
+msgstr "ثبت شد"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:119
+msgid "An error occurred. Please go back and try again."
+msgstr "خطایی رخ داده. لطفا بازگردید و مجددا تلاش کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:256
+msgid "USP"
+msgstr "User Submitted Posts"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:433
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:471
+msgid ""
+"There was an error. Please ensure that you have added a title, some content, "
+"and that you have uploaded only images."
+msgstr ""
+"خطایی رخ داده. لطفا اطمینان حاصل کنید از آنکه همه کادر های عنوان ، محتوا "
+"و... را تکمیل نموده اید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:478
+#: folder\user-submitted-posts/user-submitted-posts.php:479
+#: folder\user-submitted-posts/user-submitted-posts.php:480
+#: folder\user-submitted-posts/user-submitted-posts.php:481
+#: folder\user-submitted-posts/user-submitted-posts.php:482
+#: folder\user-submitted-posts/user-submitted-posts.php:489
+#: folder\user-submitted-posts/user-submitted-posts.php:490
+msgid "show"
+msgstr "نمایش"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:483
+msgid "hide"
+msgstr "مخفی کردن"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:484
+msgid "Please select your image(s) to upload."
+msgstr "لطفا عکس های موردنظرتان را برای بارگذاری انتخاب نمایید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:491
+msgid "Success! Thank you for your submission."
+msgstr "موفقیت آمیز بود! از پستتان ممنونیم"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:514
+msgid ""
+"Classic form + styles (<small><em><strong>Note:</strong> the &ldquo;"
+"classic&rdquo; form is deprecated and will be removed in a future version.</"
+"em></small>)"
+msgstr ""
+"Classic form + styles (<small><em><strong>Note:</strong> the &ldquo;"
+"classic&rdquo; form is deprecated and will be removed in a future version.</"
+"em></small>)"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:518
+msgid "HTML5 form + styles"
+msgstr "شیوه نامه به صورت HTML5"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:522
+msgid "Disable stylesheet"
+msgstr "غیرفعال کردن شیوه نامه"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:707
+msgid "Toggle all panels"
+msgstr "باز/بسته کردن همه تب ها"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:715
+msgid "Overview"
+msgstr "درباره"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:719
+msgid ""
+"(USP) enables your visitors to submit posts and upload images from anywhere "
+"on your site."
+msgstr ""
+"افزونه به بازدیدکنندگانتان اجازه می دهد که مطالب و عکس هایشان در در هرحایی "
+"از وب سایت شما قرار دهند."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:720
+msgid ""
+"To implement, configure the plugin settings and include the USP form in any "
+"post or page via shortcode or anywhere in your theme via template tag."
+msgstr ""
+"برای کارکردن ، تنظیمات افزونه را پیکر بندی کنید.سپس با استفاده از کد کوتاه "
+"یا کدهای PHP داده شده ، در هر جایی از پست ها یا برگه ها یا پوسته تان ، "
+"افزونه را استفاده کنید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:721
+msgid "For more functionality check out"
+msgstr "بررسی کنید. برای قابلیت های بیشتر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:722
+msgid "&mdash; the ultimate solution for unlimited front-end forms."
+msgstr ""
+".راه حل نهایی برای فرم های نامحدود<br />تر جمه به فارسی توسط گروه وبلاگ "
+"نویسی <a href=\"http://icomp.ir\">آی کامپ</a><br />انجمن آی کامپ. محل "
+"پاسخگویی به سوالات وبلاگ نویسان : <a href=\"http://forum.icomp.ir\">forum."
+"icomp.ir</a><br />وبلاگ آی کامپ. آموزش وبلاگ نویسی ، کدهای کاربردی و... : <a "
+"href=\"http://tuts.icomp.ir\">tuts.icomp.ir</a>"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:726
+msgid "Configure settings"
+msgstr "پیکربندی تنظیمات"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:727
+msgid "Get the shortcode &amp; template tag"
+msgstr "در یافت کدکوتاه &amp; کدپوسته"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:728
+msgid "More info:"
+msgstr "اطلاعات بیشتر:"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:728
+msgid "readme.txt"
+msgstr "readme.txt"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:729
+msgid "and"
+msgstr "و"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:729
+msgid "homepage"
+msgstr "خانه"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:730
+msgid "If you like USP, please"
+msgstr "اگر از افزونه خوشتان آمد ، لطفا"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:731
+msgid "Rate and review this plugin at the WP Plugin Directory"
+msgstr ""
+"به این افزونه در مخزن وردپرس امتیاز دهید و نظرتان را در مورد آن به اشتراک "
+"بگذارید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:732
+msgid "rate it at WordPress.org"
+msgstr "به افزونه در سایت وردپرس (wordpress.org) امتیاز دهید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:744
+msgid "Options"
+msgstr "گزینه ها"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:746
+msgid ""
+"Here you may configure options for USP. See the <code>readme.txt</code> for "
+"more information."
+msgstr ""
+"در اینجا می توانید تنظیمات افزونه را انجام دهید. برای اطلاعات بیشتر به "
+"<code>readme.txt</code> مراجعه کنید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:747
+msgid "Show/hide the following form fields"
+msgstr "نمایش/مخفی کردن فیلدهای این تب"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:751
+#: folder\user-submitted-posts/user-submitted-posts.php:757
+#: folder\user-submitted-posts/user-submitted-posts.php:763
+#: folder\user-submitted-posts/user-submitted-posts.php:769
+#: folder\user-submitted-posts/user-submitted-posts.php:775
+#: folder\user-submitted-posts/user-submitted-posts.php:781
+#: folder\user-submitted-posts/user-submitted-posts.php:787
+#: folder\user-submitted-posts/user-submitted-posts.php:793
+msgid "Show"
+msgstr "نمایش دادن"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:752
+#: folder\user-submitted-posts/user-submitted-posts.php:758
+#: folder\user-submitted-posts/user-submitted-posts.php:764
+#: folder\user-submitted-posts/user-submitted-posts.php:770
+#: folder\user-submitted-posts/user-submitted-posts.php:776
+#: folder\user-submitted-posts/user-submitted-posts.php:782
+#: folder\user-submitted-posts/user-submitted-posts.php:788
+#: folder\user-submitted-posts/user-submitted-posts.php:794
+msgid "Hide"
+msgstr "مخفی کردن"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:753
+msgid "User Name"
+msgstr "نام کاربری"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:759
+msgid "Post URL"
+msgstr "آدرس مطلب"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:765
+#: folder\user-submitted-posts/views/submission-form-classic.php:46
+#: folder\user-submitted-posts/views/submission-form.php:46
+#: folder\user-submitted-posts/views/submission-form.php:47
+msgid "Post Title"
+msgstr "عنوان مطلب"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:771
+#: folder\user-submitted-posts/views/submission-form-classic.php:53
+#: folder\user-submitted-posts/views/submission-form.php:51
+#: folder\user-submitted-posts/views/submission-form.php:52
+msgid "Post Tags"
+msgstr "برچسب های مطلب"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:777
+#: folder\user-submitted-posts/views/submission-form-classic.php:60
+#: folder\user-submitted-posts/views/submission-form.php:61
+msgid "Post Category"
+msgstr "دسته بندی مطلب"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:783
+#: folder\user-submitted-posts/views/submission-form-classic.php:98
+#: folder\user-submitted-posts/views/submission-form.php:89
+#: folder\user-submitted-posts/views/submission-form.php:90
+msgid "Post Content"
+msgstr "محتوا"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:789
+msgid "Post Images"
+msgstr "تصاویر مطلب"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:795
+msgid "Challenge question (Captcha)"
+msgstr "پرسش امنیتی (کپچا)"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:798
+msgid "Choose some general form options"
+msgstr "برای از گزینه های کلی فرم را انتخاب نمایید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:802
+msgid "Form style"
+msgstr "شیوه نامه فرم"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:820
+msgid ""
+"HTML5 is recommended. If upgrading and the new form looks weird, choose the "
+"Classic version."
+msgstr ""
+"HTML5 قابل استفاده است. اگر پس از بروزرسانی ، استایل فرم جدید چشم نواز نبود "
+"(!) می توانید از Classic Version یا فرم سنتی استفاده کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:821
+msgid ""
+"To disable the plugin&rsquo;s stylesheet, choose Disable. Note: complete "
+"list of CSS hooks for the submission form at"
+msgstr ""
+"برای نمایش شیوه نامه افزونه ، غیرفعال را انتخاب کنید. نکته : صفات سی اس اس "
+"را برای فرم تکمیل کنید در "
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:822
+msgid "CSS Hooks for User Submitted Posts"
+msgstr "صفات CSS برای افزونه"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:827
+msgid "Include JavaScript?"
+msgstr "شامل کردن جاوا اسکریپت؟"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:829
+msgid ""
+"Check this box if you want to include the external JavaScript file "
+"(recommended)."
+msgstr ""
+"اگر می خواهید فایل JavaScript دلخواهی را به فرم مطلب پیوست کنید ، این گزینه "
+"را انتخاب کنید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:832
+msgid "Targeted Loading"
+msgstr "بارگذاری ویژه"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:834
+msgid ""
+"When enabled, external CSS &amp; JavaScript files are loaded on every page. "
+"Here you may specify the URL of the USP form to load resources only on that "
+"page. Note: leave blank to load on all pages."
+msgstr ""
+"زمانی که فعال شود ،فایل های JavaScript و CSS خارجی در صفحات بارگذاری می "
+"شوند. البته شما می توانید تعیین کنید که آن فایل فقط در چه صفحه ای بارگذاری "
+"شود. برای اینکه در تمام صفحات اجرا شوند ، کادر را خالی بگذارید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:837
+msgid "Categories"
+msgstr "دسته بندی"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:850
+msgid "Select which categories may be assigned to submitted posts."
+msgstr "دسته بندی های مورد نظرتان را برای پست ها انتخاب کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:854
+msgid "Assigned Author"
+msgstr "کاربر معین"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:864
+msgid ""
+"Specify the user that should be assigned as author for user-submitted posts."
+msgstr ""
+"کاربری را برای نویسنده ثابت پست ها در صورتی که نام نویسنده ذکر نشده باشد "
+"انتخاب کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:868
+msgid "Auto Publish?"
+msgstr "انتشار خودکار؟"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:871
+msgid "Always moderate"
+msgstr "همیشه نیاز به تایید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:872
+msgid "Always publish immediately"
+msgstr "همیشه بدون نیاز به تایید مطالب را قبت کن"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:877
+msgid ""
+"For submitted posts, you can always moderate (recommended), publish "
+"immediately, or publish after any number of approved posts."
+msgstr ""
+"می توانید تعیین کنید که مطلب همیشه نیاز به تایید داشته باشند ، یا اینکه فورا "
+"ثبت شوند ، یا اینکه پس از چند پست ، دیگر نیازی به تایید نداشته باشند."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:881
+msgid "Receive Email Alert"
+msgstr "دریافت ایمیل هشدار"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:883
+msgid ""
+"Check this box if you want to be notified via email for new post submissions."
+msgstr ""
+"این گزینه را تیک دار کنید ، اگر می خواهید پس از ارسال هر مطلب توسط کاربران "
+"یک ایمیل برای شما ارسال شود"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:886
+msgid "Enable Rich Text Editor"
+msgstr "فعال سازی Rich Text Editor"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:888
+msgid ""
+"Check this box if you want to enable WP rich text editing for submitted "
+"posts."
+msgstr ""
+"در صورتی که می خواهید ویرایشگر پیشفرض وردپرس را برای فرم ارسال مطالب فعال "
+"کنید ، این گزینه را تیک دار کنید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:891
+msgid "Set Uploaded Image as Featured Image"
+msgstr "انتخاب تصاویر بارگذاری شده به عنوان تصاویر شاخص"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:893
+msgid ""
+"Check this box if you want to set submitted images as Featured Images (aka "
+"Post Thumbnails) for posts. \n"
+"\t\t\t\t\t\t\t\t\t\t\tNote: your theme&rsquo;s single.php file must include"
+msgstr ""
+"اگر میخواهید تصاویر آپلود شده به عنوان تصاویر ویژه و شاخص انتخاب شوند ، این "
+"گزینه را تیک دار کنید. \n"
+"\t\t\t\t\t\t\t\t\t\t\t هشدار: فایل&rsquo;s single.php در پوسته شما باید از "
+"تصاویر شاخص پشتیبانی کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:894
+msgid "to display Featured Images."
+msgstr "برای نمایش تصاویر ویژه و شاخص"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:897
+msgid "Email Address for Alerts"
+msgstr "آدرس ایمیل برای هشدار"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:899
+msgid ""
+"If you checked the box to receive email alerts, indicate here the "
+"address(es) to which the emails should be sent."
+msgstr ""
+"اگر این گزینه را تیک دار کنید ، برای شما ایمیل های هشداردهنده ارسال خواهد "
+"شود. ایمیل هایی را که می خواهید هشدار ها برایشان ارسال شوند را وارد نمایید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:900
+msgid "Tip: multiple addresses may be included using a comma, like so:"
+msgstr "نکته : آدرس های جداگانه را با کاما از هم جدا کنید. مانند: "
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:903
+msgid "Redirect URL"
+msgstr "انتقال به آدرس"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:905
+msgid ""
+"Specify a URL to redirect the user after post-submission. Note: leave blank "
+"to redirect back to current page."
+msgstr "آدرسی را وارد کنید که می خواهید کاربر پس از ثبت مطلب ، به آن منتقل شود"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:908
+msgid "Success Message"
+msgstr "پیغام موفقیت آمیز بودن"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:910
+msgid ""
+"This is the success message that is displayed if post-submission is "
+"successful."
+msgstr ""
+"این پیغام موفقیت آمیز بودنی است که هنگامی نمایش داده میشود که ثبت مطلب "
+"موفقیت آمیز بوده باشد"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:913
+msgid "Error Message"
+msgstr "پیغام خطا"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:915
+msgid "This is the error message that is displayed if post-submission fails."
+msgstr "این پیغام خطا زمانی نمایش داده می شود که ثبت مطلب با مشکلی مواجه شود"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:918
+msgid "Custom Content"
+msgstr "محتوای سفارشی"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:920
+msgid ""
+"Here you may specify custom text/markup to be included before the submission "
+"form. Note: leave blank to disable."
+msgstr ""
+"اینجا می توانید متن یا نشانه دلخواهی را وارد نمایید تا قبل از فرم نمایش داده "
+"شود. برای غیر فعال بودن ، کادر را خالی بگذارید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:924
+msgid "Use registered user info"
+msgstr "استفاده از اطلاعات کاربر ثبت نام کرده"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:928
+msgid "Use registered username for author?"
+msgstr "استفاده از نام کاربری کاربر ثبت نام کرده برای نام نویسنده؟"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:930
+msgid ""
+"Check this box if you want to automatically use the registered username as "
+"the submitted-post author. Note: this really should only be used when "
+"requiring log-in for submissions."
+msgstr ""
+"این گزینه را تیک دار کنید اگر می خواهید به صورت خودکار از نام کاربری فرد در "
+"فرم ارسال مطلب استفاده شود. نکته : این زمانی کاربرد دارد که کاربر وارد شده "
+"باشد."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:933
+msgid "Use registered URL for submitted URL?"
+msgstr ""
+"انتخاب آدرسی که کاربر ثبت نام کرده وارد کرده به عنوان آدرس وبگاه نویسنده مطلب"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:935
+msgid ""
+"Check this box if you want to automatically use the registered user&rsquo;s "
+"specified URL as the submitted-post URL. Note: this really should only be "
+"used when requiring log-in for submissions."
+msgstr ""
+"این گزینه را تیک دار کنید ، اگر می خواهید به صورت خودکار از آدرس وبگاه کاربر "
+"ثبت نام کرده به عنوان وبگاه نویسنده مطلب استفاده شود.نکته : زمانی کاربرد "
+"دارد که کاربر وارد شده باشد"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:938
+msgid "Use a hidden field for submitted category?"
+msgstr "استفاده از یک کادرمخفی برای دسته بندی"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:940
+msgid ""
+"Check this box if you want to use a hidden category field for the submitted "
+"category. Note: this may be used to specify a default category for submitted "
+"posts when the category field is hidden."
+msgstr ""
+"تیک این گزینه را بزنید اگر می خواهید دسته بندی های مخفی باشند. زمانی از این "
+"استفاده کنید که می خواهید یک دسته بندی مشخص را برای مطالب انتخاب کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:943
+msgid "Category ID for hidden field"
+msgstr "آی دی دسته مورد نظر برای کادر مخفی"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:945
+msgid ""
+"Specify a cateogry (ID) to use as the default category when using the &ldquo;"
+"hidden field&rdquo; option."
+msgstr ""
+"اگر می خواهید فیلد دسته بندی مخفی باشد ، یک آی دی دسته بندی را به عنوان "
+"پیشفرض انتخاب کنید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:949
+msgid "Challenge question (captcha)"
+msgstr "پرسش امنیتی (کپچا)"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:953
+msgid "Challenge Question"
+msgstr "پرسش امنیتی"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:955
+msgid ""
+"To prevent spam, enter a question that users must answer before submitting "
+"the form."
+msgstr ""
+"برای جلوگیری از هرزنامه ، یک پرسش امنیتی را وارد کنید تا کاربران قبل از ثبت "
+"مطلب ملزم به جواب دادن به آن شوند"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:958
+msgid "Challenge Response"
+msgstr "پاسخ پرسش امنیتی"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:960
+msgid "Enter the <em>only</em> correct answer to the challenge question."
+msgstr "پاسخ درست پرسش امنیتی را وارد کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:963
+msgid "Case-sensitivity"
+msgstr "حساسیت به بزرگی و کوچکی حروف"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:965
+msgid "Check this box if you want the challenge response to be case-sensitive."
+msgstr ""
+"اگر می خواید پاسخ به پرسش امنیتی ، به حروف کوچک و بزرگ در زبان انگلیسی حساس "
+"باشد ، این گزینه را تیک داد کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:969
+msgid "Options for image uploads"
+msgstr "تنظیمات تصاویر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:973
+msgid "Upload Message"
+msgstr "پیغام بارگذاری"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:975
+msgid ""
+"This is the message that appears next to upload field. Useful to state your "
+"upload guidelines/rules/etc."
+msgstr "این پیغام زمانی نمایش داده می شود که آپلود تصویر موفقیت آمیز نباشد."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:978
+msgid "&ldquo;Add another image&rdquo; link"
+msgstr "اضافه کردن یک لینک تصویر دیگر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:980
+msgid ""
+"Here you may specify your own custom markup for the &ldquo;Add another "
+"image&rdquo; link (leave blank to use the default markup)."
+msgstr ""
+"می توانید نشانه مورد نظر خودرا برای لینک افزودن تصویر جدید انتخاب کنید. برای "
+"استفاده از حالت پیشفرض ، کادر را خالی بگذارید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:983
+msgid "Minimum number of images"
+msgstr "کمترین تعداد تصاویر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:986
+msgid "Specify the <em>minimum</em> number of images."
+msgstr "یک مقدار حداقل را برای تعداد عکس ها انتخاب نمایید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:990
+msgid "Maximum number of images"
+msgstr "بیشتر تعداد تصاویر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:993
+msgid "Specify the <em>maximum</em> number of images."
+msgstr "یک مقدار حداکثر را برای تعداد عکس ها انتخاب نمایید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:997
+msgid "Minimum image width"
+msgstr "کمترین طول تصاویر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:999
+msgid "Specify a <em>minimum width</em> (in pixels) for uploaded images."
+msgstr "یک مقدار حداقل را برای طول عکس های آپلود شده انتخاب نمایید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1002
+msgid "Minimum image height"
+msgstr "کمترین ارتفاع عکس ها"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1004
+msgid "Specify a <em>minimum height</em> (in pixels) for uploaded images."
+msgstr "یک مقدار حداقل را برای ارتفاع عکس های آپلود شده انتخاب نمایید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1007
+msgid "Maximum image width"
+msgstr "بیشتر طول تصاویر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1009
+msgid "Specify a <em>maximum width</em> (in pixels) for uploaded images."
+msgstr "یک مقدار حداکثر را برای طول عکس های آپلود شده انتخاب نمایید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1012
+msgid "Maximum image height"
+msgstr "بیشترین ارتفاع تصاویر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1014
+msgid "Specify a <em>maximum height</em> (in pixels) for uploaded images."
+msgstr "یک مقدار حداکثر را برای ارتفاع عکس های آپلود شده انتخاب نمایید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1018
+#: folder\user-submitted-posts/user-submitted-posts.php:1046
+msgid "Save Settings"
+msgstr "ذخیره تنظیمات"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1022
+msgid "Shortcode &amp; Template Tag"
+msgstr "کدکوتاه و کد داخل پوسته"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1025
+msgid "Shortcode"
+msgstr "کدکوتاه"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1026
+msgid "Use this shortcode to display the USP Form on any post or page:"
+msgstr "از کدکوتاه زیر برای نمایش فرم ارسال مطلب در برگه یا پست استفاده کنید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1029
+msgid "Template tag"
+msgstr "قالب برچسب"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1030
+msgid ""
+"Use this template tag to display the USP Form anywhere in your theme "
+"template:"
+msgstr "کدهای زیر را برای نمایش فرم ارسال مطلب در پوسته تان قرار دهید"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1035
+msgid "Restore Default Options"
+msgstr "بازگردانی تنظیمات بیشتر"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1039
+msgid "Restore default options upon plugin deactivation/reactivation."
+msgstr "بازگردانی تنظیمات پیشفرض پس از غیرفعال / فعال کردن افزونه"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1043
+msgid ""
+"<strong>Tip:</strong> leave this option unchecked to remember your settings. "
+"Or, to go ahead and restore all default options, check the box, save your "
+"settings, and then deactivate/reactivate the plugin."
+msgstr ""
+"<strong>نکته:</strong> اگر میخواهید تنظیماتتان باقی بماند ، تیک این گزینه را "
+"بردارید. یا برای بازگرداند به پیشفرض ، تیک را بزنید ،همه گزینه ها را "
+"بازگردانید و اطلاعات را ذخیره کنید. سپس افزونه را غیر فعال/فعال کنید."
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1050
+msgid "Updates &amp; Info"
+msgstr "به روز رسانی ها و اطلاعات"
+
+#: D:\WEB\New folder\user-submitted-posts/user-submitted-posts.php:1090
+msgid ""
+"Are you sure you want to restore all default options? (this action cannot be "
+"undone)"
+msgstr ""
+"آیا مطمئن هستید که می خواهید تمامی تنظیمات را به حالت اولیه برگردانید؟ این "
+"انتخاب قابل بازگشت نخواهد بود!"
+
+#: D:\WEB\New folder\user-submitted-posts/views/submission-form-classic.php:32
+#: folder\user-submitted-posts/views/submission-form.php:36
+#: folder\user-submitted-posts/views/submission-form.php:37
+msgid "Your Name"
+msgstr "نام شما"
+
+#: D:\WEB\New folder\user-submitted-posts/views/submission-form-classic.php:39
+#: folder\user-submitted-posts/views/submission-form.php:41
+#: folder\user-submitted-posts/views/submission-form.php:42
+msgid "Your URL"
+msgstr "آدرس وبگاه شما"
+
+#: D:\WEB\New folder\user-submitted-posts/views/submission-form-classic.php:53
+msgid "(separate with commas)"
+msgstr "(با کاما جدا کنید)"
+
+#: D:\WEB\New
+#: folder\user-submitted-posts/views/submission-form-classic.php:109
+#: folder\user-submitted-posts/views/submission-form.php:96
+msgid "Upload an Image"
+msgstr "بارگذاری تصویر"
+
+#: D:\WEB\New
+#: folder\user-submitted-posts/views/submission-form-classic.php:116
+#: folder\user-submitted-posts/views/submission-form.php:104
+msgid "Add another image"
+msgstr "افزودن تصویر"
+
+#: D:\WEB\New
+#: folder\user-submitted-posts/views/submission-form-classic.php:133
+#: folder\user-submitted-posts/views/submission-form.php:122
+msgid "Human verification: leave this field empty."
+msgstr "تایید ربات نبودن: این کادر را خالی بگذارید"
+
+#: D:\WEB\New
+#: folder\user-submitted-posts/views/submission-form-classic.php:149
+#: folder\user-submitted-posts/views/submission-form.php:138
+msgid "Submit Post"
+msgstr "ثبت مطلب"
+
+#: D:\WEB\New folder\user-submitted-posts/views/submission-form.php:57
+msgid "Antispam Question"
+msgstr "پرسش امنیتی"

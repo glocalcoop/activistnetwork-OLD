@@ -1,0 +1,4 @@
+@charset "UTF-8";
+/* admin styles */
+form#posts-filter a#usp_admin_filter_posts { float: right; margin: 1px 8px 0 0; }
+form#posts-filter input#delete_all { margin-right: 8px; }
