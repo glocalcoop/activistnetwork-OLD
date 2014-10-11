@@ -1777,7 +1777,7 @@ POSTS & CONTENT STYLES
   font-size: 28px;
   font-size: 1.75rem;
   line-height: 1.1;
-  margin: 24px 0; }
+  margin: 24px 0 48px; }
 
 /* line 21, ../sass/modules/_posts.scss */
 .subtitle {
@@ -1788,8 +1788,9 @@ POSTS & CONTENT STYLES
   .directory .subtitle {
     margin-top: 48px; }
 
-/* line 33, ../sass/modules/_posts.scss */
+/* line 34, ../sass/modules/_posts.scss */
 .entry-title.single-title {
+  margin-top: 24px;
   margin-bottom: .3em; }
 
 /* want to style individual post classes? Booya! */
@@ -1801,7 +1802,16 @@ POSTS & CONTENT STYLES
 /* hentry class */
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
-/* line 51, ../sass/modules/_posts.scss */
+/* line 53, ../sass/modules/_posts.scss */
+.post {
+  padding: 24px; }
+
+/* line 56, ../sass/modules/_posts.scss */
+.post-image img {
+  width: 100%;
+  height: auto; }
+
+/* line 63, ../sass/modules/_posts.scss */
 .byline {
   margin: 0;
   color: #b8b6b2;
@@ -1809,20 +1819,19 @@ POSTS & CONTENT STYLES
   letter-spacing: 1px;
   font-size: 15px;
   font-size: 0.9375rem; }
-  /* line 57, ../sass/modules/_posts.scss */
+  /* line 69, ../sass/modules/_posts.scss */
   .byline a {
     color: #b8b6b2; }
 
-/* line 63, ../sass/modules/_posts.scss */
+/* line 76, ../sass/modules/_posts.scss */
 .single-post .entry-content {
   padding-top: 40px; }
-
-/* line 66, ../sass/modules/_posts.scss */
+/* line 79, ../sass/modules/_posts.scss */
 .single-post .entry-content p:first-child {
   font-size: 22px;
   font-size: 1.375rem; }
 
-/* line 72, ../sass/modules/_posts.scss */
+/* line 86, ../sass/modules/_posts.scss */
 .post .entry-content {
   /*
   image alignment on a screen this size may be
@@ -1830,50 +1839,57 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
-  /* line 73, ../sass/modules/_posts.scss */
-  .post .entry-content h1 {
-    margin-bottom: 0; }
-  /* line 77, ../sass/modules/_posts.scss */
+  /* line 88, ../sass/modules/_posts.scss */
   .post .entry-content h2, .post .entry-content h3, .post .entry-content h4 {
     margin-top: 1.8em; }
-  /* line 81, ../sass/modules/_posts.scss */
+  /* line 92, ../sass/modules/_posts.scss */
   .post .entry-content p {
     max-width: 40em; }
-  /* line 86, ../sass/modules/_posts.scss */
+  /* line 95, ../sass/modules/_posts.scss */
+  .post .entry-content a {
+    color: #333231;
+    border-bottom: 1px solid rgba(0, 169, 157, 0.2);
+    box-shadow: inset 0 -3px 0 rgba(0, 169, 157, 0.2); }
+    /* line 99, ../sass/modules/_posts.scss */
+    .post .entry-content a:hover {
+      color: #00a99d;
+      border-bottom-color: rgba(0, 169, 157, 0.1);
+      box-shadow: inset 0 -3px 0 rgba(0, 169, 157, 0.1); }
+  /* line 107, ../sass/modules/_posts.scss */
   .post .entry-content ul, .post .entry-content ol {
     padding: 0 40px; }
-  /* line 91, ../sass/modules/_posts.scss */
+  /* line 112, ../sass/modules/_posts.scss */
   .post .entry-content ul {
     list-style: square; }
-  /* line 95, ../sass/modules/_posts.scss */
+  /* line 116, ../sass/modules/_posts.scss */
   .post .entry-content ol {
     list-style: decimal; }
-  /* line 102, ../sass/modules/_posts.scss */
+  /* line 123, ../sass/modules/_posts.scss */
   .post .entry-content dl {
     border-top: 1px solid #fff;
     padding-top: 1em; }
-  /* line 106, ../sass/modules/_posts.scss */
+  /* line 127, ../sass/modules/_posts.scss */
   .post .entry-content dt {
     float: left; }
-  /* line 109, ../sass/modules/_posts.scss */
+  /* line 130, ../sass/modules/_posts.scss */
   .post .entry-content dd {
     margin-left: 375px; }
-  /* line 112, ../sass/modules/_posts.scss */
+  /* line 133, ../sass/modules/_posts.scss */
   .post .entry-content img {
     margin: 0 0 20px 0;
     max-width: 100%;
     height: auto; }
-  /* line 123, ../sass/modules/_posts.scss */
+  /* line 144, ../sass/modules/_posts.scss */
   .post .entry-content .alignleft, .post .entry-content img.alignleft {
     float: left;
     margin-right: 40px;
     margin-bottom: 20px; }
-  /* line 124, ../sass/modules/_posts.scss */
+  /* line 145, ../sass/modules/_posts.scss */
   .post .entry-content .alignright, .post .entry-content img.alignright {
     float: right;
     margin-left: 40px;
     margin-bottom: 20px; }
-  /* line 126, ../sass/modules/_posts.scss */
+  /* line 147, ../sass/modules/_posts.scss */
   .post .entry-content video, .post .entry-content object {
     max-width: 100%;
     height: auto; }
