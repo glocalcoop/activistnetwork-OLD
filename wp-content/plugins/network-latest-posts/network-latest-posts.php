@@ -321,17 +321,18 @@ function network_latest_posts( $parameters ) {
     // Paranoid ;)
     $time_frame = (int)$time_frame;
     // Get the list of blogs in order of most recent update, get only public and nonarchived/spam/mature/deleted
+    // Removed mature post exclusion - PEA 10/13/2014
     if( $time_frame > 0 ) {
         // By blog ID except those ignored
         if( !empty($blog_id) && $blog_id != NULL ) {
             $blogs = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs WHERE
-                public = '1' AND archived = '0' AND mature = '0' AND spam = '0' AND deleted = '0' $display
+                public = '1' AND archived = '0' AND spam = '0' AND deleted = '0' $display
                     $ignore AND last_updated >= DATE_SUB(CURRENT_DATE(), INTERVAL $time_frame DAY)
                         ORDER BY last_updated DESC");
         // Everything but ignored blogs
         } else {
             $blogs = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs WHERE
-                public = '1' AND archived = '0' AND mature = '0' AND spam = '0' AND deleted = '0'
+                public = '1' AND archived = '0' AND spam = '0' AND deleted = '0'
                     $ignore AND last_updated >= DATE_SUB(CURRENT_DATE(), INTERVAL $time_frame DAY)
                         ORDER BY last_updated DESC");
         }
@@ -340,12 +341,12 @@ function network_latest_posts( $parameters ) {
         // By blog ID except those ignored
         if( !empty($blog_id) && $blog_id != NULL ) {
             $blogs = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs WHERE
-                public = '1' AND archived = '0' AND mature = '0' AND spam = '0' AND deleted = '0' $display
+                public = '1' AND archived = '0' AND spam = '0' AND deleted = '0' $display
                     $ignore ORDER BY last_updated DESC");
         // Everything but ignored blogs
         } else {
             $blogs = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs WHERE
-                public = '1' AND archived = '0' AND mature = '0' AND spam = '0' AND deleted = '0'
+                public = '1' AND archived = '0' AND spam = '0' AND deleted = '0'
                     $ignore ORDER BY last_updated DESC");
         }
     }
