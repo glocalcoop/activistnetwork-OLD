@@ -621,11 +621,11 @@ main {
   main:last-child {
     margin-right: 0; }
   /* line 67, ../sass/modules/_containers.scss */
-  .page-template-page-iframe-php main, .page-template-default main, .directory main, .news main {
+  .page-template-page-iframe-php main, .page-template-default main, .directory main, .sites main, .news main {
     width: 100%; }
 
 @media (min-width: 769px) {
-  /* line 76, ../sass/modules/_containers.scss */
+  /* line 77, ../sass/modules/_containers.scss */
   aside,
   div[role='complementary'] {
     display: block;
@@ -636,12 +636,12 @@ main {
     aside:last-child,
     div[role='complementary']:last-child {
       margin-right: 0; } }
-/* line 80, ../sass/modules/_containers.scss */
+/* line 81, ../sass/modules/_containers.scss */
 aside:last-child,
 div[role='complementary']:last-child {
   margin-right: 0; }
 
-/* line 88, ../sass/modules/_containers.scss */
+/* line 89, ../sass/modules/_containers.scss */
 main.main-news,
 .home-start,
 .sites-list,
@@ -665,13 +665,13 @@ main.main-news,
   .networks-list:after {
     clear: both; }
 
-/* line 98, ../sass/modules/_containers.scss */
+/* line 99, ../sass/modules/_containers.scss */
 .home-intro {
   background: #fff;
   margin: 20px 0;
   padding: 24px 24px 0; }
   @media (min-width: 769px) {
-    /* line 98, ../sass/modules/_containers.scss */
+    /* line 99, ../sass/modules/_containers.scss */
     .home-intro {
       display: block;
       float: left;
@@ -680,19 +680,19 @@ main.main-news,
       /* line 41, ../sass/partials/neat/grid/_span-columns.scss */
       .home-intro:last-child {
         margin-right: 0; } }
-  /* line 103, ../sass/modules/_containers.scss */
+  /* line 104, ../sass/modules/_containers.scss */
   .home-intro h1 {
     margin-bottom: 8px;
     line-height: 1.1; }
-  /* line 107, ../sass/modules/_containers.scss */
+  /* line 108, ../sass/modules/_containers.scss */
   .home-intro p {
     line-height: 1.5; }
 
-/* line 112, ../sass/modules/_containers.scss */
+/* line 113, ../sass/modules/_containers.scss */
 .home-feature {
   border-top: 1px solid #b8b6b2; }
   @media (min-width: 769px) {
-    /* line 112, ../sass/modules/_containers.scss */
+    /* line 113, ../sass/modules/_containers.scss */
     .home-feature {
       display: block;
       float: left;
@@ -703,10 +703,10 @@ main.main-news,
       .home-feature:last-child {
         margin-right: 0; } }
 
-/* line 117, ../sass/modules/_containers.scss */
+/* line 118, ../sass/modules/_containers.scss */
 .home-modules {
   padding-bottom: 30px; }
-  /* line 119, ../sass/modules/_containers.scss */
+  /* line 120, ../sass/modules/_containers.scss */
   .home-modules .row {
     clear: both;
     border-top: 1px solid #b8b6b2;

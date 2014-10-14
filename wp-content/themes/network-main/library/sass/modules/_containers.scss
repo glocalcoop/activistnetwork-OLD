@@ -67,6 +67,7 @@ main {
   .page-template-page-iframe-php &,
   .page-template-default &,
   .directory &,
+  .sites &,
   .news & {
       @include fill-parent;
   }
