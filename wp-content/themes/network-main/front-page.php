@@ -26,7 +26,7 @@
 
 		<section class="home-modules">
 			<?php if ( is_multisite() ) { // Check to see if multisite is active. If not, display a recent posts and events module for this site. ?> 
-			<?php $sites = wp_get_sites('offset=1'); // Set up variable that holds array of sites ?>
+			<?php $sites = wp_get_sites('offset=1&archived=0&deleted=0'); // Set up variable that holds array of sites ?>
 
 			<?php 
 			if(function_exists('glocal_home_category')) {
