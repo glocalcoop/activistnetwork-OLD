@@ -48,8 +48,8 @@ jQuery(document).ready(function(){
 		'display_type'     => 'ulist',
 		'auto_excerpt'  => 'true',
 		'full_meta'		=> 'true',
-		'sorting_order'	=> 'desc',
 		'sort_by_date'	=> 'true',
+		'use_pub_date'	=> 'true',
 		'excerpt_length'   => '20',
 		// BUG: Not respecting number of updates specified
 		'number_posts'     => 2,

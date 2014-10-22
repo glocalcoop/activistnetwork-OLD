@@ -25,10 +25,11 @@ if(function_exists( 'network_latest_posts' )) {
 		// 'title'         => '',
 		'title_only'    => 'false',
 		'auto_excerpt'  => 'true',
-		'display_type'     => 'ulist',
+		'display_type'	=> 'ulist',
 		'full_meta'		=> 'true',
 		'sort_by_date'	=> 'true',
-		'sorting_order'	=> 'desc',
+		'use_pub_date'	=> 'true',
+		// 'sorting_order'	=> 'desc',
 		// BUG: Not respecting number of updates specified
 		'number_posts'     => $updatenumber,
 		'wrapper_list_css' => 'highlights-list',
