@@ -49,6 +49,14 @@
 				if(!empty($glocal_home_settings['modules'])) { ?>
 
 					<?php
+					if (in_array("updates", $glocal_home_settings['modules'])) {
+						
+						// Get network-wide updates
+						get_template_part( 'partials/home-module', 'updates' );
+					}
+					?>
+
+					<?php
 					if (in_array("posts", $glocal_home_settings['modules'])) {
 						
 						// Get network-wide posts
@@ -73,6 +81,10 @@
 					?>
 
 				<?php } else { ?>
+
+					<?php
+					// Get network-wide updates
+					get_template_part( 'partials/home-module', 'updates' ); ?>
 
 					<?php
 					// Get network-wide posts

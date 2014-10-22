@@ -102,8 +102,6 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 	        );
 	    }
 	}
-
-
 }
 
 
@@ -114,6 +112,23 @@ function glocal_customize_register( $wp_customize ) {
 	if(function_exists('glocal_home_category')) {
 		$postcategory = glocal_home_category();
 	}
+
+	// Post Category Drop-down
+
+	$categories = get_categories();
+	$cats = array();
+	$i = 0;
+	foreach($categories as $category){
+		if($i==0){
+			$default = $category->slug;
+			$i++;
+		}
+		$cats[$category->slug] = $category->name;
+	}
+
+	/**
+	* Panels & Sections
+	*/
 
 	// Panel
 	$wp_customize->add_panel( 'home_panel', array(
@@ -132,28 +147,38 @@ function glocal_customize_register( $wp_customize ) {
 		'panel'  => 'home_panel',
 	) );
 
+	// Section - Updates
+	$wp_customize->add_section( 'home_updates' , array(
+		'title'      => __( 'Updates', 'glocal-network' ),
+		'priority'   => 20,
+		'panel'  => 'home_panel',
+	) );
+
 	// Section - Posts
 	$wp_customize->add_section( 'home_posts' , array(
 		'title'      => __( 'Posts', 'glocal-network' ),
-		'priority'   => 20,
+		'priority'   => 30,
 		'panel'  => 'home_panel',
 	) );
 
 	// Section - Events
 	$wp_customize->add_section( 'home_events' , array(
 		'title'      => __( 'Events', 'glocal-network' ),
-		'priority'   => 30,
+		'priority'   => 40,
 		'panel'  => 'home_panel',
 	) );
 
 	// Section - Sites
 	$wp_customize->add_section( 'home_sites' , array(
 		'title'      => __( 'Sites', 'glocal-network' ),
-		'priority'   => 40,
+		'priority'   => 50,
 		'panel'  => 'home_panel',
 	) );
 
-	// Controls
+
+	/**
+	* Settings & Controls
+	*/
 
 	// Homepage Modules
 	$wp_customize->add_setting( 'glo_options_home[modules]', array(
@@ -172,6 +197,7 @@ function glocal_customize_register( $wp_customize ) {
 				'section'  => 'home_modules',
 				'type'     => 'multiple-select', // The $type in our class
 				'choices'  => array(
+					'updates' => __('Updates', 'glocal-network'),
 					'posts' => __('Posts', 'glocal-network'),
 					'events' => __('Events', 'glocal-network'),
 					'sites' => __('Sites', 'glocal-network'),
@@ -181,18 +207,11 @@ function glocal_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Posts - Categories
-	$categories = get_categories();
-	$cats = array();
-	$i = 0;
-	foreach($categories as $category){
-		if($i==0){
-			$default = $category->slug;
-			$i++;
-		}
-		$cats[$category->slug] = $category->name;
-	}
+	/**
+	* Posts
+	*/
  
+	// Posts - Categories
 	// Setting
 	$wp_customize->add_setting('glo_options_home[posts][featured_category]', array(
 		'default'        => $default,
@@ -213,7 +232,6 @@ function glocal_customize_register( $wp_customize ) {
 			)
 		)
 	);
-
 
 	// Posts - Heading
     $wp_customize->add_setting('glo_options_home[posts][posts_heading]', array(
@@ -242,7 +260,7 @@ function glocal_customize_register( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_control('glocal_post_heading_link', array(
+	$wp_customize->add_control('glocal_posts_heading_link', array(
 		'label'      => __('Heading Link', 'glocal-network'),
 		'section'    => 'home_posts',
 		'settings'   => 'glo_options_home[posts][posts_heading_link]',
@@ -275,6 +293,95 @@ function glocal_customize_register( $wp_customize ) {
 		)
     ));
 
+	/**
+	* Updates
+	*/
+
+    // Updates - Categories
+	// Setting
+	$wp_customize->add_setting('glo_options_home[updates][featured_category]', array(
+		'default'        => $default,
+		'type'           => 'option',
+	));
+
+	// Control
+	$wp_customize->add_control( 
+		new WP_Customize_Multiple_Select_Control(
+			$wp_customize,
+			'glocal_featured_category', array(
+			'settings' => 'glo_options_home[updates][featured_category]',
+			'label'   => __('Categorie(s)', 'glocal-network'),
+			'section'  => 'home_updates',
+			'type'    => 'multiple-select',
+			'choices' => $cats,
+			'priority' => 10,
+			)
+		)
+	);
+
+	// Updates - Heading
+    $wp_customize->add_setting('glo_options_home[updates][updates_heading]', array(
+        'default'        => __('Updates', 'glocal-network'),
+        // 'capability'     => 'manage_options',
+        'type'           => 'option',
+ 
+    ));
+ 
+    $wp_customize->add_control('glocal_update_heading', array(
+        'label'      => __('Heading', 'glocal-network'),
+        'section'    => 'home_updates',
+        'settings'   => 'glo_options_home[updates][updates_heading]',
+        'type' => 'text',
+        'priority' => 20,
+		'input_attrs' => array(
+			'placeholder'   => __('Enter a heading for the updates list', 'glocal-network'),
+		)
+    ));
+
+	// Updates - Heading Link
+	$wp_customize->add_setting('glo_options_home[updates][updates_heading_link]', array(
+		'default'        => '',
+		// 'capability'     => 'manage_options',
+		'type'           => 'option',
+		)
+	);
+
+	$wp_customize->add_control('glocal_updates_heading_link', array(
+		'label'      => __('Heading Link', 'glocal-network'),
+		'section'    => 'home_updates',
+		'settings'   => 'glo_options_home[updates][updates_heading_link]',
+		'type' => 'url',
+		'priority' => 21,
+		'input_attrs' => array(
+			'placeholder'   => __('Enter a URL or path', 'glocal-network'),
+			)
+		)
+	);
+
+	// Updates - Number
+    $wp_customize->add_setting('glo_options_home[updates][number_updates]', array(
+        'default'        => '10',
+        // 'capability'     => 'manage_options',
+        'type'           => 'option',
+ 
+    ));
+ 
+    $wp_customize->add_control('glocal_update_number', array(
+        'label'      => __('Number of Updates', 'glocal-network'),
+        'section'    => 'home_updates',
+        'settings'   => 'glo_options_home[updates][number_updates]',
+        'type' => 'number',
+        'priority' => 22,
+		'input_attrs' => array(
+			'min'   => 1,
+			'max'   => 20,
+			'placeholder'   => __('Min: 1, Max: 20', 'glocal-network'),
+		)
+    ));
+
+	/**
+	* Events
+	*/
 
 	// Events - Heading
     $wp_customize->add_setting('glo_options_home[events][events_heading]', array(
@@ -336,6 +443,9 @@ function glocal_customize_register( $wp_customize ) {
 		)
     ));
 
+	/**
+	* Sites
+	*/
 
 	// Sites - Heading
     $wp_customize->add_setting('glo_options_home[sites][sites_heading]', array(

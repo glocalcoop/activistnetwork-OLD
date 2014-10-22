@@ -6,7 +6,29 @@ if(function_exists('glocal_customation_settings')) {
 } 
 ?>
 
-<article id="highlights-module" class="module row highlights clearfix">
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('.news-list').bxSlider({
+		slideWidth: 5000,
+		minSlides: 2,
+		maxSlides: 2,
+		slideMargin: 10,
+		pager: false
+	});
+	var responsive_viewport = jQuery(window).width();
+	if (responsive_viewport < 320) {
+		jQuery('.news-list').reloadSlider({
+		slideWidth: 5000,
+		minSlides: 1,
+		maxSlides: 1,
+		slideMargin: 10,
+		pager: false
+		});
+	} 
+});
+</script>
+
+<article id="news-module" class="module row news clearfix">
 	<h2 class="module-heading">
 	<?php if(!empty($glocal_home_settings['posts']['posts_heading_link'])) { ?>
 		<a href="<?php echo $glocal_home_settings['posts']['posts_heading_link']; ?>">
@@ -17,41 +39,42 @@ if(function_exists('glocal_customation_settings')) {
 	<?php } ?>	
 	</h2>
 
+	<?php
+	if(function_exists( 'network_latest_posts' )) {
 
-<?php
-if(function_exists( 'network_latest_posts' )) {
-
-	$parameters = array(
+		$parameters = array(
 		// 'title'         => '',
 		'title_only'    => 'false',
-		'auto_excerpt'  => 'true',
 		'display_type'     => 'ulist',
+		'auto_excerpt'  => 'true',
 		'full_meta'		=> 'true',
-		// BUG: Not respecting number of posts specified
-		// 'number_posts'     => $postnumber,
-		'wrapper_list_css' => 'highlights-list',
-		'wrapper_block_css'=> 'module row highlights', //The wrapper classe
-		'instance'         => 'highlights-module', //The wrapper ID
-	);
+		'sort_by_date'	=> 'true',
+		'excerpt_length'   => '20',
+		'number_posts'     => 2,
+		'wrapper_list_css' => 'news-list',
+		'wrapper_block_css'=> 'module row news', //The wrapper classe
+		'instance'         => 'news-module', //The wrapper ID
+		);
 
-	// If a category was selected, limit to that category
-	if(!empty($postcategory)) {
-		$parameters['category'] = $postcategory;
+		// If a category was selected, limit to that category
+		if(!empty($postcategory)) {
+			$parameters['category'] = $postcategory;
+		}
+
+		// If number of posts is specified, limit to that number of posts
+		if(!empty($postcategory)) {
+			$parameters['number_posts'] = $postnumber;
+		}
+		// Execute
+		$recent_posts = network_latest_posts($parameters);
+	} else {
+
+		get_template_part( 'partials/error', 'plugin' );
+
 	}
-
-	// If number of posts is specified, limit to that number of posts
-	if(!empty($postcategory)) {
-		$parameters['number_posts'] = $postnumber;
-	}
-
-	// Execute
-	$hightlights_posts = network_latest_posts($parameters);
-
-} else {
-
-	get_template_part( 'partials/error', 'plugin' );
-
-}
-?>
-
+	?>
 </article>
+
+
+
+
