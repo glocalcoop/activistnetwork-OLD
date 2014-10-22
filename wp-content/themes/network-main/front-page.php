@@ -29,15 +29,15 @@
 
 			<?php
 
+			if(function_exists('glocal_customation_settings')) {
 				$glocal_home_settings = glocal_customation_settings();
+			} else {
+				echo '<pre>glocal_customation_settings() does not exist.</pre>';
+			}
 
-				echo '<pre>';
-				var_dump($glocal_home_settings);
-				echo '</pre>';
+			?>
 
-			 ?>
-
-			 <?php if (! is_multisite() ) { // Check to see if multisite is active. If not, display a recent posts and events module for this site. ?> 
+			<?php if (! is_multisite() ) { // Check to see if multisite is active. If not, display a recent posts and events module for this site. ?> 
 
 				<?php get_template_part( 'partials/error', 'multisite' ); ?>
 

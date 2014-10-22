@@ -14,7 +14,11 @@ get_header(); ?>
 
 	<?php
 
-	$glocal_home_settings = glocal_customation_settings();
+	if(function_exists('glocal_customation_settings')) {
+		$glocal_home_settings = glocal_customation_settings();
+	} else {
+		echo '<pre>glocal_customation_settings() does not exist.</pre>';
+	}
 
  ?>
 
