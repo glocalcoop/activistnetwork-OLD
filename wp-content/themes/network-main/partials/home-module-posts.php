@@ -7,8 +7,16 @@ if(function_exists('glocal_customation_settings')) {
 ?>
 
 <article id="highlights-module" class="module row highlights clearfix">
-	<!-- TODO: Add theme customization to change module link -->
-	<h2 class="module-heading"><?php echo $glocal_home_settings['posts']['posts_heading']; ?></h2>
+	<h2 class="module-heading">
+	<?php if(!empty($glocal_home_settings['posts']['posts_heading_link'])) { ?>
+		<a href="<?php echo $glocal_home_settings['posts']['posts_heading_link']; ?>">
+			<?php echo $glocal_home_settings['posts']['posts_heading']; ?>
+		</a>
+	<?php } else { ?>
+		<?php echo $glocal_home_settings['posts']['posts_heading']; ?>
+	<?php } ?>	
+	</h2>
+
 
 <?php
 if(function_exists( 'network_latest_posts' )) {

@@ -6,9 +6,15 @@ if(function_exists('glocal_customation_settings')) {
 ?>
 
 <article id="sites-module" class="module row sites">
-
-	<!-- TODO: Add theme customization to change module heading and link -->
-	<h2 class="module-heading"><?php echo $glocal_home_settings['sites']['sites_heading']; ?></h2>
+	<h2 class="module-heading">
+	<?php if(!empty($glocal_home_settings['sites']['sites_heading_link'])) { ?>
+		<a href="<?php echo $glocal_home_settings['sites']['sites_heading_link']; ?>">
+			<?php echo $glocal_home_settings['sites']['sites_heading']; ?>
+		</a>
+	<?php } else { ?>
+		<?php echo $glocal_home_settings['sites']['sites_heading']; ?>
+	<?php } ?>	
+	</h2>
 
 	<ul class="sites-list">
 

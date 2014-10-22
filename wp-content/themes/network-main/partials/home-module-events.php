@@ -10,8 +10,16 @@ if(function_exists('glocal_customation_settings')) {
 if ( is_plugin_active('events-manager/events-manager.php') ) { ?>
 
 	<article id="events-module" class="module row events">
-		<!-- TODO: Add theme customization to change module heading and link -->
-		<h2 class="module-heading"><?php echo $glocal_home_settings['events']['events_heading']; ?></h2>
+		<h2 class="module-heading">
+		<?php if(!empty($glocal_home_settings['events']['events_heading_link'])) { ?>
+			<a href="<?php echo $glocal_home_settings['events']['events_heading_link']; ?>">
+				<?php echo $glocal_home_settings['events']['events_heading']; ?>
+			</a>
+		<?php } else { ?>
+			<?php echo $glocal_home_settings['events']['events_heading']; ?>
+		<?php } ?>	
+		</h2>
+		
 		<ul class="events-list">
 			<?php
 			$parameters = array(
