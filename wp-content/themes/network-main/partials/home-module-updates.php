@@ -28,7 +28,7 @@ if(function_exists( 'network_latest_posts' )) {
 		'display_type'     => 'ulist',
 		'full_meta'		=> 'true',
 		'sort_by_date'	=> 'true',
-		'sorting_order'	=> 'asc',
+		'sorting_order'	=> 'desc',
 		// BUG: Not respecting number of updates specified
 		'number_posts'     => $updatenumber,
 		'wrapper_list_css' => 'highlights-list',
