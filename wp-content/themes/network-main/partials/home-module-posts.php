@@ -48,8 +48,10 @@ jQuery(document).ready(function(){
 		'display_type'     => 'ulist',
 		'auto_excerpt'  => 'true',
 		'full_meta'		=> 'true',
+		'sorting_order'	=> 'asc',
 		'sort_by_date'	=> 'true',
 		'excerpt_length'   => '20',
+		// BUG: Not respecting number of updates specified
 		'number_posts'     => 2,
 		'wrapper_list_css' => 'news-list',
 		'wrapper_block_css'=> 'module row news', //The wrapper classe
