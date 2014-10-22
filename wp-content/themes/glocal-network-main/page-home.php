@@ -16,9 +16,9 @@ get_header(); ?>
 
 	$glocal_home_settings = glocal_customation_settings();
 
-	// echo '<pre>';
-	// var_dump($glocal_home_settings);
-	// echo '</pre>';
+	echo '<pre>';
+	var_dump($glocal_home_settings);
+	echo '</pre>';
 
  ?>
 
