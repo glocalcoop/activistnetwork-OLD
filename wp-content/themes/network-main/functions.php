@@ -44,9 +44,13 @@ require_once( 'library/bones.php' ); // if you remove this, bones will break
 */
 // require_once( 'library/translation/translation.php' ); // this comes turned off by default
 
-require_once( 'library/recent-network-posts.php' ); // Required to display recent posts
 
-require_once( 'library/custom-functions.php' ); // Required to display recent posts
+require_once( 'library/custom-functions.php' );
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/library/customizer.php';
 
 
 /************* THUMBNAIL SIZE OPTIONS *************/
@@ -275,30 +279,6 @@ function glocal_scripts_and_styles() {
 
 if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'glocal_scripts_and_styles' );
 
-
-/*************************
-OPTIONS FRAMEWORK FUNCTION
-*************************/
-
-if ( !function_exists( 'of_get_option' ) ) {
-	function of_get_option($name, $default = false) {
-		
-		$optionsframework_settings = get_option('optionsframework');
-		
-		// Gets the unique option id
-		$option_name = $optionsframework_settings['id'];
-		
-		if ( get_option($option_name) ) {
-			$options = get_option($option_name);
-		}
-			
-		if ( isset($options[$name]) ) {
-			return $options[$name];
-		} else {
-			return $default;
-		}
-	}
-}
 /************* COMMENT LAYOUT *********************/
 
 // Comment Layout
@@ -351,10 +331,23 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 
-/**
- * Customizer additions.
- */
-// require get_template_directory() . '/library/customizer.php';
+/************* REMOVE UNWANTED THEME SUPPORT OPTIONS *****************/
+// http://codex.wordpress.org/Function_Reference/add_theme_support
+// http://codex.wordpress.org/Function_Reference/remove_theme_support
+
+function glocal_custom_theme_support() {
+
+	// Turn off support for custom background
+	remove_theme_support( 'custom-background' );
+
+	// Turn on support for custom header image
+	add_theme_support( 'custom-header', array(
+		'header-text' => false
+	) );
+
+}
+add_action( 'after_setup_theme', 'glocal_custom_theme_support', 60 );
+
 
 
 ?>
