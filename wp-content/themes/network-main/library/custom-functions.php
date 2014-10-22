@@ -337,10 +337,6 @@ function glocal_hack_wp_title_for_home( $title ) {
   return $title;
 }
 
-// Remove unused menus
-add_action( 'after_setup_theme', 'remove_theme_customization_glocal', 20); 
-
-
 
 /************* GET GLOBAL NAVIGATION FROM MAIN SITE (SITE 1) (MULTISITE) *****************/
 
