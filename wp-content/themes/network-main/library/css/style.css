@@ -449,11 +449,6 @@ p, li, dt, dd {
   margin-bottom: 24px;
   font-size: 18px;
   font-size: 1.125rem; }
-  @media (min-width: 1025px) {
-    /* line 86, ../sass/modules/_typography.scss */
-    p, li, dt, dd {
-      max-width: 40em;
-      line-height: 1.75; } }
 
 /* line 94, ../sass/modules/_typography.scss */
 input, label, select, textarea {
