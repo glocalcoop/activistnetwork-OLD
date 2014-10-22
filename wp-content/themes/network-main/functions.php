@@ -351,16 +351,10 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 
-
-
-
-function remove_theme_customization_glocal() {
-
-	unregister_nav_menu( 'secondary-nav' );
-	unregister_nav_menu( 'utility-nav' );
-	unregister_nav_menu( 'footer-links' );
-
-}
+/**
+ * Customizer additions.
+ */
+// require get_template_directory() . '/library/customizer.php';
 
 
 ?>
