@@ -44,28 +44,51 @@
 			<?php } else { ?>
 
 				<?php
-				if (in_array("posts", $glocal_home_settings['modules'])) {
-					
+
+				// Check that the array is populated
+				if(!empty($glocal_home_settings['modules'])) { ?>
+
+					<?php
+					if (in_array("posts", $glocal_home_settings['modules'])) {
+						
+						// Get network-wide posts
+						get_template_part( 'partials/home-module', 'posts' );
+					}
+					?>
+
+					<?php
+					if (in_array("events", $glocal_home_settings['modules'])) {
+						
+						// Get network-wide events
+						get_template_part( 'partials/home-module', 'events' );
+					}
+					?>
+
+					<?php
+					if (in_array("sites", $glocal_home_settings['modules'])) {
+
+						// Get network-wide sites
+						get_template_part( 'partials/home-module', 'sites' );
+					}
+					?>
+
+				<?php } else { ?>
+
+					<?php
 					// Get network-wide posts
-					get_template_part( 'partials/home-module', 'posts' );
-				}
-				?>
+					get_template_part( 'partials/home-module', 'posts' ); ?>
 
-				<?php
-				if (in_array("events", $glocal_home_settings['modules'])) {
-					
+					<?php
 					// Get network-wide events
-					get_template_part( 'partials/home-module', 'events' );
-				}
-				?>
+					get_template_part( 'partials/home-module', 'events' ); ?>
 
-				<?php
-				if (in_array("sites", $glocal_home_settings['modules'])) {
-
+					<?php
 					// Get network-wide sites
-					get_template_part( 'partials/home-module', 'sites' );
-				}
-				?>
+					get_template_part( 'partials/home-module', 'sites' ); ?>
+
+
+				<?php } ?>
+
 
 			<?php } ?>
 
