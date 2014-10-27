@@ -64,7 +64,7 @@ jQuery(document).ready(function(){
 		}
 
 		// If number of posts is specified, limit to that number of posts
-		if(!empty($postcategory)) {
+		if(!empty($postnumber)) {
 			$parameters['number_posts'] = $postnumber;
 		}
 		// Execute

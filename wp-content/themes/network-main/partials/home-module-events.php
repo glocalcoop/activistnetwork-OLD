@@ -37,8 +37,6 @@ if ( is_plugin_active('events-manager/events-manager.php') ) { ?>
 				$parameters['limit'] = $eventnumber;
 			}
 
-			// 'limit'=>7,
-			// TODO: Add theme customization to change the number of events to display
 			$events = EM_Events::output($parameters); ?>
 			<?php echo $events; ?>
 
