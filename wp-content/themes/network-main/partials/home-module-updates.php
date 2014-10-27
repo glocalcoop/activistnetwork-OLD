@@ -24,6 +24,7 @@ if(function_exists( 'network_latest_posts' )) {
 	$parameters = array(
 		// 'title'         => '',
 		'title_only'    => 'false',
+		'ignore_blog' => '1',
 		'auto_excerpt'  => 'true',
 		'display_type'	=> 'ulist',
 		'full_meta'		=> 'true',

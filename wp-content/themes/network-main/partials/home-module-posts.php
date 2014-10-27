@@ -45,6 +45,7 @@ jQuery(document).ready(function(){
 		$parameters = array(
 		// 'title'         => '',
 		'title_only'    => 'false',
+		'ignore_blog' => '1',
 		'display_type'     => 'ulist',
 		'auto_excerpt'  => 'true',
 		'full_meta'		=> 'true',
