@@ -222,7 +222,7 @@ function glocal_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 
 		new WP_Customize_Multiple_Select_Control(
 			$wp_customize,
-			'glocal_featured_category', array(
+			'glocal_posts_category', array(
 			'settings' => 'glo_options_home[posts][featured_category]',
 			'label'   => __('Categorie(s)', 'glocal-network'),
 			'section'  => 'home_posts',
@@ -308,7 +308,7 @@ function glocal_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 
 		new WP_Customize_Multiple_Select_Control(
 			$wp_customize,
-			'glocal_featured_category', array(
+			'glocal_updates_category', array(
 			'settings' => 'glo_options_home[updates][featured_category]',
 			'label'   => __('Categorie(s)', 'glocal-network'),
 			'section'  => 'home_updates',
