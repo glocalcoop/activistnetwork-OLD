@@ -49,7 +49,7 @@ class glocal_social_plugin extends WP_Widget {
 	</p>
 	<p>
 	<label for="<?php echo $this->get_field_id('twitter'); ?>"><?php _e('Twitter:', 'glocal-social-widget'); ?></label>
-		<input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" placeholder="http://twitter.com/YOURTWITTERNAME" type="text" value="<?php echo $twiter; ?>" />
+		<input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" placeholder="http://twitter.com/YOURTWITTERNAME" type="text" value="<?php echo $twitter; ?>" />
 	</p>
 	<p>
 	<label for="<?php echo $this->get_field_id('facebook'); ?>"><?php _e('Facebook:', 'glocal-social-widget'); ?></label>
