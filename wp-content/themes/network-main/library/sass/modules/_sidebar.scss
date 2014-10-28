@@ -134,3 +134,32 @@ SIDEBARS & ASIDES
     }
 }
 
+
+// SOCIAL WIDGET
+.widget {
+  ul.nav-social {
+    float: none;
+    border-bottom: none;
+
+    li {
+      display: inline-block !important;
+      line-height: 30px;
+      height: 30px;
+      width: 30px;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        height: 30px;
+        padding: 0 !important;
+      }
+    }
+
+  }
+
+}
+
+
+
+
