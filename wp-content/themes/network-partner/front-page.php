@@ -13,7 +13,8 @@
 			<article role="article" class="partner post news">
 			
 				<header class="post-header">
-					<div class="post-date date"><?php the_date('M j, Y'); ?></div>
+					<div class="post-date date"><?php echo get_the_date('M j, Y'); ?><?php the_date('M j, Y'); ?></div>
+					<?php echo get_the_category_list(); ?>
 				</header>
 				
 				<section class="post-body">
