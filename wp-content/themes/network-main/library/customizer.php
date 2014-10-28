@@ -113,8 +113,11 @@ function glocal_customize_register( $wp_customize ) {
 		$postcategory = glocal_home_category();
 	}
 
-	// Post Category Drop-down
+	/**
+	* Drop-downs
+	*/
 
+	// Post Category Drop-down
 	$categories = get_categories();
 	$cats = array();
 	$i = 0;
@@ -124,6 +127,20 @@ function glocal_customize_register( $wp_customize ) {
 			$i++;
 		}
 		$cats[$category->slug] = $category->name;
+	}
+
+	// Sites List Drop-down
+	$sites = wp_get_sites();
+	$siteslist = array();
+	$i = 0;
+	foreach ($sites as $site) {
+		$siteid = $site['blog_id'];
+		$sitedetails = get_blog_details( $siteid );
+		if($i==0) {
+			$default = $siteid;
+			$i++;
+		}
+		$siteslist[$siteid] = $sitedetails->blogname;
 	}
 
 	/**
@@ -140,9 +157,9 @@ function glocal_customize_register( $wp_customize ) {
 	) );
 
 	// Section - Select Modules
-	$wp_customize->add_section( 'home_modules' , array(
-		'title'      => __( 'Modules', 'glocal-network' ),
-		'description'    => __( 'Select the content modules to display on the home page.', 'glocal-network' ),
+	$wp_customize->add_section( 'home_general' , array(
+		'title'      => __( 'General', 'glocal-network' ),
+		'description'    => __( 'Select the content to display.', 'glocal-network' ),
 		'priority'   => 10,
 		'panel'  => 'home_panel',
 	) );
@@ -193,8 +210,8 @@ function glocal_customize_register( $wp_customize ) {
 			'glocal_home_modules',
 			array(
 				'settings' => 'glo_options_home[modules]',
-				'label'    => __( 'Homepage Modules', 'glocal-network' ),
-				'section'  => 'home_modules',
+				'label'    => __( 'Modules - Select the modules to display', 'glocal-network' ),
+				'section'  => 'home_general',
 				'type'     => 'multiple-select', // The $type in our class
 				'choices'  => array(
 					'updates' => __('Updates', 'glocal-network'),
@@ -202,6 +219,28 @@ function glocal_customize_register( $wp_customize ) {
 					'events' => __('Events', 'glocal-network'),
 					'sites' => __('Sites', 'glocal-network'),
 				),
+				'priority' => 10,
+			)
+		)
+	);
+
+	// Homepage Site Exclude
+	$wp_customize->add_setting( 'glo_options_home[exclude_sites]', array(
+		'default' => array(),
+		// 'capability'     => 'manage_options',
+		'type'           => 'option',
+	) );
+
+	$wp_customize->add_control(
+		new WP_Customize_Multiple_Select_Control(
+			$wp_customize,
+			'glocal_home_exclude_sites',
+			array(
+				'settings' => 'glo_options_home[exclude_sites]',
+				'label'    => __( 'Exclude Sites - Select sites from which to exclude content', 'glocal-network' ),
+				'section'  => 'home_general',
+				'type'     => 'multiple-select', // The $type in our class
+				'choices'  => $siteslist,
 				'priority' => 20,
 			)
 		)
