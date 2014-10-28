@@ -33,6 +33,8 @@ if ( is_plugin_active('events-manager/events-manager.php') ) { ?>
 					</li>',
 			);
 
+			// TODO: Add exclude site customization?
+
 			if(!empty($eventnumber)) {
 				$parameters['limit'] = $eventnumber;
 			}

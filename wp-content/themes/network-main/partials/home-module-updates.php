@@ -24,6 +24,7 @@ if(function_exists( 'network_latest_posts' )) {
 	$parameters = array(
 		// 'title'         => '',
 		'title_only'    => 'false',
+		// TODO: Add exclude site customization	
 		'ignore_blog' => '1',
 		'auto_excerpt'  => 'true',
 		'display_type'	=> 'ulist',

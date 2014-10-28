@@ -45,6 +45,7 @@ jQuery(document).ready(function(){
 		$parameters = array(
 		// 'title'         => '',
 		'title_only'    => 'false',
+		// TODO: Add exclude site customization	
 		'ignore_blog' => '1',
 		'display_type'     => 'ulist',
 		'auto_excerpt'  => 'true',

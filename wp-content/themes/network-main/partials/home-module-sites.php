@@ -18,7 +18,9 @@ if(function_exists('glocal_customation_settings')) {
 
 	<ul class="sites-list">
 
-	<?php $sites = wp_get_sites('offset=1&archived=0&deleted=0'); // Set up variable that holds array of sites ?>	
+	<?php 
+	// TODO: Add exclude site customization	
+	$sites = wp_get_sites('offset=1&archived=0&deleted=0'); // Set up variable that holds array of sites ?>	
 
 	<?php
 	$counter = 0; 
