@@ -29,10 +29,10 @@
 
 			<?php
 
-			if(function_exists('glocal_customation_settings')) {
-				$glocal_home_settings = glocal_customation_settings();
+			if(function_exists('glocal_customization_settings')) {
+				$glocal_home_settings = glocal_customization_settings();
 			} else {
-				echo '<pre>glocal_customation_settings() does not exist.</pre>';
+				echo '<pre>glocal_customization_settings() does not exist.</pre>';
 			}
 
 			?>
