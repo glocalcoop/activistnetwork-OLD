@@ -63,12 +63,12 @@ jQuery(document).ready(function(){
 		);
 
 		// If a category was selected, limit to that category
-		if(!empty($postcategory)) {
+		if($postcategory) {
 			$parameters['category'] = $postcategory;
 		}
 
 		// If number of posts is specified, limit to that number of posts
-		if(!empty($postnumber)) {
+		if($postnumber) {
 			$parameters['number_posts'] = $postnumber;
 		}
 		// Execute
