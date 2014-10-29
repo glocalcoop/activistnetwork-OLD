@@ -553,7 +553,7 @@ add_action( 'customize_register', 'glocal_customize_register' );
 
 // Return nice array of customization options
 
-function glocal_customation_settings() {
+function glocal_customization_settings() {
 	$glocal_home_settings = get_option('glo_options_home');
 
 	if (!empty($glocal_home_settings)) {
