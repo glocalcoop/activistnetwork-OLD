@@ -1,6 +1,6 @@
 <?php 
-if(function_exists('glocal_customation_settings')) {
-	$glocal_home_settings = glocal_customation_settings();
+if(function_exists('glocal_customization_settings')) {
+	$glocal_home_settings = glocal_customization_settings();
 	$eventnumber = $glocal_home_settings['events']['number_events'];
 }
 
