@@ -1,7 +1,9 @@
 <?php 
-if(function_exists('glocal_customation_settings')) {
-	$glocal_home_settings = glocal_customation_settings();
-	$updatecategory = implode(",", $glocal_home_settings['updates']['featured_category']);
+if(function_exists('glocal_customization_settings')) {
+	$glocal_home_settings = glocal_customization_settings();
+	if(!empty($glocal_home_settings['updates']['featured_category'])) {
+		$updatecategory = implode(",", $glocal_home_settings['updates']['featured_category']);
+	}
 	$updatenumber = $glocal_home_settings['updates']['number_updates'];
 } 
 ?>
@@ -31,22 +33,20 @@ if(function_exists( 'network_latest_posts' )) {
 		'full_meta'		=> 'true',
 		'sort_by_date'	=> 'true',
 		'use_pub_date'	=> 'true',
-		// 'sorting_order'	=> 'desc',
 		// BUG: Not respecting number of updates specified
-		'number_posts'     => $updatenumber,
 		'wrapper_list_css' => 'highlights-list',
 		'wrapper_block_css'=> 'module row highlights', //The wrapper classe
 		'instance'         => 'highlights-module', //The wrapper ID
 	);
 
 	// If a category was selected, limit to that category
-	if(!empty($updatecategory)) {
+	if($updatecategory) {
 		$parameters['category'] = $updatecategory;
 	}
 
 	// If number of updates is specified, limit to that number of updates
-	if(!empty($updatecategory)) {
-		$parameters['number_updates'] = $updatenumber;
+	if($updatenumber) {
+		$parameters['number_posts'] = $updatenumber;
 	}
 
 	// Execute
