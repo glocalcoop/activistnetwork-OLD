@@ -1,7 +1,9 @@
 <?php 
-if(function_exists('glocal_customation_settings')) {
-	$glocal_home_settings = glocal_customation_settings();
-	$postcategory = implode(",", $glocal_home_settings['posts']['featured_category']);
+if(function_exists('glocal_customization_settings')) {
+	$glocal_home_settings = glocal_customization_settings();
+	if(!empty($glocal_home_settings['posts']['featured_category'])) {
+		$postcategory = implode(",", $glocal_home_settings['posts']['featured_category']);
+	}
 	$postnumber = $glocal_home_settings['posts']['number_posts'];
 } 
 ?>
