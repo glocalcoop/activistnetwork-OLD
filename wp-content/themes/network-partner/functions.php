@@ -34,6 +34,9 @@ function network_partner_remove_theme_customization() {
 		)
 	);
 	remove_action( 'customize_register', 'glocal_customize_register');
+
+	// Remove bones excerpt, which is breaking feed imports
+	remove_filter( 'excerpt_more', 'bones_excerpt_more' );
 }
 add_action( 'after_setup_theme', 'network_partner_remove_theme_customization', 20 ); 
 

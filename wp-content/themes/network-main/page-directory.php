@@ -20,6 +20,10 @@ Template Name: Sites Directory
 
 					<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 
+					<section class="entry-content">
+						<?php the_content(); ?>
+					</section>
+
 				</header>
 
 				<section class="directory-content" itemprop="articleBody" rel="main">
