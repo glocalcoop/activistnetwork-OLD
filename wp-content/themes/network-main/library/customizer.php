@@ -123,7 +123,7 @@ function glocal_customize_register( $wp_customize ) {
 	$i = 0;
 	foreach($categories as $category){
 		if($i==0){
-			$default = $category->slug;
+			$defaultcat = $category->slug;
 			$i++;
 		}
 		$cats[$category->slug] = $category->name;
@@ -137,7 +137,7 @@ function glocal_customize_register( $wp_customize ) {
 		$siteid = $site['blog_id'];
 		$sitedetails = get_blog_details( $siteid );
 		if($i==0) {
-			$default = $siteid;
+			$defaultsite = $siteid;
 			$i++;
 		}
 		$siteslist[$siteid] = $sitedetails->blogname;
@@ -253,8 +253,9 @@ function glocal_customize_register( $wp_customize ) {
 	// Posts - Categories
 	// Setting
 	$wp_customize->add_setting('glo_options_home[posts][featured_category]', array(
-		'default'        => $default,
-		'type'           => 'option',
+		'default' 		=> array(),
+		// 'default'        => $default,
+		'type'			=> 'option',
 	));
 
 	// Control
@@ -339,8 +340,9 @@ function glocal_customize_register( $wp_customize ) {
     // Updates - Categories
 	// Setting
 	$wp_customize->add_setting('glo_options_home[updates][featured_category]', array(
-		'default'        => $default,
-		'type'           => 'option',
+		'default'		=> array(),
+		// 'default'        => $default,
+		'type'			=> 'option',
 	));
 
 	// Control
