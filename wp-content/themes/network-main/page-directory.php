@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Sites Directory
+Template Name: Network Sites
 */
 ?>
 
