@@ -103,9 +103,28 @@ div.css-search {
     }
     .event-header {
         @include breakpoint(sm) {@include span-columns(2);}
-        .meta {
-            margin: .35em 0;
+        .meta,
+        .meta span {
+            margin: 0;
             line-height: 1.5;
+            // @include font-size($milli);
+            color: $base5;
+            display: inline-block;
+            @include font-size($zeta);
+            text-transform: uppercase;
+            letter-spacing: $tracking;
+            &:after {
+                letter-spacing: 5px;
+            }
+            &:last-child:after {
+                content: '';
+            }
+            a, a:visited {
+                color: $base5;
+                &:hover {
+                    color: $text-color;
+                }
+            }
         }
         span {
             padding-right: 5px;

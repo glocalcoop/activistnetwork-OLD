@@ -52,46 +52,94 @@ hr {
 }
 
 
+// 2-COLUMN PAGE (DEFAULT)
+
+.page-template-default {}
+
+.content {
+
+  main {
+    @include span-columns(12);
+  }
+  aside {
+    @include span-columns(4);
+  }
+
+  // @include breakpoint(sm) {
+  //   main,
+  //   aside {
+  //     @include span-columns(16);
+  //   }
+  // }
+
+}
+
+
+// SINGLE COLUMN, FULLWIDTH PAGE
+
+// .page-template,
+.page-template-page-full-width-php,
+// .page-template-page-news-php,
+.page-template-page-directory-php,
+// .page-news,
+.page-events,
+.page-directory,
+.page-sites {
+
+  .content {
+    main {
+      @include span-columns(16);
+    }
+  }
+}
+
 
 // CONTENT COLUMNS
 
 // main
-main {
-  padding-bottom: 60px; 
-  @include breakpoint(md) {@include span-columns(12); }
-  // clear right margin if right column
-  &:last-child {
-      @include omega();
-  }
-  // single column layout 
-  .page-template-page-iframe-php &,
-  .page-template-default &,
-  .directory &,
-  .sites &,
-  .news & {
-      @include fill-parent;
-  }
-}
+// main {
+//   padding-bottom: 60px; 
+//   @include breakpoint(md) {
+//     @include span-columns(12);
+//   }
+//   // clear right margin if right column
+//   &:last-child {
+//       @include omega();
+//   }
+//   // single column layout 
+//   .page-template-page-iframe-php &,
+//   // .page-template-default &,
+//   .directory &,
+//   .sites &,
+//   .news & {
+//       @include fill-parent;
+//   }
+// }
 
-// sidebar
-aside,
-div[role='complementary'] {
-	@include breakpoint(md) {@include span-columns(4); }
-    // clear right margin if right column
-    &:last-child {
-        @include omega();
-    }
-}
+// // sidebar
+// aside,
+// div[role='complementary'] {
+// 	@include breakpoint(md) {
+//     @include span-columns(4);
+//   }
+//     // clear right margin if right column
+//     &:last-child {
+//         @include omega();
+//     }
+// }
+
+
+
 
 
 // ONE-COLUMN CONTENT 
 
-main.main-news,
-.home-start,
-.sites-list,
-.networks-list {
-    @include row();
-}
+// main.main-news,
+// .home-start,
+// .sites-list,
+// .networks-list {
+//     @include row();
+// }
 
 
 // CUSTOM CONTAINERS 

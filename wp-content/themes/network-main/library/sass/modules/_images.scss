@@ -19,6 +19,14 @@ img, video, object {
     image-border: $frame-border;
 }
 
+// images in post lists {
+article .post-image {
+    float: right;
+    img {
+        border: $frame-border;
+    }
+}
+
 
 // images with captions
 

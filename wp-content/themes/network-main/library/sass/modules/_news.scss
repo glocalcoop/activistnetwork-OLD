@@ -73,18 +73,33 @@
   float: right;
 }
 
-// news page
+// News Listing
 
 .main-news .post {
   .post-header {
     @include span-columns(3);
   }
   .post-body {
-    @include span-columns(10);
+    @include span-columns(13);
+    .post-image {
+        float: right;
+        margin-left: $space;
+        margin-bottom: $space-fourth;
+        img {
+            display: block;
+            border: $frame-border;
+        }      
+    }
   }
   .post-footer {
     @include span-columns(3);
   }
+}
+
+// Events Listing
+
+.event-image {
+  overflow: hidden;
 }
 
 
