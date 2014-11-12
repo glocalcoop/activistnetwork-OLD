@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Network News
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="content">
@@ -56,6 +62,8 @@
 		?>
 
 		</main>
+
+		<?php get_sidebar(); ?>
 
 	</div>
 
