@@ -1,8 +1,13 @@
 <?php 
 if(function_exists('glocal_customization_settings')) {
 	$glocal_home_settings = glocal_customization_settings();
+	//Check the setting exists
 	if(!empty($glocal_home_settings['posts']['featured_category'])) {
-		$postcategory = implode(",", $glocal_home_settings['posts']['featured_category']);
+		if(count($glocal_home_settings['posts']['featured_category']) > 1) {
+			$postcategory = implode(",", $glocal_home_settings['posts']['featured_category']);
+		} else {
+			$postcategory = $glocal_home_settings['posts']['featured_category'];
+		}
 	}
 	$postnumber = $glocal_home_settings['posts']['number_posts'];
 } 
@@ -63,7 +68,7 @@ jQuery(document).ready(function(){
 		);
 
 		// If a category was selected, limit to that category
-		if($postcategory) {
+		if(isset($postcategory)) {
 			$parameters['category'] = $postcategory;
 		}
 

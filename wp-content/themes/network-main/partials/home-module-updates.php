@@ -1,8 +1,13 @@
 <?php 
 if(function_exists('glocal_customization_settings')) {
 	$glocal_home_settings = glocal_customization_settings();
+	//Check the setting exists
 	if(!empty($glocal_home_settings['updates']['featured_category'])) {
-		$updatecategory = implode(",", $glocal_home_settings['updates']['featured_category']);
+		if(count($glocal_home_settings['updates']['featured_category']) > 1) {
+			$postcategory = implode(",", $glocal_home_settings['updates']['featured_category']);
+		} else {
+			$postcategory = $glocal_home_settings['updates']['featured_category'];
+		}
 	}
 	$updatenumber = $glocal_home_settings['updates']['number_updates'];
 } 
@@ -40,7 +45,7 @@ if(function_exists( 'network_latest_posts' )) {
 	);
 
 	// If a category was selected, limit to that category
-	if($updatecategory) {
+	if(isset($updatecategory)) {
 		$parameters['category'] = $updatecategory;
 	}
 
