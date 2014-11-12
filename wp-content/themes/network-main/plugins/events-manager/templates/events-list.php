@@ -11,7 +11,7 @@
 $args = apply_filters('em_content_events_args', $args);
 
 $args['format_header'] = '
-{logged_in}<a href="/events/add/?action=edit">Add Event</a>{/logged_in}
+<a href="/events/add/?action=edit" class="button">Add Event</a>
 <header class="event-list-header">
 	<h6 class="event-list-date">Date</h6>
 	<h6 class="event-list-description">Description</h6>
