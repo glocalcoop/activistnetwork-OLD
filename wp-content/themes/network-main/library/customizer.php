@@ -561,7 +561,10 @@ function glocal_customization_settings() {
 	if (!empty($glocal_home_settings)) {
 		foreach ($glocal_home_settings as $key => $option)
 			$home_options[$key] = $option;
+		return $home_options;
+	} else {
+		return null;
 	}
-	return $home_options;
+	
 }
 
