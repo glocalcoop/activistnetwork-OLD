@@ -6,12 +6,6 @@ Template Name: Network Sites
 
 <?php get_header(); ?>
 
-<?php 
-if(is_page_template('page-directory.php')) {
-	echo "I'm page-directory.php";
-}
-?>
-
 <div class="content">
 
 	<div class="wrap">
