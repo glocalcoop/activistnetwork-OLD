@@ -251,14 +251,19 @@ ENQUEUE AND REGISTER SCRIPTS AND STYLES
 
 function glocal_scripts_and_styles() {
 
-	// deregister WP jquery
-	wp_deregister_script( 'jquery' );
-	wp_deregister_script( 'jquery-ui-draggable' );
+	// Load hosted version of jquery for page using isotope only
+	if(is_page_template('page-directory.php')) {
+		// Deregister WP jquery
+		wp_deregister_script( 'jquery' );
+		// wp_deregister_script( 'jquery-ui-draggable' );
 
-	// Hosted jquery
-	// Changed hosted jquery version/source to eliminate conflicts - PEA 11/2/2014
-	// wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), '', true );
-	wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.js', array(), '', true );
+		// Hosted jquery
+		// wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), '', true );
+		wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.js', array(), '', true );
+
+		// Enqueue style
+	    // wp_enqueue_script( 'jquery' );
+	}
 
 	// Responsive Slider Script
 	wp_register_script( 'responsive-slider-script', get_template_directory_uri() . '/library/boxslider/jquery.bxslider.min.js', array(), '', true );
@@ -275,7 +280,6 @@ function glocal_scripts_and_styles() {
 
 
 	// enqueue styles and scripts
-    wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'responsive-slider-script' );
     wp_enqueue_script( 'isotope-script' );
 
