@@ -252,13 +252,13 @@ ENQUEUE AND REGISTER SCRIPTS AND STYLES
 function glocal_scripts_and_styles() {
 
 	// deregister WP jquery
-	// Removed hosted jquery - interferring with events maps - PEA 12/2/2014
-	// wp_deregister_script( 'jquery' );
-	// wp_deregister_script( 'jquery-ui-draggable' );
+	wp_deregister_script( 'jquery' );
+	wp_deregister_script( 'jquery-ui-draggable' );
 
 	// Hosted jquery
-	// Removed hosted jquery - interferring with events maps - PEA 12/2/2014
+	// Changed hosted jquery version/source to eliminate conflicts - PEA 11/2/2014
 	// wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), '', true );
+	wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.js', array(), '', true );
 
 	// Responsive Slider Script
 	wp_register_script( 'responsive-slider-script', get_template_directory_uri() . '/library/boxslider/jquery.bxslider.min.js', array(), '', true );
@@ -275,8 +275,7 @@ function glocal_scripts_and_styles() {
 
 
 	// enqueue styles and scripts
-	// Removed hosted jquery - interferring with events maps - PEA 12/2/2014
-    // wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'responsive-slider-script' );
     wp_enqueue_script( 'isotope-script' );
 
