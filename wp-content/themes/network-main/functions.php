@@ -251,7 +251,7 @@ ENQUEUE AND REGISTER SCRIPTS AND STYLES
 
 function glocal_scripts_and_styles() {
 
-	// Load hosted version of jquery for page using isotope only
+	// Load hosted version of jquery for template using isotope only
 	if(is_page_template('page-directory.php')) {
 		// Deregister WP jquery
 		wp_deregister_script( 'jquery' );
@@ -262,7 +262,7 @@ function glocal_scripts_and_styles() {
 		wp_register_script( 'jquery', 'http://code.jquery.com/jquery-latest.js', array(), '', true );
 
 		// Enqueue style
-	    // wp_enqueue_script( 'jquery' );
+	    wp_enqueue_script( 'jquery' );
 	}
 
 	// Responsive Slider Script
